@@ -523,7 +523,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .fixed-bg1 {
-  background-image: url("https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/240125104_10158820852846725_2875035085638677318_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=973b4a&_nc_ohc=7Vs-y-7aDZgAX_26Xgh&_nc_ht=scontent-atl3-1.xx&oh=936f7659aaa883635813c46079357b23&oe=6133C145");
+  background-image: url("/Docs/LobbyBase.jpg");
   min-height: 900px;
   width: 100%;
   background-attachment: fixed;
