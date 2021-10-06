@@ -1,7 +1,668 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link re/l="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="C:\Users\Tiffany McDonald\OneDrive\Desktop\style.css"/>
+
+<style>
+
+
+
+</style>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+
+
+<div id="navbar">
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+	<div class="logo">
+		<img src="https://previews.dropbox.com/p/thumb/ABSKVG2Xa1RhewHWB9uxDqfX9SvrO2w0sjSg9RPOHxveUaW0vrztvxjjBH2cS816iRA4KzRyb-ENJ4WZ8MDYOZeXcfTmX46J8jDXZfmKpvqAzSRvN7-OwecECYStO4kqLfPoQdV2L1F4GQ9wrdDj6k8O4keBPMgsHn6r-F6iKfrRwt3BSPP6ar9zpiCpao9I84Zjd4_2eFqrKtfRqY0-XFXJ9cvDvp92QHw1FFQ6sYCXHsXQOMLf3KcCTxwIgcBTTtQYZQ0SU-biAu4dHBuu8mLxoziriwhEm_9Ych77Et9f13VZriWD5UGUAIsIOG8GWZRY6TjIF9eKdiLEPHQLM2GWkp3Qbl-6IsSdC8P5pSFMkQ/p.png?fv_content=true&size_mode=5" alt="Logo">
+	</div>
+    <label for="btn" class="icon" onclick="/changeNav()">
+    	<span class="fa fa-bars"></span>
+    </label>
+    <input type="checkbox" id="btn">
+	<ul>
+    	<li><a href="#" style="color:green;">Home</a></li>
+        <li>
+        	<label for="btn-1" class="show1">About Us +</label>
+        	<a href="#">About Us</a>
+            <input type="checkbox" id="btn-1">
+            <ul>
+            	<li><a href="#">Our Mission</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Awards</a></li>
+            </ul>
+        </li>
+        <li>
+        	<label for="btn-2"  class="show1">Services +</label>
+        	<a href="#">Services</a>
+            <input type="checkbox" id="btn-2">
+            <ul>
+            	<li><a href="#">Construction</a></li>
+                <li>
+                	<label for="btn-5" class="show1">Service +</label>
+                	<a href="#">Service</a>
+                    <input type="checkbox" id="btn-5">
+                    	<ul>
+                        	<li><a href="#">EPM</a></li>
+                            <li><a href="#">Maintenance</a></li>
+                            <li><a href="#">MADs</a></li>
+                            <li><a href="#">IR Imaging</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Insurance</a></li>
+            </ul>
+        </li>
+        <li>
+        	<label for="btn-3" class="show1">Projects +</label>
+        	<a href="#" >Projects</a>
+            <input type="checkbox" id="btn-3">
+            <ul>
+            	<li><a href="#">Commercial</a></li>
+                <li><a href="#">Medical</a></li>
+                <li><a href="#">Data Center</a></li>
+                <li><a class="special" href="#">Theatre/Sound Stage</a></li>
+                <li><a class="special2" href="#">Critical Power</a></li>
+            </ul>
+        </li>
+        <li>
+        	<label for="btn-4" class="show1">People +</label>
+        	<a href="#">People</a>
+            <input type="checkbox" id="btn-4">
+            <ul>
+            	<li><a href="#">Our Team</a></li>
+                <li><a href="#">Career</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</div>
+
+<div class="content-sw">
+  
+  <div class="square-wrapper">
+  <div class="square">
+  <div class="fade-in-slideshow">
+  <div class="slideshow-container">
+
+<div class="mySlides fade-ss">
+  <div class="fixed-bg1"></div>
+  <div class="text">Building Success Together</div>
+</div>
+
+<div class="mySlides fade-ss">
+  	<div class="fixed-bg2"></div>
+  <div class="text">Award Winning Service</div>
+</div>
+
+<div class="mySlides fade-ss">
+ 	 <div class="fixed-bg3"></div>
+  <div class="text">Design - Build - Service</div>
+  <div class = "subText">Customer Satisfaction, Quality and Safety are Philosophies we Live by</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="tb-container" style="text-align: center;">
+<div class="tab-col-icons">
+  <button class="tablinks" onclick="openEvent(event, 'Customers')" onmouseover="openEvent(event, 'Customers')" id="defaultOpen"><img src="https://image.flaticon.com/icons/png/512/1605/1605401.png"></button>
+  <button class="tablinks" onmouseover="openEvent(event, 'ProfessionalTeam')" onclick="openEvent(event, 'ProfessionalTeam')"><img src="https://image.flaticon.com/icons/png/512/648/648324.png"></button>
+  <button class="tablinks" onmouseover="openEvent(event, 'Service')" onclick="openEvent(event, 'Service')"><img src="https://image.flaticon.com/icons/png/512/1086/1086581.png"></button>
+  <button class="tablinks" onmouseover="openEvent(event, 'Safety')" onclick="openEvent(event, 'Safety')"><img src="https://image.flaticon.com/icons/png/512/2610/2610605.png"></button>
+  <button class="tablinks" onmouseover="openEvent(event, 'Speed')" onclick="openEvent(event, 'Speed')"><img src="https://image.flaticon.com/icons/png/512/2558/2558113.png"></button>
+</div>
+
+<div id="Customers" class="tabcontent-container" style="text-align: center;">
+<div style="width:45%; float: left;">
+  <h3 style="color: green; font-size: 30px;">CUSTOMERS</h3>
+  <p style="color: white;">96% of our customers hire us again.</p>
+	<p>Mayberry Electric works for the most demanding customers in Atlanta; we like it that way.  As a commercial electric contractor in Atlanta, GA we have customers who expect commitments to be realized, customers who expect milestones to be made on time and within cost, customers who expect best practices and quality installations, customers who own class A facilities and want to keep them class A.</p>
+</div>
+</div>
+
+<div id="ProfessionalTeam" class="tabcontent-container">
+<div style="width:45%; float: left;">
+  <h3>PROFESSIONAL TEAM</h3>
+  <p> Our uniformed team is highly accustomed to working in occupied spaces and are known for their courteous attitude.</p> 
+</div>
+</div>
+
+<div id="Service" class="tabcontent-container">
+<div style="width:45%; float: left;">
+  <h3>EXCELLENCE IN SERVICE</h3>
+  <p>We do it right the first time, everytime!</p>
+</div>
+</div>
+
+<div id="Safety" class="tabcontent-container">
+<div style="width:45%; float: left;">
+  <h3>SAFETY</h3>
+  <p>Our dedication to safety has lowered our insurance costs which is a savings we can pass on to our customers.</p>
+</div>
+</div>
+
+<div id="Speed" class="tabcontent-container">
+	<div style="width:45%; float: left;">
+  		<h3>SPEED</h3>
+  		<p>Available 24/7 365, Our team is able to mobilize and be on your site right now.</p>
+	</div>
+	<img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-9/60350154_10156713995426725_923059313100980224_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=973b4a&_nc_ohc=zQOak5QrbxUAX_uy8vr&_nc_ht=scontent-atl3-1.xx&oh=0394ee96feef5d2ecc5aa34d7949a149&oe=61530060">
+</div>
+
+</div>
+  
+  
+  
+
+
+
+<div class = "display-card-container" st/yle="background-color: #b6ffb6; margin-top: -25px;">
+<h2 style="color: #006600; text-align: center; padding-bottom: 35px;">What can we do for you?</h2>
+<div class="cardContain">
+<div class="container">
+    		<div class="card">
+        		<div class="content">
+            			<h2>Services</h2>
+            			<p>Safety and Satisfaction are Our #1 Priorities </p>
+            			<a class="container_link" href="#">Read More</a>
+            		</div>
+            		<img href="#" src="https://previews.dropbox.com/p/thumb/ABRlo8leDUZ4Hteuj5aoPNe4ylWr1_TE1-Wk6qHMngucns-xW0_Yeh3OSs_umb9fadbkuAHf0DtJYFVpSmSg3lkqLv1NgDE8oxTRWDyjSGRXisxpLUV6uHeeU7HYvYZpzgqQj34yJSqAijxk3ghcad4cdPxfCzOFK1_nTx3xmLJpExFD0M9pyTR1oMe27IJ1SmBl1xIiierAJSxFNDAGMFYc7aNqcqAYH5tGYiBfd5TVaVUTiU8fk0mM-cEoiBpSP8JYUvKXuYCB-J8vgxw_cUBahqhs36xpBO07eMtL-otGD0CY-YZxpJtrkt36cNUFUHE5wLOSei0HAId2V7uRHYIzOhlkz8GtVMRXwl8AWIKEig/p.png?fv_content=true&size_mode=5">              
+        	</div>
+        	<div class="card">
+        		<div class="content">
+            			<h2 class="header_link">Projects</h2>
+            			<p>Let Us Show You What We Can Do</p>
+            			<a class="container_link" href="#">Read More</a>
+            		</div>
+            		<img src="https://images.cdn4.stockunlimited.net/preview1300/man-with-hardhat-looking-at-blueprint_1864638.jpg">             
+        	</div>
+    	</div>
+</div>
+</div>
+
+
+<div class="Info_container">
+<h2 style="color: #006600; padding-left:10px;">Our Expertise</h2>
+<h3 style="color: #3a3838; padding-left:30px;">Why Atlanta's Premier facilities prefer MEI</h3>
+<div class="Info_row">
+  <div class="Info_column" style="background-color:#ddd;">
+    <div class="Info_details">
+    	<div class="Info_imgbox">
+        	<img src="https://image.flaticon.com/icons/png/512/2781/2781853.png">
+        </div>
+        <h3><a href="#">Electrical Construction</a><br><span>Insert Desc.</span></h3>
+    </div>
+  </div>
+  <div class="Info_column" style="background-color:#ddd;">
+    <div class="Info_details">
+    	<div class="Info_imgbox">
+        	<img src="https://image.flaticon.com/icons/png/512/1086/1086581.png">
+        </div>
+        <h3><a href="#">Service</a><br><span>Insert Desc.</span></h3>
+    </div>
+  </div>
+  <div class="Info_column" style="background-color:#ddd;">
+    <div class="Info_details">
+    	<div class="Info_imgbox">
+        	<img src="https://image.flaticon.com/icons/png/512/2219/2219516.png">
+        </div>
+        <h3><a href="#">Design</a><br><span>Insert Desc.</span></h3>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+
+<br>
+<div class="company_about">
+	<h2>Who We Are...</h2>
+    <div class="company_about_holder">
+    	<div class="company_about_wrapper">
+        <h3> Atlanta's Premier Commercial Electrical Contractor </h3>
+        	<div class="company_about_container">
+            	<div class="company_about_info">
+                	<h3>Test1</h3>
+                </div>
+                <div class="company_about_info_2">
+                	<h3>Continued Excellence</h3>
+                    <p>2020 NECA Project Excellence Award Winner</p>
+                </div>
+                <div class="company_about_info_2">
+                	<h3>Test3</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="image-mosaic-container">
+<h3>Associations we are proud to be Partnered with</h3>
+<br>
+<div class="image-mosaic">
+  <div
+    class="card"
+    style="background-image: url('https://www.mayberryelectric.com/uploads/8/8/5/6/8856990/4312190.png')"
+  ></div>
+  <div
+    class="card card-wide"
+    style="background-image: url('https://www.mayberryelectric.com/uploads/8/8/5/6/8856990/9383378_orig.png'); background-size: 100% 100%;"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://www.mayberryelectric.com/uploads/8/8/5/6/8856990/2087025.jpg')"
+  ></div>
+  <div
+    class="card card-wide"
+    style="background-image: url('https://www.mayberryelectric.com/uploads/8/8/5/6/8856990/8539827.jpg?358')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://previews.dropbox.com/p/thumb/ABQXhdH_StAZO-Iua6nYKY92IzhetCUeQ0dcTUn84cRpLUPWCk9ESpTwYgOIfWgu8_rRA0JfaDruaEuXlc6UGSDoH9TtQBdwoCsnXICaes2LPAXP7BeQpuoIX3OsFX2rweRulsL5fxxzfcT0NSXtC0qSveIuESUtL6lErMP47-jt5OT8L_MMxNbIwS53zr1tqC0zyAQfByGXQwrUjE8EYgeoV1gK-z68q0sL1b3nMo4EQPL21rz3SezBwLHRm6uisufTiERRLrL_wXY89c8l_ovQWPIgMqGVhHSx1LTJ5NtxBKXUuSrl4_77P1ofQc6UQo3BFZY972a_5h6U__XKXCFELLfLRv2pmTJjriZKu7qDMQ/p.png?fv_content=true&size_mode=5'); background-size: 100% 100%;"
+  ></div>
+  <div
+    class="card card-wide"
+    style="background-image: url('https://www.mayberryelectric.com/uploads/8/8/5/6/8856990/7852480.jpg?321')"
+  ></div>
+  <div
+    class="card "
+    style="background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/U.S._Green_Building_Council_logo.svg/1200px-U.S._Green_Building_Council_logo.svg.png'); background-size: 50% 100%;"
+  ></div>
+  <div
+    class="card card-wide"
+    style="background-image: url('https://www.naiop.org/images/naioplogo.svg'); background-size: 100% 100%;"
+  ></div>
+  <div
+    class="card "
+    style="background-image: url('https://www.mayberryelectric.com/uploads/8/8/5/6/8856990/acs_orig.png'); backgr/ound-size: 50% 100%;"
+  ></div>
+</div>
+<br>
+<!--<a href="#">SEE MORE</a>-->
+</div>
+
+
+
+<br>
+
+
+
+
+
+<div class="QA_container">
+	<ul class="nav nav-tabs" style="margin-left: 50px;">
+    		<li class="active"><a data-toggle="tab" href="#home" style="color: green;">Customer Quotes</a></li>
+    		<li><a data-toggle="tab" href="#menu1" style="color: green;">Awards</a></li>
+	</ul>
+
+	<div class="tab-content">
+    		<div id="home" class="tab-pane fade in active">
+			<div class="section_swiper">
+				<div class="swiper-container mySwiper">
+					<h2>Our Customers Love What we Do</h2>
+      					<div class="swiper-wrapper">
+      
+        					<div class="swiper-slide">
+        						<div class="testimonialBox">
+            							<img src="https://image.flaticon.com/icons/png/512/59/59149.png" class="quote" >
+                						<div class="content">
+                							<p> Fantastic and had great communication. We’d definitely recommend Mayberry to anyone going forward and will use your team on any project.</p>
+                   							<div class="details">
+                    								<div class="imgbox" style="bord/er-radius: 0px; overflow: visible; margin-top: 20px;">
+                    									<img style="height: 80%;" src="https://bluearccapital.com/wp-content/themes/bluearc/images/logo.jpg">
+                        							</div>
+                        							<h3> Ashley Thomas<br><span>BlueArc Capital Partners</span></h3>
+                    							</div>
+                						</div>
+            						</div>
+        					</div>
+        
+        					<div class="swiper-slide">
+        						<div class="testimonialBox">
+            							<img src="https://image.flaticon.com/icons/png/512/59/59149.png" class="quote" >
+                						<div class="content">
+                							<p> Ryan was fantastic as always. I am really happy with Dustin as well – he is always so responsive and professional. Please tell Ryan and Dustin’s bosses how much we appreciate these guys.</p>
+                    							<div class="details">
+                    								<div class="imgbox">
+                    									<img src="">
+                        							</div>
+                        							<h3> Sheila Meyer<br><span>One Museum Place Condominium Association</span></h3>
+                    							</div>
+                						</div>
+            						</div>
+        					</div>
+        
+        					<div class="swiper-slide">
+        						<div class="testimonialBox">
+            							<img src="https://image.flaticon.com/icons/png/512/59/59149.png" class="quote" >
+                						<div class="content">
+                							<p> Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                    							<div class="details">
+                    								<div class="imgbox">
+                    									<img src="https://images.squarespace-cdn.com/content/v1/584b0ec1d2b8577118027730/1500837764228-1OCRREO84AJ00V1Z4V2S/PTTP1.jpg">
+                        							</div>
+                        							<h3> Insert Name<br><span>Insert Role</span></h3>
+                    							</div>
+                						</div>
+            						</div>
+        					</div>
+      					</div>
+    				</div>
+			</div>
+    		</div>
+
+    		<div id="menu1" class="tab-pane fade">
+			<div class="section_swiper">
+				<div class="swiper-container mySwiper">
+					<h2>Our Awards</h2>
+      					<div class="swiper-wrapper">
+        					<div class="swiper-slide">
+        						<div class="testimonialBox">
+                						<div class="content">
+									<div class="details">
+										<h3>2020</h3>
+									</div>
+                							<img style="margin: 25%; height: 200px; width: 200px;" src="https://www.mayberryelectric.com/uploads/8/8/5/6/8856990/neca-award-image_orig.png">
+								</div>
+            						</div>
+        					</div>
+        
+        					<div class="swiper-slide">
+        						<div class="testimonialBox">
+                						<div class="content">
+									<div class="details">
+										<h3>Awards</h3>
+									</div>
+                							<img style="margin: 25%; height: 200px; width: 200px;" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-9/150567826_10158440797676725_9061796568192193794_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=973b4a&_nc_ohc=TjS8-qaEHTcAX9docSU&_nc_ht=scontent-atl3-1.xx&oh=6bfc38170c42e82ac5324a6f7a341f1b&oe=61545D49">
+                						</div>
+            						</div>
+        					</div>
+        
+        					<div class="swiper-slide">
+        						<div class="testimonialBox">
+                						<div class="content">
+									<div class="details">
+										<h3>2009 Best in Construction</h3>
+									</div>
+                							<img style="margin: 25%; height: 200px; width: 200px;" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-9/199494541_10158694474916725_2824365618091606446_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=973b4a&_nc_ohc=qCrviODbkYQAX-UPmQU&_nc_ht=scontent-atl3-1.xx&oh=3d6b0985de82cf8ebabbfff9c971b388&oe=615236DB">
+                						</div>
+            						</div>
+        					</div>
+        
+      					</div>
+    				</div>
+			</div>
+    		</div>
+  	</div>
+</div>
+
+
+<br>
+
+<section class="contact-pg-container">
+	<div class="contact-pg">
+		<h2>Contact Us</h2>	
+		<!--<p>Lorem ipsum dolor sit amet,</p>-->
+	</div>
+	<div class="contact-inf-container">
+		<div class="contact-inf">
+			<div class="box-inf">
+				<div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/967/967848.png"></div>
+				<div class="text-inf">
+					<h3>Address</h3>
+					<p>2126 Defoors Ferry Rd <br>Atlanta, Ga 30318</p>
+				</div>
+			</div>
+			<div class="box-inf">
+				<div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/1034/1034131.png"></div>
+				<div class="text-inf">
+					<h3>Phone</h3>
+					<p>(404)-799-3334</p>
+				</div>
+			</div>
+			<div class="box-inf">
+				<div class="icon" ><img src="https://cdn-icons-png.flaticon.com/512/32/32535.png" style="margin-top: -10px;"></div>
+				<div class="text-inf">
+					<h3>24/7 Service Hotline</h3>
+					<p>(404)-645-7373</p>
+				</div>
+			</div>
+		</div>
+		<div class="contact-fm">
+			<form method="post" action="">
+				<h2>Contact Us</h2>
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span>Full Name</span>
+				</div>
+				<div class="inputBox">
+					<input type="email" name="" required="required">
+					<span>Email</span>
+				</div>
+				<div class="inputBox">
+					<textarea required="required"></textarea>
+					<span>Type your Message...</span>
+				</div>
+			<div class="g-recaptcha" data-sitekey="6LfdCjwcAAAAAMH7pj8bBdvCpL1PIL1h7n3VI9N6"></div>
+				<div class="inputBox">
+					<input type="submit" name="" value="Send">
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+<br>
+
+<div class="footer">
+	<div class="nectar-shape-divider-wrap"  data-height="250" data-front="" data-style="curve_opacity" >
+		<svg class="nectar-shape-divider" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"> 
+			<path  fill="rgba(0, 102, 0, 0.5)" d="M 0 14 s 88.64 3.48 300 36 c 260 40 514 27 703 -10 l 12 28 l 3 36 h -1018 z"></path> 
+			<path fill="rgba(0, 102, 0, 0.5)" d="M 0 45 s 271 45.13 500 32 c 157 -9 330 -47 515 -63 v 86 h -1015 z"></path> 
+			<path fill="rgba(0, 102, 0, 0.5)" d="M 0 58 s 188.29 32 508 32 c 290 0 494 -35 494 -35 v 45 h -1002 z"></path> 
+		</svg>
+	</div>
+    <div class="footer_bottom">
+    	<div class="text_column">
+        	<img src="https://previews.dropbox.com/p/thumb/ABRTweKbI7rZkGwJdoPpR2pwSVBctlkoBpxpe3JNxHn5qc7-rPuJklkKkNtJ8SGAM0i4ADbX0aIBwzunQ6B6PlrPEvyCBYp4ETvj1HPkfv9tITVatFmJ-SNQf5MFXxIYsoO97lsyBMmERAhZvWl5ircS2C8MSAIjLSKAzYV4ulWQkvp1xXIlg02lvKQJ1Y63Haqpxeenyzr0VxZ9LOrxEpspUYnVW8yUZbZ3F3x0SIF-8m4jkOc4EV_jhbww3r3KJez7q9CN2WxeQk9eQ7GmPO13pNKnhmkhK4Dox4rc-swkjcVPlytM9Vhyi7tn2p4tfL_fRPwm7shNK7mUoXldossk3-6sK0A_XblJcoh_PoLpfQ/p.png?fv_content=true&size_mode=5" style="padding-top: 10px;">
+            <br>
+       		<img src="https://www.mayberryelectric.com/uploads/8/8/5/6/8856990/neca-award-image_orig.png" style="margin-top: -10px;">
+    	</div>
+    	<div class="text_column footer-1">
+        	<h2>Company</h2>
+            <a href="#">About Us</a>
+            <a href="#">Job Opportunities</a>
+            <br>
+            <h2>Contact Us</h2>
+            <h3>Main Phone (404) 799-3334</h3>
+            <h3>24/7 Hotline (404) 645-7373</h3>
+            <p>2126 Defoors Ferry Rd NW, Atlanta, GA 30318</p>
+        </div>
+        <div class="text_column footer-2">
+        	<h2>Services</h2>
+            <a href="#">Construction</a>
+            <a href="#">Service</a>
+            <a href="#">Design</a>
+            <a href="#">Insurance</a>
+        </div>
+        <div class="text_column footer-3">
+        	<h2>Projects</h2>
+            <a href="#">Commercial</a>
+            <a href="#">Medical</a>
+            <a href="#">Data Center</a>
+            <a href="#">Theatre/Sound Stage</a>
+            <a href="#">Critical Power</a>
+        </div>
+        
+    </div>
+    <div style="background-color: rgba(0,102,0,0.875); text-align: center;">
+    <p style="font-size:14px; color:#fff;">© 2020-<script>document.write(new Date().getFullYear())</script>, Mayberry Electric Incorporated.
+    <a href="#" style="color:#fff; text-decoration: none;"> Website Design by Baxter Govan</a>	  
+    </p>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+
+
+
+window.onload = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const square = entry.target.querySelector('.square');
+    
+
+    if (entry.isIntersecting) {
+      square.classList.add('square-animation');
+	  return; // if we added the class, exit the function
+    }
+
+    // We're not intersecting, so remove the class!
+  
+  });
+});
+
+observer.observe(document.querySelector('.square-wrapper'));
+
+
+/* progress bar*/ 
+let progress = document.getElementById('progressbar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function()
+	{
+		let progressHeight = (window.pageYOffset / totalHeight) *100;
+    	progress.style.width = progressHeight + "%";
+	}
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+function changeNav() {
+if(navbar.classList.contains("sticky"))
+{
+	navbar.classList.remove("sticky");
+}
+else
+{	navbar.classList.add("sticky");
+}
+
+}
+
+var swiper = new Swiper(".mySwiper", {
+	effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+    	rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    loop: true,
+	});
+
+
+
+
+function openEvent(evt, evtName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent-container");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(evtName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+
+</script>
+
+
+
 </body>
 </html>
