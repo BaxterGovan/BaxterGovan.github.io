@@ -1359,7 +1359,7 @@ text-align: center;
 }
 .Info_column {
   float: left;
-  width: 24%;
+  width: 32%;
   margin-left: 0.8%;
   height: 300px; /* Should be removed. Only for demonstration */
   align-items: center;
