@@ -533,7 +533,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .fixed-bg2 {
-  background-image: url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-9/p960x960/83815500_10157363472471725_7154994470902038528_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=36a2c1&_nc_ohc=dveEwwAcbiAAX_FN76v&_nc_ht=scontent-atl3-1.xx&oh=284d09faafbb2d7267a5d6a9d15d3a9b&oe=61539EEC");
+  background-image: url("/Photos/lobby.jpg");
   min-height: 900px;
   width: 100%;
   background-attachment: fixed;
@@ -543,7 +543,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .fixed-bg3 {
-  background-image: url("https://www.mayberryelectric.com/uploads/8/8/5/6/8856990/view-from-bridge-2_orig.jpg");
+  background-image: url("/Photos/Bridge_view.jpg");
   min-height: 900px;
   width: 100%;
   background-attachment: fixed;
