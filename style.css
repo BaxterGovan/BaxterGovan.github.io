@@ -766,7 +766,7 @@ wid/th: 33%;
  position: absolute;
  bottom: 0;
  height: 400px;
- left: 55%;
+ left: 68%;
  transform: translateX(-50%);
  transition: 0.5s;
 
@@ -774,7 +774,7 @@ wid/th: 33%;
 }
 .container .card:hover img
 {
- left: 73%;
+ left: 80%;
  height: 500px;
 }
 
