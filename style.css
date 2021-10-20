@@ -2625,3 +2625,302 @@ font-size: 13px;
 
 
 }
+
+
+//This is where peoples data structures will be housed
+
+col {
+    margin-bottom: 1%;
+    float: left;
+    width: 33.33%;
+    z-index: 100;
+}
+
+.people_modal {
+    display: none;
+    position: fixed;
+    z-index: 5001;
+    padding: 50px 0px 0px 62px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.people_modal-content {
+    position: relative;
+    display: block;
+    margin-left: 10%;
+    min-width: 545px;
+    height: 690px;
+    border: 10px solid;
+    border-color: white;
+    padding: 10px 10px 10px 15px;
+}
+
+.people_slide {
+    display: none;
+    text-align: center;
+}
+
+.people_slide .text_wrapper {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    font-family: Suisse SemiBold, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.people_slide .text_wrapper p {
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: .4px;
+}
+
+.people_slide .text_wrapper p1 {
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: .4px;
+}
+
+.people_image-slide {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 500px;
+    min-height: 650px;
+    
+}
+.bio_modal-content {
+    position: relative;
+    left: -10px;
+    max-width: 700px;
+    min-width: 500px;
+    display: block;
+    height: 690px;
+    background: white;
+    border-radius: 8px;
+}
+
+.bio_slide {
+    display: none;
+    text-align: center;
+}
+.bio_slide .people_bio_info {
+    text-align: center;
+
+}
+.bio_slide .people_bio_info p{
+    font-size: 25px;
+}
+
+
+.people_modal-preview {
+    width: 100%;
+}
+
+.dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img.people_preview,
+img.people_modal-preview {
+    opacity: 1;
+}
+
+img.active {
+    opacity: 0.6;
+}
+
+.people_preview:hover,
+.people_modal-preview:hover {
+    opacity: 1;
+}
+
+img.people_hover-shadow {
+    transition: 0.3s;
+}
+
+.people_hover-shadow:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5), 0 9px 20px 0 rgba(0, 0, 0, 1);
+}
+/* Content */
+
+.people_close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 9000;
+}
+
+.people_close:hover,
+.people_close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.people_previous,
+.people_next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.people_next {
+    right: 2%;
+    border-radius: 3px 0 0 3px;
+}
+
+.people_previous:hover,
+.people_next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.preview {
+    width: 100%;
+}
+
+.row {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+height: 3000px;
+}
+
+.row>.col {
+    padding: 0 8px;
+}
+
+.col {
+ margin-bottom: 1%;
+ overflow: hidden;
+ float: left;
+ width: 33%;
+ z-index: 100;
+}
+
+.col_blank {
+ margin-bottom: 1%;
+ overflow: hidden;
+ float: left;
+ width: 33%;
+ z-index: 100;
+ max-height: 0px;
+}
+
+
+.col p {
+ margin-left: 10px;
+cursor: pointer;
+}
+
+.col:hover p {
+color: green;
+}
+
+.col p1 {
+ margin-left: 10px;
+ font-size: 15px;
+}
+
+.col .linework {
+ position: absolute;
+ height: 3px;
+ background: green;
+width: 0px;
+transition: 0.5s; 
+margin-left: 10px;
+}
+
+.col:hover .linework {
+width: 100px;
+}
+
+
+.col img:hover {
+ cursor: pointer;
+}
+/* Content */
+
+.content {
+
+    background-color: white;
+    padding: 10px;
+    min-height: auto;
+}
+
+.content img {
+max-width:400px;
+max-height: 520px;
+width: 100%;
+}
+
+
+@media screen and (max-width: 1500px) {
+
+    .people_modal-content {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 1050px) {
+
+    .col {
+	
+	width: 50%;
+	
+    }
+
+
+    .people_modal {
+	padding: 0px 0px 0px 0px;
+	
+    }
+    .people_modal-content {
+	min-width: 480px;
+	max-width: 480px;
+	border: 0px;
+	padding: 0px 0px 0px 0px;
+	max-width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+
+    }
+
+    .people_image-slide {
+	min-width: 480px;
+	
+    }
+
+    .bio_modal-content {
+	left: 0px;
+	min-width: 480px;
+	max-width: 90%;
+	height: auto;
+	border-radius: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-left: auto;
+	margin-right: auto;
+    }
+
+}
+
