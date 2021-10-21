@@ -2860,14 +2860,14 @@ width: 100px;
 }
 /* Content */
 
-.content {
+.content1 {
 
     background-color: white;
     padding: 10px;
     min-height: auto;
 }
 
-.content img {
+.content1 img {
 max-width:400px;
 max-height: 520px;
 width: 100%;
