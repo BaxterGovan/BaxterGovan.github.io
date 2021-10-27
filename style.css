@@ -1147,6 +1147,15 @@ text-align: center;
  
 }
 
+
+.footer_bottom .text_column  {
+ 
+ margin-right: 0;
+
+}
+
+
+
 }
 
 @media (max-width: 968px)
@@ -1746,8 +1755,8 @@ transform: scale(1.05);
 /* clients */
 
 .client_thumbnails_container {
- width: 80%;
- margin-left: 10%;
+ width: 100%;
+ mar/gin-left: 10%;
 
  margin-bottom: 150px;
  
@@ -2245,6 +2254,17 @@ float: left;
  margin-bottom: 20px;
 }
 
+.cm-sp-photo-text-media-wrapper:before {
+    background: url("https://previews.dropbox.com/p/thumb/ABVAwRTZUq623OvH9c4DdHLyPIa6tWgSlr7-D1-2QMXYFYwcd52G9SXRqk7V9DW4sxzcMtB365DP0OuIz28sb9xqc0U7HWekYCMmf4UnoKnmRbZhyfO_kF5L7c9sPDzgE1i1h39P17SbTuNNrOjNeXxDKblHU0EFwItwscyMHlXzqpMVc_u7pJWyK6w0YgMEyFNJAgqqp7Vh1fZ6r-W3FhRgl84s8k1bYPWsaIZoX9OwVFucvgzZ7A4kLXmMh8VCY_i_GX_TO6ciZ2xMcdWwytyiJCnU_JXYcNdocUDPnelkKVZkiw4Z3gEHDGrqjWCDYpBgHKgY7b4nOc2krp-N_JYuM_HiFtkuCSokz8Umr5e4UQ/p.png?fv_content=true&size_mode=5") no-repeat 0 0/100% 100% transparent;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 25px;
+}
+
 .cm-photo-media-container {
  width: 50%;
  flex-basis: 50%;
@@ -2282,7 +2302,6 @@ background-color: #006600;
 
 
 .cp-sp-photo-text-media-wrapper {
-
  width: 100%;
  display: flex;
  margin-bottom: 30vh;
@@ -2996,7 +3015,7 @@ width: 100%;
 }
 
 .slider1:hover .navigation1{
-  opacity: 1;
+  opacity: 0;
 }
 
 .prev-btn1, .next-btn1{
