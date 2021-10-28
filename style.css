@@ -457,7 +457,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   z-index: 99;
 }
 
-.active, .dot:hover {
+.dot.active, .dot:hover {
   background-color: white;
 }
 
@@ -565,7 +565,15 @@ body {font-family: Verdana, sans-serif; margin:0}
  background-image: linear-gradient(to bottom right, #006600, #00ff00);
 }
 
-
+.tb-container:before  {
+    background: url(https://previews.dropbox.com/p/thumb/ABVAwRTZUq623OvH9c4DdHLyPIa6tWgSlr7-D1-2QMXYFYwcd52G9SXRqk7V9DW4sxzcMtB365DP0OuIz28sb9xqc0U7HWekYCMmf4UnoKnmRbZhyfO_kF5L7c9sPDzgE1i1h39P17SbTuNNrOjNeXxDKblHU0EFwItwscyMHlXzqpMVc_u7pJWyK6w0YgMEyFNJAgqqp7Vh1fZ6r-W3FhRgl84s8k1bYPWsaIZoX9OwVFucvgzZ7A4kLXmMh8VCY_i_GX_TO6ciZ2xMcdWwytyiJCnU_JXYcNdocUDPnelkKVZkiw4Z3gEHDGrqjWCDYpBgHKgY7b4nOc2krp-N_JYuM_HiFtkuCSokz8Umr5e4UQ/p.png?fv_content=true&size_mode=5) no-repeat 0 0/100% 100% transparent;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 25px;
+}
 .section-wrap {
 posititon: relative;
 }
@@ -722,8 +730,14 @@ transform: scale(1.1);
  
 margin-left: 10%;
 margin-right: auto;
+
 }
 
+
+.tb-container .tb-text .tb-text-container.active {
+
+
+}
 
 
 
@@ -993,7 +1007,15 @@ z-index: 5001;
     text-align: center;
     padding: 10px 40px;
     border-left: dashed 2px rgba(255,255,255,0.5);
+    border-right: dashed 2px rgba(255,255,255,0.5);
 }
+.company_about_info_3 {
+    width: 33%;
+    text-align: center;
+    padding: 10px 40px;
+    
+}
+
 company_about_info h3 {
     margin-top: 0;
     text-transform: uppercase;
@@ -1013,6 +1035,31 @@ company_about_info h3 {
  font-family: "Gotham A","Gotham B","Raleway",sans-serif;
  
 }
+
+
+#allNames {
+  display: none;
+}
+#errorMessage {
+  display: none;
+  color: red;
+}
+
+#loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  margin-top: 40px;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 @media (max-width: 700px)
 {
@@ -1037,6 +1084,8 @@ company_about_info h3 {
     text-align: center;
     border-left: dashed 0px rgba(255,255,255,0.5);
     border-top: dashed 2px rgba(255,255,255,0.5);
+    border-right: dashed 0px rgba(255,255,255,0.5);
+    border-bottom: dashed 2px rgba(255,255,255,0.5);
  }
 
 }
@@ -1688,7 +1737,10 @@ opacity: 1;
  color: #fff;
  text-align: center;
  font-size: 120px;
- 
+ text-shadow: 4px 3px 0 rgb(1 1 1 / 13%);
+    letter-spacing: -2px;
+    margin: 0 auto 36px;
+    font-weight: 700;
 }
 
 .ctus-container {
@@ -1776,7 +1828,7 @@ transform: scale(1.05);
 }
 .client_thumbnails li {
   float: left;
-  width: 20%;
+  width: 25%;
   position: relative;
   margin-top: 10px;
   min-height: 100px;
@@ -2258,7 +2310,6 @@ float: left;
     background: url("https://previews.dropbox.com/p/thumb/ABVAwRTZUq623OvH9c4DdHLyPIa6tWgSlr7-D1-2QMXYFYwcd52G9SXRqk7V9DW4sxzcMtB365DP0OuIz28sb9xqc0U7HWekYCMmf4UnoKnmRbZhyfO_kF5L7c9sPDzgE1i1h39P17SbTuNNrOjNeXxDKblHU0EFwItwscyMHlXzqpMVc_u7pJWyK6w0YgMEyFNJAgqqp7Vh1fZ6r-W3FhRgl84s8k1bYPWsaIZoX9OwVFucvgzZ7A4kLXmMh8VCY_i_GX_TO6ciZ2xMcdWwytyiJCnU_JXYcNdocUDPnelkKVZkiw4Z3gEHDGrqjWCDYpBgHKgY7b4nOc2krp-N_JYuM_HiFtkuCSokz8Umr5e4UQ/p.png?fv_content=true&size_mode=5") no-repeat 0 0/100% 100% transparent;
     content: '';
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
     z-index: 1;
@@ -2554,7 +2605,7 @@ font-size: 15px;
  width: 100%;
  margin: 0 auto;
  margin-top: 180px;
- margin-bottom: 30vh;
+ margin-bottom: 2vh;
  background-color: black;
  display:flex;
  align-items: flex-end;
@@ -2833,6 +2884,14 @@ img.people_hover-shadow {
 height: 3000px;
 }
 
+.row h2 {
+    text-shadow: 4px 3px 0 rgb(1 1 1 / 13%);
+    letter-spacing: -2px;
+    margin: 0 auto 36px;
+    font-weight: 700;
+
+}
+
 .row>.col {
     padding: 0 8px;
 }
@@ -2972,7 +3031,7 @@ width: 100%;
 }
 
 .slider1 .slide1.active{
-  clip-path: circle(125% at 0 50%);
+  clip-path: circle(150% at 0 50%);
   transition: 2s;
 }
 
@@ -3055,7 +3114,7 @@ width: 100%;
 }
 
 .navigation1-visibility .slide-icon.active{
-  background: #4285F4;
+  background: #33cc33;
 }
 
 @media (max-width: 900px){
