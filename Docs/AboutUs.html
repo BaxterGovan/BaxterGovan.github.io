@@ -652,6 +652,24 @@ else
 
 }
 
+// ----------------------Community Service SlideShow -------------------
+var CS_slideIndex = 0;
+CS_showSlides();
+
+function CS_showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("photo-media");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  CS_slideIndex++;
+  if (CS_slideIndex >= slides.length) {CS_slideIndex = 1}    
+
+  slides[CS_slideIndex-1].style.display = "block";  
+  
+  setTimeout(CS_showSlides, 10000); // Change image every 5 seconds
+}
+
 
 
 </script>
