@@ -2390,24 +2390,34 @@ max-height: 600px;
 }
 
 .cm-photo-media-container .photo-media {
- backgrou/nd-color: green;
  width: 100%;
  height: 100%;
- trans/form: translate(10px, 10px);
  overflow: hidden;
- justify-content: center;
+
+ 
 }
 
 .cm-photo-media-container .photo-media img{
  width: 100%;
- transition: 0.5s ease-in-out;
+transition: 0.5s;
+ 
 }
 
 .cm-photo-media-container .photo-media:hover img{
  
- transform: scale(1.1);
+ transform: scale(1.05);
 
 }
+
+
+  @keyframes fader {
+    from { opacity: 0.0; }
+    to   { opacity: 1.0; }
+  }
+ @keyframes fader-out {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
 
 .photo-media .green-bar {
 visibility: hidden;
