@@ -2705,13 +2705,13 @@ font-size: 15px;
  float: left;
 
 }
-.aw-photo-media-container .photo-media {
+.aw-photo-media-container .photo-media1 {
  width: 100%;
  height: 100%;
  overflow: hidden;
 }
 
-.aw-photo-media-container .photo-media img{
+.aw-photo-media-container .photo-media1 img{
  width: 100%;
  display: block;
  transition: 0.5s ease-in-out;
