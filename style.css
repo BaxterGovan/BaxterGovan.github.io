@@ -2602,6 +2602,31 @@ width: 100%;
   overflow: hidden;
   margin-top: 10px;
 }
+
+
+.people_modal-content-projects {  
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-width: 545px;
+    border: 10px solid;
+    border-color: white;
+    padding: 10px 10px 10px 15px;
+    z-index: 10;
+}
+
+.people_modal .lightbox-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+ 
+}
+
+
 .projects_thumbnails_sgl li {
   float: left;
   width: 32%;
@@ -2634,7 +2659,7 @@ width: 100%;
   background: rgb(0,0,0, 0.4);
   bottom: -100%;
   text-align: center;
-  transition:bottom 0.45s ease-out;
+  transition:bottom 0.4s;
 
 }
 .projects_thumbnails_sgl li:hover .hvr-name-disp {
