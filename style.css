@@ -523,7 +523,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .fixed-bg1 {
-  background-image: url("/Photos/SlideShow2.png");
+  background-image: url("/Photos/LobbyBase.jpg");
   min-height: 900px;
   width: 100%;
   background-attachment: fixed;
@@ -626,14 +626,7 @@ posititon: relative;
  text-align: center;
 }
 
-@media only screen and (min-width: 1100px)
-{
-	.tb-container .tb-display
-	{
-    		display: block;
-    		rig/ht: 20px;
-	}
-}
+
 
 .tb-container .tb-display .tb-logo 
 {
@@ -666,7 +659,8 @@ max-width: 70%;
 }
 
 /* Style the buttons inside the tab */
-.tb-display button {
+
+.tb-display .tablinks  {
   display: block;
  position: relative;
   background-color: #fff;
@@ -678,6 +672,36 @@ max-width: 70%;
   transition: 0.3s;
   border-radius: 50%;
  z-index: 100;
+}
+
+#tablinks1  {
+
+left: 250px; top: -5px;
+
+}
+#tablinks2  {
+
+
+left: -34px; top: -128px;
+
+}
+#tablinks3  {
+
+
+left: 295px; top: 50px;
+
+}
+ #tablinks4  {
+ 
+
+left: -138px; top: -90px;
+
+}
+ #tablinks5  {
+
+
+left: 82px; top: -18px;
+
 }
 
 .tb-display button img
@@ -738,6 +762,83 @@ margin-right: auto;
 
 
 }
+
+@media only screen and (max-width: 480px)
+{
+	.tb-container .tb-display
+	{
+    		display: flex;
+    		
+	}
+	.tb-container .tb-display .tablinks
+	{
+    		max-height: 75px;
+		height: 75px;
+		min-width: 75px;
+    		width: 75px;
+	}
+	
+    		
+	
+	.tb-container .tb-display .linework
+	{
+    		display: none;
+    		
+	}
+	.tb-container .tb-display .tb-logo
+	{
+    		display: none;
+    		
+	}
+	.tb-container .tb-display .tablinks img
+	{
+    		vertical-align: baseline;
+    		
+	}
+
+	.tb-container .tb-display #tablinks1
+	{
+    		top: 10px;
+		left: 10px;
+    		
+	}
+	.tb-container .tb-display #tablinks2
+	{
+    		top: 10px;
+		left: 25px;
+    		
+	}
+	.tb-container .tb-display #tablinks3
+	{
+    		top: 10px;
+		left: 40px;
+    		
+	}
+	.tb-container .tb-display #tablinks4
+	{
+    		top: 10px;
+		left: 55px;
+    		
+	}
+
+	.tb-container .tb-display #tablinks5
+	{
+    		top: 10px;
+		left: 70px;
+    		
+	}
+
+	.tb-container .tb-text 
+	{
+
+		width: 100%;
+		top:85px;
+    		
+	}
+
+	
+}
+
 
 
 
