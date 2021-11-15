@@ -799,32 +799,32 @@ margin-right: auto;
 	.tb-container .tb-display #tablinks1
 	{
     		top: 10px;
-		left: 10px;
+		left: -5px;
     		
 	}
 	.tb-container .tb-display #tablinks2
 	{
     		top: 10px;
-		left: 25px;
+		left: 10px;
     		
 	}
 	.tb-container .tb-display #tablinks3
 	{
     		top: 10px;
-		left: 40px;
+		left: 25px;
     		
 	}
 	.tb-container .tb-display #tablinks4
 	{
     		top: 10px;
-		left: 55px;
+		left: 40px;
     		
 	}
 
 	.tb-container .tb-display #tablinks5
 	{
     		top: 10px;
-		left: 70px;
+		left: 55px;
     		
 	}
 
