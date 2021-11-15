@@ -1461,7 +1461,7 @@ text-align: center;
 
 
 .image-mosaic-wrapper:before {
-    background: url(https://previews.dropbox.com/p/thumb/ABVAwRTZUq623OvH9c4DdHLyPIa6tWgSlr7-D1-2QMXYFYwcd52G9SXRqk7V9DW4sxzcMtB365DP0OuIz28sb9xqc0U7HWekYCMmf4UnoKnmRbZhyfO_kF5L7c9sPDzgE1i1h39P17SbTuNNrOjNeXxDKblHU0EFwItwscyMHlXzqpMVc_u7pJWyK6w0YgMEyFNJAgqqp7Vh1fZ6r-W3FhRgl84s8k1bYPWsaIZoX9OwVFucvgzZ7A4kLXmMh8VCY_i_GX_TO6ciZ2xMcdWwytyiJCnU_JXYcNdocUDPnelkKVZkiw4Z3gEHDGrqjWCDYpBgHKgY7b4nOc2krp-N_JYuM_HiFtkuCSokz8Umr5e4UQ/p.png?fv_content=true&size_mode=5) no-repeat 0 0/100% 100% transparent;
+    background: url(/Photos/bg-section-shadow.png) no-repeat 0 0/100% 100% transparent;
     content: '';
     position: absolute;
     left: 0;
