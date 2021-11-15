@@ -2864,6 +2864,18 @@ font-size: 15px;
 
 }
 
+@media (max-width: 577px) {
+
+ .projects_container_sgl h2 {
+	font-size: 6.5vw;
+ } 
+
+.projects_thumbnails_sgl li {
+ 	min-height: 280px;
+}
+
+}
+
 
 .aw-container { 
  width: 100%;
