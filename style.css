@@ -1685,6 +1685,7 @@ transition: 0.5s;
   justify-content: center;
   bac/kground-color: #aaa;
   transition: 0.5s;
+  border-radius: 10px;
 }
 .services_column:hover {
  background-color: #33cc33;
