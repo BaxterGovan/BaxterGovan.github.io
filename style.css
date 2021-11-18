@@ -2966,14 +2966,30 @@ font-size: 15px;
  background-color: black;
  display:flex;
  align-items: flex-end;
+transition: 0.4 ease in out;
 }
 
-.aw-asyc-photo-text-media {
+.aw-asym-photo-text-media {
     
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
+ -webkit-animation: fadeinout1 10s linear forwards;
+ animation: fadeinout1 10s linear forwards;
+ opacity: 0;
 }
+
+@keyframes fadeinout1 {
+
+ 10% {
+	opacity: 1;
+ }
+ 90% {
+	opacity: 1;
+ }
+ 100% {
+	opacity: 0;
+ }
+
+}
+
 
 .aw-photo-media-container {
 
@@ -3072,7 +3088,7 @@ col {
     z-index: 100;
 }
 
-.people_modal {
+.people_modal {w
     display: none;
     position: fixed;
     z-index: 5001;
