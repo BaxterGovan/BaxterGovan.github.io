@@ -3427,6 +3427,7 @@ width: 100%;
   align-items: center;
   justify-content: space-between;
   opacity: 0;
+	z-index:-1;
   transition: opacity 0.5s ease;
 }
 
@@ -3457,6 +3458,8 @@ width: 100%;
   z-index: 999;
   display: flex;
   justify-content: center;
+  position: relative;
+  top: 350px;
 }
 
 .navigation1-visibility .slide-icon{
