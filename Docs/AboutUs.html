@@ -422,11 +422,11 @@ h2 {
 	
 <div style="height: 100px;" id="awards"></div>
 
-<div class="aw-container">
+<div class="aw-container" id="awards1" style="display: flex;">
 	<div class="aw-asym-photo-text-media">
 		<div class="aw-photo-media-container">
-			<div class="photo-media1">
-				<img src="/Photos/steve_mowers_2018AGC_award.jpg">
+			<div class="photo-media1" >
+				<img src="/Photos/Scott.jpg">
 			</div>
 		</div>
 		<div class="aw-text-media-container">
@@ -434,12 +434,30 @@ h2 {
 				<h2>Senior Construction Manager Scott Mowers (Middle)</h2>
 			</div>
 			<div class="text-media-lower">
-				<p>MEI Winning The First Place Trophy For The 2018 AGC Georgia Specialty Contractor Award</p>
+				<p>MEI winning the First Place Trophy for the 2018 AGC Georgia Specialty Contractor Award</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="aw-container" id="awards2" style="display: none;">
+	<div class="aw-asym-photo-text-media">
+		<div class="aw-photo-media-container">
+			<div class="photo-media1" >
+				<img src="/Photos/BrianFoster_Award.jpg">
+			</div>
+		</div>
+		<div class="aw-text-media-container">
+			<div class="text-media-header">
+				<h2>Senior Project Manager Brian Foster</h2>
+			</div>
+			<div class="text-media-lower">
+				<p>Mayberry Electric is proud to win a NECA interiors Project Excellence Award</p>
 			</div>
 		</div>
 	</div>
 </div>
-
 
 
 <div class="footer">
@@ -696,7 +714,45 @@ function CS_showSlides() {
       repeater();
     });
     </script>
-      
+     <script>
+
+var awards1 = document.getElementById("awards1");
+var awards2 = document.getElementById("awards2");
+
+var awards1chld = awards1.children;
+var awards2chld = awards2.children;
+    var playSlider;
+	var track = 1;
+    var repeater = () => {
+      playSlider = setInterval(function(){
+	if(track == 0) {
+		awards2chld[0].addEventListener("animationend", (ev) => {
+  			if (ev.type === "animationend") {
+    				awards2.style.display = "none";
+  			}
+		}, false);
+		
+		awards1.style.display = "flex";
+		track++;
+		
+		
+	}
+	else if( track == 1) {
+		awards1chld[0].addEventListener("animationend", (et) => {
+  			if (et.type === "animationend") {
+    				awards1.style.display = "none";
+  			}
+		}, false);
+		awards2.style.display = "flex";
+		track--;
+		
+	}
+
+      }, 10000);
+    }
+    repeater();
+
+</script> 
 
 </body>
 </html>
