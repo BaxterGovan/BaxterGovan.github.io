@@ -1483,22 +1483,15 @@ color: #006600;
  font-size: 30px;
 }
 
-.image-mosaic-container a {
- color: #000;
- text-decoration: none;
- border-radius: 8px;
- background: #ddd;
- transition: 0.5s;
- padding-left: 6px;
- padding-right: 6px;
+
+.image-mosaic-wrapper h2 {
+   text-shadow: 4px 3px 0 rgb(1 1 1 / 13%);
+   letter-spacing: -2px;
+   margin: 0 auto 36px;
+   font-weight: 700;
+
 }
-.image-mosaic-container a:hover {
- color: #006600;
- background: #111;
- padding-left: 10px;
- padding-right: 10px;
- 
-}
+
 
 .image-mosaic-info{
  width: 50%;
@@ -1525,7 +1518,7 @@ margin-right: auto;
 }
 
 .image-mosaic {
-  width: 50%;
+  width: 100%;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1554,8 +1547,11 @@ margin-right: auto;
   object-fit: contain;
 }
 
-.image-mosaic .active{
+
+
+.image-mosaic .card:hover{
 box-shadow: 0 0 10px rgb(0 0 0);
+cur/sor: pointer;
 }
 
 @media screen and (min-width: 600px) {
@@ -3561,5 +3557,90 @@ width: 100%;
 
 .button_plus p{
   font-size: 25px;
+  color: white;
 }
+
+
+/*------------------------ Width test for collapse -------------*/
+
+
+.collapse-container2 {
+  display: inline-flex;
+  width:100%;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+ background: #EEE;
+}
+
+
+.collapsible2 {
+  background-color: #999;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 450px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 28px;
+
+  height: 700px;
+
+  margin-left: 2.5%;
+  
+
+}
+
+.collapsible2 img {
+
+  max-width: 410px;
+  max-height: 520px;
+  width: 100%;
+
+}
+
+
+.collapsible2 p1{
+ 
+ font-size: 15px;
+}
+
+.collapsible2 .active, .collapsible2:hover {
+  color: green;
+  background-color: #555;
+}
+
+.collapsible2:hover .button_plus p, p1{
+  color: white;
+}
+
+.collapsible2 .linework {
+ position: absolute;
+ height: 3px;
+ background: green;
+width: 0px;
+transition: 0.5s; 
+
+}
+
+.collapsible2:hover .linework {
+width: 100px;
+}
+
+.collapseContent2 {
+  padding: 18px 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: max-width 0.2s ease-out;
+  background-color: #FFF;
+  height: 700px;
+  
+  
+ 
+}
+
+
 
