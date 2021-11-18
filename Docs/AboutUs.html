@@ -279,10 +279,7 @@ h2 {
  		</li>
 	</ul>
       </div>
-      <div class="navigation1">
-        <span class=" prev-btn1"><</span> 
-        <span class=" next-btn1">></span> 
-      </div>
+
       <div class="navigation1-visibility">
         <div class="slide-icon active"></div>
         <div class="slide-icon"></div>
@@ -650,7 +647,7 @@ function CS_showSlides() {
     var slideNumber = 0;
 
     //image slider next button
-    nextBtn.addEventListener("click", () => {
+   /* nextBtn.addEventListener("click", () => {
       slides.forEach((slide) => {
         slide.classList.remove("active");
       });
@@ -685,7 +682,7 @@ function CS_showSlides() {
 
       slides[slideNumber].classList.add("active");
       slideIcons[slideNumber].classList.add("active");
-    });
+    });*/
 
     //image slider autoplay
     var playSlider;
