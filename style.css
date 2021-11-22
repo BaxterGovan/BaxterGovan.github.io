@@ -373,12 +373,13 @@ body {font-family: Verdana, sans-serif; margin:0}
   border-radius: 0 3px 3px 0;
   user-select: none;
   transition: 0.5s;
-  transform: translateX(-66%);
-  
+  trans/form: translateX(-66%);
+  opacity: 0;
 }
 
 .slideshow-container:hover .prev { 
- transform: translateX(10%);
+ transf/orm: translateX(10%);
+ opacity: 1;
 }
 
 .next {
@@ -395,12 +396,13 @@ body {font-family: Verdana, sans-serif; margin:0}
  border-radius: 0 3px 3px 0;
  user-select: none;
  transition: 0.5s;
- transform: translateX(65%);
- 
+ tr/ansform: translateX(65%);
+ opacity: 0;
 }
 
 .slideshow-container:hover .next { 
- transform: translateX(-10%);
+ transfo/rm: translateX(-10%);
+ opacity: 1;
 }
 
 /* Position the "next button" to the right */
@@ -2431,6 +2433,7 @@ min-width: 400px;
  
  .contact-inf-container {
   flex-direction: column;
+ width: 150%;
  } 
  
  .contact-inf-container .contact-inf {
@@ -2495,8 +2498,8 @@ width: 80%;
 
  margin: 0 auto;
  
- margin-bottom: 30vh;
- height: 35vh;
+ margin-bottom: 100px;
+ 
 }
 
 .cm-asyc-photo-text-media {
@@ -3526,7 +3529,7 @@ width: 100%;
 
 .collapse-wrapper {
  width: 100%;
- height: 2600px;
+ height: 2200px;
  margin-left: auto;
  margin-right: auto;
  
@@ -3535,7 +3538,7 @@ width: 100%;
 .collapse-container {
   display: block;
   width:500px;
-  height: 650px;
+  height: 750px;
   border-radius: 8px;
   margin-left: 3%;
   margin-right: 3%;
@@ -3627,12 +3630,14 @@ width: 100px;
   max-height: 0;
   overflow: hidden;
   transition: max-width 0.2s ease-out;
-  background-color: #FFF;
-  width: 95%;
+  background-color: #EEE;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 10px;
-  
+  font-size: 20px;
+  transition: 0.3s;
+  border-radius: 10px;
+ 
   
  
 }
