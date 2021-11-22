@@ -298,6 +298,44 @@ h3 {
 
 </div>
 </div>
+<br>
+
+
+<div class="object-sep">
+	<div class="darkgreen-bar"></div>
+	<div class="green-bar"></div>
+</div>
+
+<div class="cm-container">
+	<div class="cm-asyc-photo-text-media">
+		<div class="cm-text-media-container">
+			<div class="text-media-header">
+				<h3>Check it out! We are ready and able to install EV Charging stations for your building</h3>
+			</div>
+		</div>
+		<div class="cm-photo-media-container">
+			<div class="photo-media">
+				<img src="">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="cm-container">
+	<div class="cm-asyc-photo-text-media">
+		<div class="cm-photo-media-container">
+			<div class="photo-media">
+				<img src="">
+			</div>
+		</div>
+		<div class="cm-text-media-container">
+			<div class="text-media-header">
+				<h3>We also have new bucket truck photos from our bucket truck photo shoot!</h3>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 
@@ -676,7 +714,43 @@ document.getElementById("defaultOpen").click();
 
 </script>
 
+<script>
+let detailBars = [...document.querySelectorAll('.object-sep')];
 
+let detailBarsOptions = {
+	rootMargin: '0%',
+	threshold: .2
+}
+
+/*let clientLogos = [...document.querySelectorAll('.client_thumbnails li img')];
+
+let clientLogosOptions = {
+	rootMargin: '0%',
+	threshold: .8
+}*/
+
+
+let setDetailsActive = ( entries => {
+	console.log(entries)
+	entries.forEach(entry => {
+		if(entry.isIntersecting) {
+			entry.target.classList.add('active')
+		}
+		/*else {
+			entry.target.classList.remove('active')
+		}
+		*/
+	})
+});
+
+let observer2 = new IntersectionObserver(setDetailsActive, detailBarsOptions);
+
+detailBars.forEach((item) => {
+observer2.observe(item)
+})
+
+
+</script>
 
 </body>
 </html>
