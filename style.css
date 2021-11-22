@@ -523,7 +523,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .fixed-bg1 {
-  background-image: url("/Photos/CoffeeMugMEI.jpg");
+  background-image: url("/Photos/LobbyBase.jpg");
   min-height: 900px;
   width: 100%;
   background-attachment: fixed;
@@ -543,7 +543,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .fixed-bg3 {
-  background-image: url("/Photos/SlideShow2.png");
+  background-image: url("/Photos/Bridge_view.jpg");
   min-height: 900px;
   width: 100%;
   background-attachment: fixed;
@@ -3524,59 +3524,127 @@ width: 100%;
 /*---------------------------Collapse bars for Service Page ------------------*/
 
 
-.collapse-container {
+.collapse-wrapper {
+ width: 100%;
+ height: 2200px;
+ margin-left: auto;
+ margin-right: auto;
+ 
+}
 
-  width:80%;
+.collapse-container {
+  display: block;
+  width:500px;
+  height: 650px;
   border-radius: 8px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 3%;
+  margin-right: 3%;
   padding-top: 25px;
   padding-bottom: 25px;
- background: #EEE;
+  bac/kground: #EEE;
+  float: left;
+  
 }
 
 
 .collapsible {
-  background-color: #999;
-  color: white;
+  background-image: linear-gradient( #CCC 85%, #EEE 90%);
+  border-radius: 10px;
+  color: black;
   cursor: pointer;
-  padding: 18px;
-  width: 95%;
+  width: 500px;
   border: none;
-  text-align: left;
   outline: none;
-  font-size: 25px;
+  font-size: 28px;
 
+  height: 550px;
   
 
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+}
 
+.collapsible .img-holder {
+  
+  overflow: hidden;
+  width: 500px;
+  height: 450px;
+  position: relative;
+ 
+}
+
+.collapsible .img-holder img {
+
+  border-radius: 10px;
+  width: 100%;
+
+}
+
+.collapsible .white-text {
+  
+  background-color: #FFF;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 8px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left: 25px;
+}
+
+
+
+.collapsible p1{
+ 
+ font-size: 15px;
 }
 
 .collapsible .active, .collapsible:hover {
+  color: green;
   background-color: #555;
 }
 
+.collapsible:hover .button_plus p, p1{
+  color: green;
+}
+
+.collapsible .linework {
+ position: absolute;
+ height: 3px;
+ background: green;
+width: 0px;
+transition: 0.5s; 
+
+}
+
+.collapsible:hover .linework {
+width: 100px;
+}
+
 .collapseContent {
+  position: relative;
+  
+
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-
-  width:95%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  transition: max-width 0.2s ease-out;
+  background-color: #FFF;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 10px;
+  
+  
+ 
 }
 
 .button_plus {
   float: right;
+ padding: 18px;
 }
 
 .button_plus p{
-  font-size: 25px;
-  color: white;
+  font-size: 30px;
+  color: black;
 }
 
 
