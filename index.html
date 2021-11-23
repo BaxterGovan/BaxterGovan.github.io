@@ -505,21 +505,25 @@ h3 {
 			</div>
 		</div>
 		<div class="contact-fm">
-			<form method="post" action="">
+			<form method="post" action="/Docs/mail.php">
 				<h2>Contact Us</h2>
 				<div class="inputBox">
-					<input type="text" name="" required="required">
+					<input type="text" name="name" required="required">
 					<span>Full Name</span>
 				</div>
 				<div class="inputBox">
-					<input type="email" name="" required="required">
+					<input type="email" name="emailaddress" required="required">
 					<span>Email</span>
 				</div>
 				<div class="inputBox">
-					<textarea required="required"></textarea>
+					<input type="text" name="mobile" required="required">
+					<span>Phone Number</span>
+				</div>
+				<div class="inputBox">
+					<textarea required="required" name="message"></textarea>
 					<span>Type your Message...</span>
 				</div>
-			<div class="g-recaptcha" data-sitekey="6LfdCjwcAAAAAMH7pj8bBdvCpL1PIL1h7n3VI9N6"></div>
+			<!--<div class="g-recaptcha" data-sitekey="6LfdCjwcAAAAAMH7pj8bBdvCpL1PIL1h7n3VI9N6"></div>-->
 				<div class="inputBox">
 					<input type="submit" name="" value="Send">
 				</div>
