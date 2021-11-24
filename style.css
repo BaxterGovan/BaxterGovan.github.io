@@ -635,8 +635,8 @@ posititon: relative;
 {
  position: absolute;
  right: 10%;
- top: 50%;
- transform: translate(0, -50%);
+ top: 45%;
+ transform: translate(1%, -50%);
  
 
 }
@@ -679,31 +679,31 @@ max-width: 70%;
 
 #tablinks1  {
 
-left: 250px; top: -5px;
+left: 265px; top: 20px;
 
 }
 #tablinks2  {
 
 
-left: -34px; top: -128px;
+left: -35px; top: -110px;
 
 }
 #tablinks3  {
 
 
-left: 295px; top: 50px;
+left: 300px; top: 70px;
 
 }
  #tablinks4  {
  
 
-left: -138px; top: -90px;
+left: -155px; top: -90px;
 
 }
  #tablinks5  {
 
 
-left: 82px; top: -18px;
+left: 82px; top: 30px;
 
 }
 
