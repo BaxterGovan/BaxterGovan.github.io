@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Atlanta Electrical Contractor</title>
+<meta property="og:site_name" content="Mayberry Electric, Inc.">
+<meta property="og:title" content="Atlanta Electrical Contractor">
+<meta property="og:description" content="Providing Superior Commercial Electrical Services">
+<meta property="og:url" content="https://www.mayberryelectric.com/Docs/AboutUs.html">
+<meta name="description" content="Providing Superior Commercial Electrical Services">
+<meta name="keywords" content="Atlanta, Electrical, Commercial, Contractor, Design, data, center, distribution, service, EV, chargers">
+<meta property="og:image" content="http://www.mayberryelectric.com/logo.html">
+<meta property="og:type" content="company">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/style.css"/>
@@ -25,7 +34,7 @@ h2 {
 </head>
 <body>
 	
-<div id="navbar">
+<div id="navbar" class="sticky">
 <div id="progressbar"></div>
 <div id="scrollPath"></div>
 	<div class="logo">
@@ -54,17 +63,7 @@ h2 {
             <input type="checkbox" id="btn-2">
             <ul>
             	<li><a href="/Docs/Services_Construction.html">Construction</a></li>
-                <li>
-                	<label for="btn-5" class="show1">Service +</label>
-                	<a href="/Docs/Services_Service.html">Service</a>
-                    <input type="checkbox" id="btn-5">
-                    	<ul>
-                        	<li><a href="#">EPM</a></li>
-                            <li><a href="#">Maintenance</a></li>
-                            <li><a href="#">MADs</a></li>
-                            <li><a href="#">IR Imaging</a></li>
-                        </ul>
-                </li>
+                <li><a href="/Docs/Services_Service.html">Service</a></li>
                 <li><a href="/Docs/Services_Design.html">Design</a></li>
             </ul>
         </li>
@@ -80,13 +79,13 @@ h2 {
                 <li><a class="special2" href="/Docs/Projects_CriticalPower.html">Critical Power</a></li>
             </ul>
         </li>
-	<li>
-        	<label for="btn-4" class="show1">People +</label>
-        	<a href="/Docs/People.html">People</a>
+        <li>
+        	<label for="btn-4" class="show1">Career +</label>
+        	<a href="/Docs/Career.html">Career</a>
             <input type="checkbox" id="btn-4">
             <ul>
-            	<li><a href="#">Our Team</a></li>
-                <li><a href="https://www.linkedin.com/company/mayberry-electric-inc./" target="_blank">Career</a></li>
+            	<li><a href="/Docs/Life_At_MEI.html">Life at MEI</a></li>
+                <li><a href="/Docs/Jobs.html">Jobs</a></li>
             </ul>
         </li>
         <li><a href="/Docs/ContactUs.html">Contact Us</a></li>
@@ -350,10 +349,7 @@ h2 {
 </div>
 
 <br>
-<div class="image-mosaic-wrapper">
 
-<h2>Associations we are proud to be Partnered with</h2>
-<br>
 <div class="image-mosaic-wrapper">
 
 <h2>Associations we are proud to be Partnered with</h2>
@@ -406,6 +402,16 @@ h2 {
     		class="card "
     		style="background-image: url('https://www.mayberryelectric.com/uploads/8/8/5/6/8856990/acs_orig.png'); backgr/ound-size: 50% 100%;"
   		></button></a>
+
+  		<a href="https://georgiacenterforchildadvocacy.org/" target="_blank"<button
+    		class="card "
+    		style="background-image: url('https://cdn.firespring.com/images/8afeda65-12e3-4c04-9002-48db77f14069.png'); background-size: 75% 120%;"
+  		></button></a>
+
+  		<a href="https://www.hside.org/" target="_blank"<button
+    		class="card card-wide"
+    		style="background-image: url('/Photos/HillsideLogo.png'); background-size: 100% 100%;"
+  		></button></a>
 	</div>
 
     </div>
@@ -413,41 +419,12 @@ h2 {
 
 </div>
 	
-	
-<div class="cm-container">
-	<div class="cm-sp-photo-text-media-wrapper" >
-		<div class="cm-sp-text-container">
-			<h2> Mayberry Electric has been a proud supporter of</h2> 
-			<br>
-			<h1>The Georgia Center for Child Advocacy</h1>
-		</div>
-		<div class="cm-sp-photo-container">
-			<div class=cm-sp-image">
-				<img src="https://www.mayberryelectric.com/uploads/8/8/5/6/8856990/4780595.jpg?798">
-			</div>
-		</div>
-		<div class="cm-sp-text-container">
-			<h3>- <span> & </span>-</h3>
-			<h1>Hillside Behavioral Education Center</h1> 
-		</div>
-		<div class="cm-sp-photo-container">
-			<div class=cm-sp-image">
-				<img src="https://www.mayberryelectric.com/uploads/8/8/5/6/8856990/1317493135.jpg">
-			</div>
-		</div>
-		<div class="cm-sp-text-container">
-			<br>
-			<h2>For the past six years</h2>
-		</div>
-	</div>
-</div>
-<div style="height: 200px;" id="awards"></div>
+<div style="height: 100px;" id="awards"></div>
 
-
-<div class="aw-container">
+<div class="aw-container" id="awards1" style="display: flex;">
 	<div class="aw-asym-photo-text-media">
 		<div class="aw-photo-media-container">
-			<div class="photo-media1">
+			<div class="photo-media1" >
 				<img src="/Photos/steve_mowers_2018AGC_award.jpg">
 			</div>
 		</div>
@@ -456,12 +433,30 @@ h2 {
 				<h2>Senior Construction Manager Scott Mowers (Middle)</h2>
 			</div>
 			<div class="text-media-lower">
-				<p>MEI Winning The First Place Trophy For The 2018 AGC Georgia Specialty Contractor Award</p>
+				<p>MEI winning the First Place Trophy for the 2018 AGC Georgia Specialty Contractor Award</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="aw-container" id="awards2" style="display: none;">
+	<div class="aw-asym-photo-text-media">
+		<div class="aw-photo-media-container">
+			<div class="photo-media1" >
+				<img src="/Photos/BrianFoster_Award.jpg">
+			</div>
+		</div>
+		<div class="aw-text-media-container">
+			<div class="text-media-header">
+				<h2>Senior Project Manager Brian Foster</h2>
+			</div>
+			<div class="text-media-lower">
+				<p>Mayberry Electric is proud to win a NECA interiors Project Excellence Award</p>
 			</div>
 		</div>
 	</div>
 </div>
-
 
 
 <div class="footer">
@@ -718,7 +713,45 @@ function CS_showSlides() {
       repeater();
     });
     </script>
-      
+     <script>
+
+var awards1 = document.getElementById("awards1");
+var awards2 = document.getElementById("awards2");
+
+var awards1chld = awards1.children;
+var awards2chld = awards2.children;
+    var playSlider;
+	var track = 1;
+    var repeater = () => {
+      playSlider = setInterval(function(){
+	if(track == 0) {
+		awards2chld[0].addEventListener("animationend", (ev) => {
+  			if (ev.type === "animationend") {
+    				awards2.style.display = "none";
+  			}
+		}, false);
+		
+		awards1.style.display = "flex";
+		track++;
+		
+		
+	}
+	else if( track == 1) {
+		awards1chld[0].addEventListener("animationend", (et) => {
+  			if (et.type === "animationend") {
+    				awards1.style.display = "none";
+  			}
+		}, false);
+		awards2.style.display = "flex";
+		track--;
+		
+	}
+
+      }, 10000);
+    }
+    repeater();
+
+</script> 
 
 </body>
 </html>
