@@ -2995,6 +2995,7 @@ transition: 0.4 ease in out;
 }
 
 
+
 .aw-photo-media-container {
 
  width: 50%;
@@ -3531,6 +3532,7 @@ width: 100%;
 .collapse-wrapper {
  width: 100%;
  height: 2600px;
+
  margin-left: auto;
  margin-right: auto;
  
@@ -3539,7 +3541,9 @@ width: 100%;
 .collapse-container {
   display: block;
   width:500px;
+
   height: 750px;
+
   border-radius: 8px;
   margin-left: 3%;
   margin-right: 3%;
@@ -3596,6 +3600,7 @@ width: 100%;
 
 
 
+
 .collapsible p1{
  
  font-size: 15px;
@@ -3639,6 +3644,7 @@ width: 100px;
   transition: 0.3s;
   border-radius: 10px;
  
+
   
  
 }
