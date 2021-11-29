@@ -713,18 +713,23 @@ function CS_showSlides() {
       repeater();
     });
     </script>
-     <script>
 
-var awards1 = document.getElementById("awards1");
-var awards2 = document.getElementById("awards2");
 
-var awards1chld = awards1.children;
-var awards2chld = awards2.children;
+  <script>
+var awards2fix = document.getElementById("awards2");
+awards2fix.style.display="flex";
+awards2fix.style.display="none";
+
     var playSlider;
 	var track = 1;
     var repeater = () => {
       playSlider = setInterval(function(){
 	if(track == 0) {
+var awards1 = document.getElementById("awards1");
+var awards2 = document.getElementById("awards2");
+
+var awards1chld = awards1.children;
+var awards2chld = awards2.children;
 		awards2chld[0].addEventListener("animationend", (ev) => {
   			if (ev.type === "animationend") {
     				awards2.style.display = "none";
@@ -737,6 +742,11 @@ var awards2chld = awards2.children;
 		
 	}
 	else if( track == 1) {
+var awards1 = document.getElementById("awards1");
+var awards2 = document.getElementById("awards2");
+
+var awards1chld = awards1.children;
+var awards2chld = awards2.children;
 		awards1chld[0].addEventListener("animationend", (et) => {
   			if (et.type === "animationend") {
     				awards1.style.display = "none";
