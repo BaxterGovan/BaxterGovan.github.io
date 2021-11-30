@@ -31,7 +31,7 @@ body {
 #navbar .logo {
 float: left;
  height: 80px;
- width: 300px;
+ width: 340px;
 } 
 
 #navbar .logo img {
@@ -40,6 +40,7 @@ float: left;
     position: relative;
     max-height: 100%;
     transition: 0.5s;
+    margin-left: 10px;
 }
 
 #navbar:after {
@@ -538,7 +539,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .fixed-bg2 {
-  background-image: url("/Photos/CoffeeMugMEI.jpg");
+  background-image: url("/Photos/lobby.jpg");
   min-height: 900px;
   width: 100%;
   background-attachment: fixed;
