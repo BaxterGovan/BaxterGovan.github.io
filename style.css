@@ -419,17 +419,20 @@ body {font-family: Verdana, sans-serif; margin:0}
 
 /* Caption text */
 .text {
-  color: black;
-  font-size: 50px;
+  color: white;
   font-family: "copperplate", fantasy;
-  font-weight: bold;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: white;
+
+
   padding: 8px 12px;
   position: absolute;
   top: 40%;
   width: 100%;
   text-align: center;
+    font-size: 65px;
+    text-shadow: 4px 3px 0 rgb(1 1 1 / 13%);
+    letter-spac/ing: -2px;
+    margin: 0 auto 36px;
+    font-weight: 700;
 }
 
 .subText {
@@ -3049,7 +3052,7 @@ animation-direction: alternate;
 .aw-photo-media-container .photo-media1 img{
  width: 100%;
  display: block;
- transition: 0.5s ease-in-out;
+ transition: 1s ease-in-out;
 }
 
 
@@ -3058,6 +3061,7 @@ animation-direction: alternate;
  float: right;
  color: white;
  text-align: center;
+ transition: 1s ease-in-out;
 }
 
 .aw-text-media-container .text-media-header {
@@ -3855,13 +3859,27 @@ width: 100px;
 
 
 .pw-container {
- width: 100%;
+ width: 70%;
  margin: 0 auto;
  margin-top: 90px;
  margin-bottom: 2vh;
  background-color: black;
  display:flex;
  align-items: flex-end;
+
+}
+
+.pw-container .media {
+
+ background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(255,255,255,0) 100%);
+ z-index: 10;
+
+}
+
+.pw-container img {
+position: relative;
+ width: 100%;
+ z-index: 2;
 }
 
 
