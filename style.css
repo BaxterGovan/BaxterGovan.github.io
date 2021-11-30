@@ -373,12 +373,13 @@ body {font-family: Verdana, sans-serif; margin:0}
   border-radius: 0 3px 3px 0;
   user-select: none;
   transition: 0.5s;
-  transform: translateX(-66%);
-  
+  trans/form: translateX(-66%);
+  opacity: 0;
 }
 
 .slideshow-container:hover .prev { 
- transform: translateX(10%);
+ transf/orm: translateX(10%);
+ opacity: 1;
 }
 
 .next {
@@ -395,12 +396,13 @@ body {font-family: Verdana, sans-serif; margin:0}
  border-radius: 0 3px 3px 0;
  user-select: none;
  transition: 0.5s;
- transform: translateX(65%);
- 
+ tr/ansform: translateX(65%);
+ opacity: 0;
 }
 
 .slideshow-container:hover .next { 
- transform: translateX(-10%);
+ transfo/rm: translateX(-10%);
+ opacity: 1;
 }
 
 /* Position the "next button" to the right */
@@ -561,7 +563,8 @@ body {font-family: Verdana, sans-serif; margin:0}
  width: 100%;
  margin-top: 20px;
  margin-bottom: 20px;
- height: 600px;
+ min-height: 600px;
+ height: 700px;
  background-image: linear-gradient(to bottom right, #006600, #00ff00);
 }
 
@@ -597,7 +600,7 @@ posititon: relative;
 	} 
 	.section-wrap .content
 	{
-		padding-top: 80px;
+		padding-top: 50px;
 		padding-bottom: 80px;
 	}
 	.tb-container .tb-content 
@@ -632,8 +635,8 @@ posititon: relative;
 {
  position: absolute;
  right: 10%;
- top: 50%;
- transform: translate(0, -50%);
+ top: 45%;
+ transform: translate(1%, -50%);
  
 
 }
@@ -676,31 +679,31 @@ max-width: 70%;
 
 #tablinks1  {
 
-left: 250px; top: -5px;
+left: 265px; top: 20px;
 
 }
 #tablinks2  {
 
 
-left: -34px; top: -128px;
+left: -35px; top: -110px;
 
 }
 #tablinks3  {
 
 
-left: 295px; top: 50px;
+left: 300px; top: 70px;
 
 }
  #tablinks4  {
  
 
-left: -138px; top: -90px;
+left: -155px; top: -90px;
 
 }
  #tablinks5  {
 
 
-left: 82px; top: -18px;
+left: 82px; top: 30px;
 
 }
 
@@ -937,6 +940,7 @@ text-decoration: none;
  text-decoration: none;
  font-weight: 700;
  transition: 0.5s;
+ border-radius: 5px;
 }
 .container .card .content .container_link:hover
 {
@@ -1059,6 +1063,17 @@ z-index: 5001;
  min-height: 40vh;
 }
 
+.company_about h1
+{
+   font-size: 40px;
+   font-weight: bold;
+   line-height: 1.09;
+   color: green;
+   text-transform: capital;
+   margin: 0 0 16px 0;
+    text-align: left;
+}
+ 
 .company_about h2
 {
  color: #006600;
@@ -2060,7 +2075,7 @@ transform: scale(1.05);
  margin-left: 5%;
  margin-right: 5%;
  display:inline-flex;
- height: 1200px;
+ 
  
 }
 .projects_LW {
@@ -2431,6 +2446,7 @@ min-width: 400px;
  
  .contact-inf-container {
   flex-direction: column;
+ width: 150%;
  } 
  
  .contact-inf-container .contact-inf {
@@ -2495,8 +2511,8 @@ width: 80%;
 
  margin: 0 auto;
  
- margin-bottom: 30vh;
- height: 35vh;
+ margin-bottom: 100px;
+ 
 }
 
 .cm-asyc-photo-text-media {
@@ -2577,8 +2593,19 @@ max-height: 600px;
 
  
 }
+.cm-photo-media-container .photo-media1 {
+ width: 100%;
+ height: 100%;
+ overflow: hidden;
 
+ 
+}
 .cm-photo-media-container .photo-media img{
+ width: 100%;
+transition: 0.5s;
+ 
+}
+.cm-photo-media-container .photo-media1 img{
  width: 100%;
 transition: 0.5s;
  
@@ -2970,26 +2997,41 @@ transition: 0.4 ease in out;
 }
 
 .aw-asym-photo-text-media {
-    
- -webkit-animation: fadeinout1 10s linear forwards;
- animation: fadeinout1 10s linear forwards;
- opacity: 0;
+   
+-webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
-@keyframes fadeinout1 {
+.aw-asym-photo-text-media.transparent {
+opacity: 0;
+}
 
- 10% {
-	opacity: 1;
- }
- 90% {
-	opacity: 1;
- }
- 100% {
-	opacity: 0;
- }
+@keyframes fadeinout {
+
+0% {
+  opacity:1;
+}
+45% {
+  opacity:1;
+}
+55% {
+  opacity:0;
+}
+100% {
+  opacity:0;
+}
 
 }
 
+.aw-asym-photo-text-media .top {
+animation-name: fadeinout;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-direction: alternate;
+}
 
 .aw-photo-media-container {
 
@@ -3526,7 +3568,7 @@ width: 100%;
 
 .collapse-wrapper {
  width: 100%;
- height: 2200px;
+ height: 3000px;
  margin-left: auto;
  margin-right: auto;
  
@@ -3535,7 +3577,7 @@ width: 100%;
 .collapse-container {
   display: block;
   width:500px;
-  height: 650px;
+  height: 750px;
   border-radius: 8px;
   margin-left: 3%;
   margin-right: 3%;
@@ -3627,14 +3669,92 @@ width: 100px;
   max-height: 0;
   overflow: hidden;
   transition: max-width 0.2s ease-out;
-  background-color: #FFF;
-  width: 95%;
+  background-color: #EEE;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 10px;
-  
+  font-size: 20px;
+  transition: 0.3s;
+  border-radius: 10px;
+ 
   
  
+}
+
+.blocker {
+height: 400px;
+}
+
+@media (max-width: 1830px){
+.collapse-wrapper {
+  height: 4400px;
+}
+.blocker {
+  height: 100px;
+}
+ 
+.collapse-container { 
+  
+ margin-left: 11%; 
+  
+}
+
+
+}
+
+@media (max-width: 1390px){
+.collapse-wrapper {
+  height: 9000px;
+}
+.blocker {
+  height: 0px;
+}
+ 
+.collapse-container { 
+  
+ margin-left: 30%; 
+  
+}
+
+
+}
+@media (max-width: 900px){
+
+.collapse-container { 
+  
+ margin-left: 24%; 
+  
+}
+}
+@media (max-width: 700px){
+
+.collapse-container { 
+  
+ margin-left: 14%; 
+  
+}
+}
+
+@media (max-width: 500px){
+
+.collapse-container { 
+  
+  margin-left: 1%; 
+  margin-right: 1%; 
+  width: 450px;
+}
+ .collapsible {
+
+  width: 450px;
+}
+.collapsible .img-holder {
+  width: 450px;
+
+}
+.collapseContent {
+top: -75px;
+}
+
 }
 
 .button_plus {
@@ -3730,4 +3850,50 @@ width: 100px;
 }
 
 
+
+/* For the construction page */
+
+
+.pw-container {
+ width: 100%;
+ margin: 0 auto;
+ margin-top: 90px;
+ margin-bottom: 2vh;
+ background-color: black;
+ display:flex;
+ align-items: flex-end;
+}
+
+
+
+.BF-portal {
+
+ margin-top: 100px;
+ max-height: 600px;
+ width: 100%;
+ text-align: center;
+ 
+}
+
+.BF-portal .container_link
+{
+ position: relative;
+ color: #111;
+ background: #fff;
+ display: inline-block;
+ padding: 10px 20px;
+ margin-top: 10px;
+ text-decoration: none;
+ font-weight: 700;
+ transition: 0.5s;
+ border-radius: 8px;
+ border-style: solid;
+}
+.BF-portal .container_link:hover
+{
+ color: #fff;
+ background: #000;
+
+
+}
 
