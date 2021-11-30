@@ -2075,7 +2075,7 @@ transform: scale(1.05);
  margin-left: 5%;
  margin-right: 5%;
  display:inline-flex;
- height: 1200px;
+ 
  
 }
 .projects_LW {
@@ -2997,26 +2997,41 @@ transition: 0.4 ease in out;
 }
 
 .aw-asym-photo-text-media {
-    
- -webkit-animation: fadeinout1 10s linear forwards;
- animation: fadeinout1 10s linear forwards;
- opacity: 0;
+   
+-webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
-@keyframes fadeinout1 {
+.aw-asym-photo-text-media.transparent {
+opacity: 0;
+}
 
- 10% {
-	opacity: 1;
- }
- 90% {
-	opacity: 1;
- }
- 100% {
-	opacity: 0;
- }
+@keyframes fadeinout {
+
+0% {
+  opacity:1;
+}
+45% {
+  opacity:1;
+}
+55% {
+  opacity:0;
+}
+100% {
+  opacity:0;
+}
 
 }
 
+.aw-asym-photo-text-media .top {
+animation-name: fadeinout;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-direction: alternate;
+}
 
 .aw-photo-media-container {
 
@@ -3548,7 +3563,7 @@ width: 100%;
 
 
 
-/*--------------------------- bars for Service Page ------------------*/
+/*---------------------------Collapse bars for Service Page ------------------*/
 
 
 .collapse-wrapper {
