@@ -606,12 +606,12 @@ function openEvent(evt, evtName) {
   evt.currentTarget.className += " active";
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+/* Get the element with id="defaultOpen" and click on it*/
+
 
 	
 
-// ----------------------Community Service SlideShow -------------------
+/* ----------------------Community Service SlideShow -------------------*/
 var CS_slideIndex = 0;
 CS_showSlides();
 
@@ -626,7 +626,7 @@ function CS_showSlides() {
 
   slides[CS_slideIndex-1].style.display = "block";  
   
-  setTimeout(CS_showSlides, 10000); // Change image every 5 seconds
+  setTimeout(CS_showSlides, 10000); // Change image every 10 seconds
 }
 
 
