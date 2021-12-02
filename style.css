@@ -534,7 +534,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .fixed-bg1 {
-  background-image: url("/Photos/LobbyBase.png");
+  background-image: url("/Photos/LobbyBase.jpg");
   min-height: 900px;
   width: 100%;
   background-attachment: fixed;
@@ -544,7 +544,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .fixed-bg2 {
-  background-image: url("/Photos/lobby.png");
+  background-image: url("/Photos/lobby.jpg");
   min-height: 900px;
   width: 100%;
   background-attachment: fixed;
@@ -554,7 +554,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .fixed-bg3 {
-  background-image: url("/Photos/Bridge_view.png");
+  background-image: url("/Photos/Bridge_view.jpg");
   min-height: 900px;
   width: 100%;
   background-attachment: fixed;
@@ -3893,17 +3893,21 @@ position: relative;
 
 .BF-container {
 width: 100%;
-background-color: #DDD;
 
+}
+
+.BF-container img {
+ 
+ width:100%;
+ 
 }
 .BF-container .BF-portal {
 
- margin-top: 100px;
  max-height: 600px;
- margin-bottom: 100px;
  text-align: center;
  margin-left: 10%;
  margin-right: 10%;
+
 }
 
 .BF-portal .container_link
