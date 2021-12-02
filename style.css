@@ -30,8 +30,8 @@ body {
 
 #navbar .logo {
 float: left;
- height: 80px;
- width: 340px;
+ height: 90px;
+ width: 420px;
 } 
 
 #navbar .logo img {
@@ -40,7 +40,7 @@ float: left;
     position: relative;
     max-height: 100%;
     transition: 0.5s;
-    margin-left: 10px;
+    margin-left: 15%;
 }
 
 #navbar:after {
@@ -53,7 +53,7 @@ float: left;
  float: right; 
  list-style: none;
  margin-ri/ght: 5px;
- margin-top: 10px;
+ margin-top: 20px;
  position: relative;
 }
 
@@ -162,6 +162,9 @@ float: left;
 #navbar .logo {
  height: 80px;
  width: 300px;
+ margin-left: auto;
+ margin-right: auto;
+ float: none;
 } 
 
 #navbar .logo img {
@@ -171,8 +174,9 @@ float: left;
     max-height: 100%;
     top: 0%;
     transform: translate(0%, 0%);
-     left: 0%; 
+    left: 0%; 
     transition: 0.5s;
+    margin-left: 0px;
 
 }
 
@@ -3884,8 +3888,12 @@ position: relative;
 }
 
 
+.BF-container {
+width: 100%;
+background-color: #DDD;
 
-.BF-portal {
+}
+.BF-container .BF-portal {
 
  margin-top: 100px;
  max-height: 600px;
@@ -3893,7 +3901,6 @@ position: relative;
  text-align: center;
  margin-left: 10%;
  margin-right: 10%;
- 
 }
 
 .BF-portal .container_link
@@ -3913,7 +3920,8 @@ position: relative;
 .BF-portal .container_link:hover
 {
  color: #fff;
- background: #000;
+ background: #006600;
+ border-color: #000;
 
 
 }
