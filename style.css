@@ -54,6 +54,7 @@ float: left;
  list-style: none;
  margin-ri/ght: 5px;
  margin-top: 20px;
+ margin-bottom: 0px;
  position: relative;
 }
 
@@ -148,7 +149,7 @@ float: left;
 @media (min-width: 969px) {
 
 #navbar ul li {
- height: 60px;
+ height: 70px;
 }
 
 }
@@ -2857,6 +2858,7 @@ width: 100%;
   overflow: hidden;
   border: 1px solid #ccc;
   min-width: 400px;
+cursorL pointer;
 }
 
 .projects_thumbnails_sgl li img {
@@ -3195,6 +3197,7 @@ col {
     width: 100%;
     min-width: 500px;
     min-height: 650px;
+    max-width: 1000px;
     
 }
 .bio_modal-content {
