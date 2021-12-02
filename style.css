@@ -534,7 +534,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .fixed-bg1 {
-  background-image: url("/Photos/LobbyBase.jpg");
+  background-image: url("/Photos/LobbyBase.png");
   min-height: 900px;
   width: 100%;
   background-attachment: fixed;
@@ -544,7 +544,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .fixed-bg2 {
-  background-image: url("/Photos/lobby.jpg");
+  background-image: url("/Photos/lobby.png");
   min-height: 900px;
   width: 100%;
   background-attachment: fixed;
@@ -554,7 +554,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .fixed-bg3 {
-  background-image: url("/Photos/Bridge_view.jpg");
+  background-image: url("/Photos/Bridge_view.png");
   min-height: 900px;
   width: 100%;
   background-attachment: fixed;
