@@ -3867,11 +3867,10 @@ width: 100px;
 
 
 .pw-container {
- width: 70%;
+ position: relative;
+ width: 100%;
+ height: 400px;
  margin: 0 auto;
- margin-top: 90px;
- margin-bottom: 2vh;
- background-color: black;
  display:flex;
  align-items: flex-end;
 
@@ -3879,16 +3878,65 @@ width: 100px;
 
 .pw-container .media {
 
- background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(255,255,255,0) 100%);
- z-index: 10;
-
+ position: relative;
+ overflow: hidden;
+ width: 100%;
 }
 
 .pw-container img {
+
 position: relative;
- width: 100%;
- z-index: 2;
+min-width: 100%;
 }
+
+.pw-container .text-container {
+ position: absolute;
+ left: 20px;
+ top: 0;
+ max-width: 400px;
+ width: 100%;
+ text-align: center;
+}
+
+.pw-container .text-container h2 {
+ font-size: 50px;
+ text-shadow: 4px 3px 0 rgb(1 1 1 / 13%);
+ margin: 0 auto 9px;
+ font-weight: 700;
+
+}
+
+.pw-container .text-container a {
+
+ color: #111;
+ background: #fff;
+ padding: 5px 10px;
+ margin-top: 20px;
+ text-decoration: none;
+ font-size: 15px;
+ transition: 0.5s;
+ border-radius: 8px;
+ border-style: solid;
+}
+.pw-container .text-container a:hover
+{
+ color: #fff;
+ background: #006600;
+ border-color: #000;
+
+
+}
+
+
+@media (max-width: 550px){
+
+  .pw-container .text-container {
+	left: none;
+	max-width:none;
+   }
+
+}
+
 
 
 .BF-container {
@@ -3920,7 +3968,7 @@ width: 100%;
  padding: 10px 20px;
  margin-top: 10px;
  text-decoration: none;
- font-weight: 700;
+ font-size: 700;
  transition: 0.5s;
  border-radius: 8px;
  border-style: solid;
