@@ -267,6 +267,37 @@ h2 {
         </div>
     </div>
 </div>
+	
+<div class="pw-container">
+	<div class="media" id="pw-media">
+			<img class="pw-img" id="pw-photo" src="C:\Users\Tiffany McDonald\Dropbox\DataCenterLong.png">
+
+	</div>
+	<div class="text-container">
+		<h2 style="color: white;">Lenovo Data Center</h2>
+		<h3 style="color: white;">Atlanta, GA</h3>
+		<a href="/Docs/Projects_DataCenter.html">View more</a>
+	</div>
+
+</div>
+
+
+<script>
+    	var playSlider;
+ 	var media = document.getElementById("pw-media");
+	var photo = document.getElementById("pw-photo");
+    	var repeater = () => {
+      		playSlider = setInterval(function(){
+			if(media.clientWidth <= 1630)
+			photo.style.left = (-400000/(media.clientWidth))+"px";
+			else
+			photo.style.left = 0;
+	      }, 1000);
+    	}
+    repeater();
+
+
+</script>
 
 <div class="ctus-container">
 			<div class="box-inf">
