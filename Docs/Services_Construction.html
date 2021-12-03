@@ -130,89 +130,95 @@ h2 {
 
 <h2>Meet Our Construction Team</h2>
 <div class="collapse-container2" style="justify-content: space-evenly;">
+/*----- Scott Mowers --------*/
 	<button class="collapsible2 ">
-		<img src=" C:\Users\Tiffany McDonald\Dropbox\New Project.png" style="margin-left: auto; margin-right: auto;"/>
+		<img src="/Photos/ProfilePics/SteveMowers.jfif" style="margin-left: auto; margin-right: auto;"/>
 	Scott Mowers
 		<div class="button_plus">
 			<p>+</p>
 		</div>
 <br>
 	<span class="linework"></span>
-	<p1>Construction Manager</p1>
+	<p1>Senior Project Manager</p1>
 	</button>
 	<div class="collapseContent2">
 		<div style="width: 350px; margin-left: 2.5%;">
   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</div>
 	</div>
-
+/*----- End Scott Mowers --------*/
+/*----- Brian Foster --------*/
 	<button class="collapsible2 ">
-		<img src=" C:\Users\Tiffany McDonald\Dropbox\New Project.png" style="margin-left: auto; margin-right: auto;"/>
-	Scott Mowers
+		<img src="/Photos/ProfilePics/BrianFoster.jfif" style="margin-left: auto; margin-right: auto;"/>
+	Brian Foster
 		<div class="button_plus">
 			<p>+</p>
 		</div>
 <br>
 	<span class="linework"></span>
-	<p1>Construction Manager</p1>
+	<p1>Project Manager</p1>
 	</button>
 	<div class="collapseContent2">
 		<div style="width: 350px; margin-left: 2.5%;">
   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</div>
 	</div>
+/*----- End Brian Foster --------*/
+/*----- Joey Butler --------*/
 	<button class="collapsible2 ">
-		<img src=" C:\Users\Tiffany McDonald\Dropbox\New Project.png" style="margin-left: auto; margin-right: auto;"/>
-	Scott Mowers
+		<img src="/Photos/ProfilePics/JoeyButler.jfif" style="margin-left: auto; margin-right: auto;"/>
+	Joey Butler
 		<div class="button_plus">
 			<p>+</p>
 		</div>
 <br>
 	<span class="linework"></span>
-	<p1>Construction Manager</p1>
+	<p1>Senior Project Manager</p1>
 	</button>
 	<div class="collapseContent2">
 		<div style="width: 350px; margin-left: 2.5%;">
   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</div>
 	</div>
-
+/*----- End Joey Butler --------*/
 </div>
 
 
 <div class="collapse-container2" style="justify-content: center;">
+/*----- Steve Ragsdale --------*/
 	<button class="collapsible2 ">
-		<img src=" C:\Users\Tiffany McDonald\Dropbox\New Project.png" style="margin-left: auto; margin-right: auto;"/>
-	Scott Mowers
+		<img src="/Photos/ProfilePics/SteveRagsdale.jfif" style="margin-left: auto; margin-right: auto;"/>
+	Steve Ragsdale
 		<div class="button_plus">
 			<p>+</p>
 		</div>
 <br>
 	<span class="linework"></span>
-	<p1>Construction Manager</p1>
+	<p1>Senior Project Manager</p1>
 	</button>
 	<div class="collapseContent2">
 		<div style="width: 350px; margin-left: 2.5%;">
   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</div>
 	</div>
-
+/*----- End Steve Ragsdale --------*/
+/*----- Chris Cooper --------*/
 	<button class="collapsible2 ">
-		<img src=" C:\Users\Tiffany McDonald\Dropbox\New Project.png" style="margin-left: auto; margin-right: auto;"/>
-	Scott Mowers
+		<img src="/Photos/ProfilePics/ChrisCooper.jfif" style="margin-left: auto; margin-right: auto;"/>
+	Chris Cooper
 		<div class="button_plus">
 			<p>+</p>
 		</div>
 <br>
 	<span class="linework"></span>
-	<p1>Construction Manager</p1>
+	<p1>Assistant Project Manager</p1>
 	</button>
 	<div class="collapseContent2">
 		<div style="width: 350px; margin-left: 2.5%;">
   			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</div>
 	</div>
-
+/*----- End Chris Cooper --------*/
 
 </div>
 
@@ -607,14 +613,35 @@ function showSlide(n) {
     modalPreviews[slideIndex - 1].className += ' active';
 };
 
-
-
-
-
-
-
 </script>
 
+<script>
+
+
+var coll = document.getElementsByClassName("collapsible2");
+var i;
+
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    var chld = this.children;
+    var txt = chld[1].children;
+    if (content.style.maxWidth){
+     	 content.style.maxWidth = null;
+	content.style.overflow = "hidden";
+     	 txt[0].innerHTML = "+";
+      
+    } else {
+      	content.style.maxWidth = content.scrollWidth + "px";
+	content.style.overflow = "inherit";
+	txt[0].innerHTML = "-";
+      
+    } 
+  });
+}
+</script>
 
 
 </body>
