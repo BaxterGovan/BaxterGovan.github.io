@@ -1480,7 +1480,10 @@ text-align: center;
 .image-mosaic-wrapper {
 
  background-color: #ebe/beb;
-
+ box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+ border-radius: 4px;
+ margin-left: 0.5%;
+ margin-right: 0.5%;
 }
 
 
@@ -3791,7 +3794,8 @@ top: -75px;
   margin-right: auto;
   padding-top: 25px;
   padding-bottom: 25px;
- background: #EEE;
+  background: #EEE;
+  
 }
 
 
@@ -3809,6 +3813,8 @@ top: -75px;
   height: 700px;
 
   margin-left: 2.5%;
+  border-radius: 10px;
+  z-index: 11;
   
 
 }
@@ -3856,9 +3862,18 @@ width: 100px;
   transition: max-width 0.2s ease-out;
   background-color: #FFF;
   height: 700px;
+  position: relative;
+  z-index: 10;
   
-  
- 
+}
+
+.collapseContent2 .collapseText {
+  width: 350px;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 10px;
+
+
 }
 
 
