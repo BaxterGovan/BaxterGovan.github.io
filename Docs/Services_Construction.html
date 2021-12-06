@@ -135,7 +135,7 @@ h2 {
 		<img src="/Photos/ProfilePics/ScottMowers.jfif" style="margin-left: auto; margin-right: auto;"/>
 	Scott Mowers
 		<div class="button_plus">
-			<p>+</p>
+			<!--<p>+</p>-->
 		</div>
 <br>
 	<span class="linework"></span>
@@ -152,7 +152,6 @@ h2 {
 		<img src="/Photos/ProfilePics/SteveRagsdale.jfif" style="margin-left: auto; margin-right: auto;"/>
 	Steve Ragsdale
 		<div class="button_plus">
-			<p>+</p>
 		</div>
 <br>
 	<span class="linework"></span>
@@ -169,7 +168,6 @@ h2 {
 		<img src="/Photos/ProfilePics/JoeyButler.jfif" style="margin-left: auto; margin-right: auto;"/>
 	Joey Butler
 		<div class="button_plus">
-			<p>+</p>
 		</div>
 <br>
 	<span class="linework"></span>
@@ -190,7 +188,6 @@ h2 {
 		<img src="/Photos/ProfilePics/BrianFoster.jfif" style="margin-left: auto; margin-right: auto;"/>
 	Brian Foster
 		<div class="button_plus">
-			<p>+</p>
 		</div>
 <br>
 	<span class="linework"></span>
@@ -207,7 +204,6 @@ h2 {
 		<img src="/Photos/ProfilePics/ChrisCooper.jfif" style="margin-left: auto; margin-right: auto;"/>
 	Chris Cooper
 		<div class="button_plus">
-			<p>+</p>
 		</div>
 <br>
 	<span class="linework"></span>
@@ -367,7 +363,7 @@ h2 {
 </div>
 -->
 
-<div style="height: 300px;"></div>
+<!--<div style="height: 300px;"></div>-->
 	
 <div class="pw-container">
 	<div class="media" id="pw-media">
@@ -615,33 +611,7 @@ function showSlide(n) {
 
 </script>
 
-<script>
 
-
-var coll = document.getElementsByClassName("collapsible2");
-var i;
-
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    var chld = this.children;
-    var txt = chld[1].children;
-    if (content.style.maxWidth){
-     	 content.style.maxWidth = null;
-	content.style.overflow = "hidden";
-     	 txt[0].innerHTML = "+";
-      
-    } else {
-      	content.style.maxWidth = content.scrollWidth + "px";
-	content.style.overflow = "inherit";
-	txt[0].innerHTML = "-";
-      
-    } 
-  });
-}
-</script>
 
 
 </body>
