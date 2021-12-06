@@ -2888,7 +2888,7 @@ cursorL pointer;
 .projects_thumbnails_sgl li img {
   max-width: 100%;
   display: block;
-  posit/ion: absolute;
+  position: relative;
   height: auto;
   t/op: 50%;
   trans/form: translate(-50%, -50%);
