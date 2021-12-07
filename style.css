@@ -1595,10 +1595,10 @@ cur/sor: pointer;
 }
 
 
-.Info-container {
+.Info_container {
  width: 100%;
 }
-.Info_column {
+.Info_container .Info_row .Info_column {
   float: left;
   width: 32%;
   margin-left: 0.8%;
@@ -1615,7 +1615,7 @@ cur/sor: pointer;
   clear: both;
 }
 
-.Info_details
+.Info_container .Info_column .Info_details
 {
  display: flex;
  flex-direction: column;
@@ -4112,4 +4112,100 @@ width: 100%;
 
 
 }
+
+
+.Info_container1 {
+ width: 95%;
+ margin-left: auto;
+ margin-right: auto;
+ box-shadow: rgba(3, 8, 20, 0.3) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.3) 0px 0.075rem 0.175rem;
+ border-radius: 10px;
+ background-color: #EEE;
+}
+
+.Info_container1 .Info_column {
+ float: left;
+ width: 24%;
+ 
+ height: 300px;
+ align-items: center;
+ justify-content: center;
+
+}
+
+.Info_container1 .Info_details {
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 20px;
+
+}
+
+.Info_container1 .Info_details .line {
+ height: 5px; 
+ width: 70%; 
+ background:green; 
+ margin-top: 10px;
+}
+
+.Info_container1 .Info_details p {
+ 
+ font-size: 25px;
+ margin-top: 10px;
+ 
+}
+/* Info_container 1 & 2 Seperation */
+
+.Info_container2 {
+ width: 95%;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+
+.Info_container2 .Info_row {
+ display: flex;
+ flex-wrap: wrap;
+ margin-left: 10px;
+ margin-right: 10px;
+
+}
+.Info_container2 .Info_column {
+ flex: 0 0 23%;
+ max-width: 23%;
+ margin-left: 0.5%;
+ margin-right: 0.5%;
+}
+
+.Info_container2 .Info_details {
+  display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 20px;
+ align-items: baseline;
+ border-top: 5px solid #006600;
+}
+
+
+.Info_container2 .Info_details h2 {
+ 
+ font-size: 2em;
+
+ margin-top: 10px;
+ padding-top: 15px;
+
+}
+.Info_container2 .Info_details p {
+ 
+ font-size: 1.5em;
+
+ margin-top: 10px;
+
+}
+.Info_container2 .Info_details ul {
+ 
+ padding-left: 100px;
+
+}
+
 
