@@ -429,7 +429,7 @@ h2 {
 	<div class="aw-asym-photo-text-media">
 		<div class="aw-photo-media-container" >
 			<div class="photo-media1" >
-				<img id="photo-switch" src="/Photos/steve_mowers_2018AGC_award.jpg">
+				<img id="photo-switch" src="C:\Users\Tiffany McDonald\Dropbox\Scott.jpg">
 			</div>
 		</div>
 		<div class="aw-text-media-container" id="cnt">
@@ -438,6 +438,13 @@ h2 {
 			</div>
 			<div class="text-media-lower">
 				<p id="text2" >MEI winning the First Place Trophy for the 2018 AGC Georgia Specialty Contractor Award</p>
+			</div>
+		</div>
+ 		<div class="bottom_bar">
+			<div class="img-track">
+				<div style="background-color: green;" id="l1" class="tracker"></div>
+				<div id="l2" class="tracker"></div>
+				<div id="l3" class="tracker"></div>
 			</div>
 		</div>
 	</div>
@@ -708,6 +715,9 @@ function CS_showSlides() {
 	var cnt = document.getElementById("cnt");
 	var txt1 = document.getElementById("text1");
 	var txt2 = document.getElementById("text2");
+	var l1 = document.getElementById("l1");
+	var l2 = document.getElementById("l2");
+	var l3 = document.getElementById("l3");
     	var repeater = () => {
       		playSlider = setInterval(function(){
 			if(track == 0) {
@@ -717,6 +727,10 @@ function CS_showSlides() {
 					setTimeout(function() {minusOpacity(pht,cnt)},0);
 				}
 				setTimeout(function() {switch1(pht,txt1,txt2)},1000);
+				/*pht.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\BrianFoster_Award.jpg"*/
+				l1.style.backgroundColor = "white";
+				l2.style.backgroundColor = "green";
+				l3.style.backgroundColor = "white";
 				for(let i=0;i<1;i++)
 				{
 					setTimeout(function() {addOpacity(pht,cnt)},1000);
@@ -730,13 +744,34 @@ function CS_showSlides() {
 					setTimeout(function() {minusOpacity(pht,cnt)},0);
 				}
 				setTimeout(function() {switch2(pht,txt1,txt2)},1000);
+
+				l1.style.backgroundColor = "white";
+				l2.style.backgroundColor = "white";
+				l3.style.backgroundColor = "green";
 				for(let i=0;i<1;i++)
 				{
 					setTimeout(function() {addOpacity(pht,cnt)},1000);
 				}
 				
-				track--;
+				track++;
 				
+			}
+			else if(track == 2)
+			{
+				for(let i=0;i<1;i++)
+				{
+					setTimeout(function() {minusOpacity(pht,cnt)},0);
+				}
+				setTimeout(function() {switch3(pht,txt1,txt2)},1000);
+				/*pht.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\Scott.jpg"*/
+				l1.style.backgroundColor = "green";
+				l2.style.backgroundColor = "white";
+				l3.style.backgroundColor = "white";
+				for(let i=0;i<1;i++)
+				{
+					setTimeout(function() {addOpacity(pht,cnt)},1000);
+				}
+				track = 0;
 			}
 
 	      }, 10000);
@@ -754,13 +789,18 @@ console.log("addOpacity"+event.style.opacity);
 	container.style.opacity = 1;
  }
  function switch1(event, text1, text2) {
-	event.src = "/Photos/BrianFoster_Award.jpg";
-	text1.innerText = "Project Manager Brian Foster";
-	text2.innerText = "Mayberry Electric is proud to win a 2021 NECA interiors Project Excellence Award";
+	event.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\BrianFoster_Award.jpg";
+	text1.innerText = "Senior Project Manager Brian Foster";
+	text2.innerText = "Mayberry Electric is proud to win a NECA interiors Project Excellence Award";
  }
  function switch2(event, text1, text2) {
-	event.src = "/Photos/steve_mowers_2018AGC_award.jpg";
-	text1.innerText = "Senior Project Manager Scott Mowers (Middle)";
+	event.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\LisaAward.png";
+	text1.innerText = "Mayberry Electric President Lisa Hollingshed";
+	text2.innerText = "Winner of the 2013 BOMA Georgia Presidents Award";
+ }
+ function switch3(event, text1, text2) {
+	event.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\Scott.jpg";
+	text1.innerText = "Senior Construction Manager Scott Mowers (Middle)";
 	text2.innerText = "MEI winning the First Place Trophy for the 2018 AGC Georgia Specialty Contractor Award";
  }
 </script>
