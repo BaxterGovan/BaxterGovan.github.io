@@ -4339,4 +4339,114 @@ margin-bottom: 50px;
 
 }
 
+.awards-ss-majorContainer {
+ width: 99%;
+ display: inline-flex;
+ margin-left: 0.5%;
+ margin-right: 0.5%;
+
+}
+
+.awards-ss-majorContainer .award-ss-container {
+ width: 66%;
+ height: 635px;
+ display: flex;
+ justify-content: center;
+
+}
+
+
+.awards-ss-majorContainer .award-ss-container .award-ss-minimized {
+ width: 450px;
+ height: 635px;
+ background-color: #EEE;
+ border-radius: 10px;
+ display:inline-flex;
+ padding-top: 50px;
+ padding-bottom: 150px;
+ transition: 1s;
+}
+
+.awards-ss-majorContainer .award-ss-container .award-ss-minimized .award-ss-mini-prev1 {
+ position: relative;
+ width: 350px;
+ left: 10px;
+ transition: 1s;
+}
+.awards-ss-majorContainer .award-ss-container .award-ss-minimized .award-ss-mini-prev2 {
+ position: relative;
+ width: 350px;
+ left: -315px;
+ top: 50px;
+ transition: 1s;
+}
+.awards-ss-majorContainer .award-ss-container .award-ss-minimized .award-ss-mini-prev3 {
+ position: relative;
+ width: 350px;
+ left: -640px;
+ top: 100px;
+ transition: 1s;
+}
+
+.awards-ss-majorContainer .award-ss-container .award-ss-minimized .award-ss-prev {
+ position:relative;
+ width: 25px;
+ height: 60px;
+ opacity:0;
+ top: 50%;
+ background-color: transparent;
+ font-size: 25px;
+ border: none;
+ transition: 1s;
+ cursor: pointer;
+}
+
+.awards-ss-majorContainer .award-ss-container .award-ss-minimized .award-ss-next {
+ position:relative;
+ width: 25px;
+ height: 60px;
+ opacity:0;
+ top: 50%;
+ left: 96%;
+ background-color: transparent;
+ font-size: 25px;
+ border: none;
+ transition: 1s;
+ cursor: pointer;
+}
+
+
+.awards-ss-majorContainer .award-ss-container:hover .award-ss-minimized {
+ width: 1250px;
+ padding-bottom: 50px;
+ height: 537px;
+ 
+}
+.awards-ss-majorContainer .award-ss-container .award-ss-minimized:hover .award-ss-prev {
+ opacity: 1;
+ 
+}
+
+.awards-ss-majorContainer .award-ss-container .award-ss-minimized:hover .award-ss-next {
+ opacity: 1;
+ 
+}
+
+.awards-ss-majorContainer .award-ss-container:hover .award-ss-minimized  .award-ss-mini-prev1 {
+ position: relative;
+ width: 350px;
+ left: 0px;
+}
+.awards-ss-majorContainer .award-ss-container:hover .award-ss-minimized  .award-ss-mini-prev2 {
+ position: relative;
+ width: 350px;
+ left: 50px;
+ top: 0px
+}
+.awards-ss-majorContainer .award-ss-container:hover .award-ss-minimized .award-ss-mini-prev3 {
+ position: relative;
+ width: 350px;
+ left: 100px;
+ top: 0px;
+}
 
