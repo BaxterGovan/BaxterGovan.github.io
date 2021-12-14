@@ -563,7 +563,20 @@ body {font-family: Verdana, sans-serif; margin:0}
   background-size: cover;
 }
 
+@media (min-width: 750px)
+{
+.subText {
+ top: 75%;
 
+}
+
+.fixed-bg1 {
+ bacground-size: none;
+
+}
+
+
+}
 
 
 /* This is where the tab icons are created */
@@ -2195,7 +2208,7 @@ height: auto;
 
 .projects_RW ul li .hvr-name-disp1 p {
  color: #FFF;
- font-size: 25px;
+ font-size: 30px;
  padding: 10px 0;
  letter-spacing: 2px;
  font-weight: 450;
@@ -2918,7 +2931,7 @@ min-height: 300px;
 
 .projects_thumbnails_sgl li .hvr-name-disp p {
  color: #FFF;
- font-size: 25px;
+ font-size: 30px;
  padding: 10px 0;
  letter-spacing: 2px;
  font-weight: 450;
