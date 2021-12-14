@@ -2098,7 +2098,7 @@ transform: scale(1.05);
 
 @media (max-width: 968px) {
 
-.client_thumbnails h2 {
+.client_thumbnails_container h2 {
   font-size: 50px; 
 }
 
@@ -2572,15 +2572,15 @@ width: 80%;
 
 .cm-asyc-photo-text-media {
     
-    display: flex;
-    width: 80%;
-    box-sizing: border-box;
-margin-left: auto;
-margin-right: auto;
+ display: flex;
+ width: 80%;
+ box-sizing: border-box;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 .cm-text-media-container {
-float: left;
+ float: left;
  width: 40%;
  flex-basis: 50%;
  padding-right: 30px;
@@ -2590,8 +2590,10 @@ float: left;
 .cm-text-media-container img {
 margin-top: 50px;
  width: 80%;
-padding-left: auto;
-padding-right: auto;
+margin-left: auto;
+margin-right: auto;
+max-width: 470px;
+min-width: 350px;
 }
 
 .cm-text-media-container .text-media-header {
@@ -2636,8 +2638,8 @@ padding-right: auto;
  width: 50%;
  flex-basis: 50%;
  float: right;
- padding-right: 30px;
-max-height: 600px;
+ max-height: 600px;
+ min-width: 500px;
 
 }
 
@@ -2687,6 +2689,52 @@ visibility: hidden;
 height: 20px; 
 background-color: #006600;
 }
+
+@media (max-width: 1250px)
+{
+.cm-asyc-photo-text-media {
+ flex-direction: column;
+
+
+}
+
+.cm-asyc-photo-text-media .cm-text-media-container{
+ width: 100%;
+
+
+}
+.cm-asyc-photo-text-media .cm-text-media-container .text-media-header h2{
+ font-size: 50px;
+
+
+}
+.cm-asyc-photo-text-media .cm-photo-media-container{
+ margin-left: auto;
+ margin-right: auto;
+
+
+}
+.cm-asyc-photo-text-media .cm-text-media-container img{
+ margin-left: 25%; 
+
+}
+
+}
+
+@media (max-width: 675px)
+{
+.cm-asyc-photo-text-media .cm-text-media-container img{
+ margin-left: 0; 
+
+}
+
+.cm-asyc-photo-text-media .cm-photo-media-container{
+ min-width: 400px;
+
+
+}
+}
+
 
 
 .cp-sp-photo-text-media-wrapper {
@@ -4514,5 +4562,19 @@ width: 100%;
 
 
 }
+.abtpg-top-container .ms-container h2 {
+font-size: 50px;
+
+}
+.abtpg-top-container .ms-container h2 {
+ margin-left:0px
+ text-align: center;
+
+}
+.abtpg-top-container .ms-container .ms-st h3 {
+ font-size: 17px;
+
+}
+
 
 }
