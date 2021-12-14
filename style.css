@@ -563,7 +563,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   background-size: cover;
 }
 
-@media (min-width: 750px)
+@media (max-width: 750px)
 {
 .subText {
  top: 75%;
@@ -571,7 +571,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .fixed-bg1 {
- bacground-size: none;
+ background-size: none;
 
 }
 
