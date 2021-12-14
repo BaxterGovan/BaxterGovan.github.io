@@ -1,4 +1,3 @@
-<script>
 var count = 0;
 var pht1 = document.getElementById("pht1");
 var pht2 = document.getElementById("pht2");
@@ -82,4 +81,3 @@ function awardsSSNext() {
 	}
 
 }
-</script>
