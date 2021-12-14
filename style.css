@@ -3108,9 +3108,7 @@ transition: 0.4 ease in out;
   transition: opacity 1s ease-in-out;
 }
 
-.aw-asym-photo-text-media.transparent {
-opacity: 0;
-}
+
 
 @keyframes fadeinout {
 
@@ -3249,6 +3247,31 @@ font-size: 13px;
 
 
 }
+
+@media (max-width: 500px) {
+
+.aw-asym-photo-text-media {
+ 
+ display: flex;
+ flex-direction: column;
+}
+.aw-photo-media-container {
+ 
+ width: 100%;
+}
+.aw-text-media-container {
+ width: 100%;
+}
+.aw-asym-photo-text-media .bottom_bar{
+ 
+ top: -15px;
+ 
+}
+
+
+
+}
+
 
 
 //This is where peoples data structures will be housed
