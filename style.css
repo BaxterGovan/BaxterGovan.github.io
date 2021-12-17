@@ -1443,16 +1443,16 @@ text-align: center;
 .testimonialBox .details .imgbox
 {
  position: relative;
- width: 60px;
+ width: 70px;
  height: 60px;
  border-radius: 50%;
  overflow: hidden;
- 
+ margin-right: 10px;
 }
 
 .testimonialBox .details .imgbox img
 {
- position: relative;
+ position: absolute;
  top: 0;
  left: 0;
  width: 100%;
@@ -1467,8 +1467,6 @@ text-align: center;
  letter-spacing: 1px;
  color: #006600;
  line-height: 1.1em;
- margin: 0 20px 12px;
- text-shadow: none;
 }
 
 .testimonialBox .details span
