@@ -1447,7 +1447,7 @@ text-align: center;
  height: 60px;
  border-radius: 50%;
  overflow: hidden;
- margin-right: 10px;
+ 
 }
 
 .testimonialBox .details .imgbox img
@@ -1467,6 +1467,8 @@ text-align: center;
  letter-spacing: 1px;
  color: #006600;
  line-height: 1.1em;
+ margin: 0 20px 12px;
+ text-shadow: none;
 }
 
 .testimonialBox .details span
