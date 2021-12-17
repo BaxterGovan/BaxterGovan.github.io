@@ -799,11 +799,24 @@ margin-right: auto;
 	{
     		max-height: 75px;
 		heig/ht: 75px;
-		min-width: 46%;
+		min-width: 50%;
     		w/idth: 75px;
 	}
 	
-    		
+        .tb-container .tb-text .tb-text-container
+	{
+   		margin-left: auto;
+    		margin-right: auto;
+	}
+
+        .tb-container .tb-text .tb-text-container h3
+	{
+   		font-size: 50px;
+	}
+        .tb-container .tb-text .tb-text-container p1
+	{
+   		font-size: 18px;
+	}
 	
 	.tb-container .tb-display .linework
 	{
