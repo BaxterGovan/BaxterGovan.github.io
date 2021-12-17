@@ -1480,6 +1480,7 @@ text-align: center;
  letter-spacing: 1px;
  color: #006600;
  line-height: 1.1em;
+ test-shadow:none;
 }
 
 .testimonialBox .details span
@@ -1491,6 +1492,15 @@ text-align: center;
 .swiper-container-3d .swiper-slide-shadow-left,
 .swiper-container-3d .swiper-slide-shadow-right{
  background-image: none;
+}
+
+@media (max-width: 500px)
+{
+ .testimonialBox .details h3
+
+
+
+
 }
 
 
