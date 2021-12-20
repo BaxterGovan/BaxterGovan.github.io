@@ -2126,7 +2126,7 @@ transform: scale(1.05);
   left: 50%;
   transition: .5s;
   fil/ter: grayscale(1000%);
-  opacity: 0;
+  opacity: 1;
 }
 
 .client_thumbnails li img.active {
