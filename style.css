@@ -2394,6 +2394,30 @@ font-size: 15px;
  color: #fff;
 }
 
+@media (max-width: 991px)
+{
+ .contact-pg h2 {
+	font-size: 60px;
+
+
+}
+
+
+}
+
+@media (max-width: 480px)
+{
+ .contact-pg h2 {
+	font-size: 45px;
+
+
+}
+
+
+}
+
+
+
 .contact-inf-container { 
  width: 100%;
  display: flex;
@@ -2538,11 +2562,12 @@ min-width: 400px;
  
  .contact-inf-container {
   flex-direction: column;
- width: 150%;
+ width: 100%;
  } 
  
  .contact-inf-container .contact-inf {
   margin-bottom: 40px;
+  min-width: 250px;
  }
 
 .contact-inf-container .contact-inf,
@@ -2556,6 +2581,7 @@ min-width: 400px;
 {
 .contact-inf-container .contact-inf .box-inf  {
  margin-bottom: 10px;
+ min-width: 250px;
 }
 
 .contact-inf-container .contact-inf .box-inf .icon  {
@@ -2566,6 +2592,11 @@ min-width: 400px;
  margin-left: auto;
  margin-right: auto;
 }
+
+.contact-inf-container .contact-inf .box-inf:hover .icon {
+ transform: scale(1.0);
+}
+
 
 }
 
