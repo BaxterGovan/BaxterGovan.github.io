@@ -3633,15 +3633,8 @@ width: 100%;
 	padding: 0px 0px 0px 0px;
 	
     }
-    .people_modal-content {
-	min-width: 480px;
-	max-width: 480px;
-	border: 0px;
-	padding: 0px 0px 0px 0px;
-	max-width: 480px;
-	margin-left: auto;
-	margin-right: auto;
-	height: auto;
+    .people_modal-content-projects {
+	max-width: 100%;
 
     }
 
@@ -3667,8 +3660,8 @@ width: 100%;
 
 
 @media screen and (max-width: 600px) {
-
-    .people_modal-content-project {
+/*
+    .people_modal-content-projects {
 	min-width: 480px;
 	max-width: 480px;
 	border: 0px;
@@ -3679,7 +3672,7 @@ width: 100%;
 	height: auto;
 
     }
-
+*/
     .people_image-slide {
 	min-width: 375px;
 	min-height: 0;
