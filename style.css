@@ -4225,8 +4225,9 @@ width: 100px;
 @media (max-width: 500px)
 {
 
-	.collapse-container2 {
-
+	.collapse-container2 .collapsible2{
+		
+		width: 400px;
 		
 	}
 
