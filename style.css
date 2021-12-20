@@ -3058,6 +3058,16 @@ min-height: 300px;
  z-index: 6;
 }
 
+@media (max-width: 500px)
+{
+.projects_thumbnails_sgl li .hvr-name-disp p {
+
+ font-size: 20px;
+
+}
+
+}
+
 .projects_container_sgl ul {
   display: block;
 }
@@ -3629,6 +3639,7 @@ width: 100%;
 
     .people_image-slide {
 	min-width: 480px;
+
 	
     }
 
@@ -3645,6 +3656,34 @@ width: 100%;
     }
 
 }
+
+
+@media screen and (max-width: 600px) {
+
+
+	
+    }
+    .people_modal-content-project {
+	min-width: 480px;
+	max-width: 480px;
+	border: 0px;
+	padding: 0px 0px 0px 0px;
+	max-width: 420px;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+
+    }
+
+    .people_image-slide {
+	min-width: 375px;
+	min-height: 0;
+	
+    }
+
+
+}
+
 //---------------------------- temp carrosel ---------------------
 
 .slider1{
