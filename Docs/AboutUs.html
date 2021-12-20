@@ -537,11 +537,11 @@ let detailBarsOptions = {
 	threshold: .2
 }
 
-let clientLogos = [...document.querySelectorAll('.client_thumbnails li img')];
+let AwardSS = [...document.querySelectorAll('.award-ss-container')];
 
-let clientLogosOptions = {
+let AwardSSOptions = {
 	rootMargin: '0%',
-	threshold: .8
+	threshold: 1
 }
 
 
@@ -551,9 +551,9 @@ let setDetailsActive = ( entries => {
 		if(entry.isIntersecting) {
 			entry.target.classList.add('active')
 		}
-		else {
+		/*else {
 			entry.target.classList.remove('active')
-		}
+		}*/
 		
 	})
 });
@@ -563,9 +563,11 @@ let observer = new IntersectionObserver(setDetailsActive, detailBarsOptions);
 detailBars.forEach((item) => {
 observer.observe(item)
 })
-let observerLogos = new IntersectionObserver(setDetailsActive, clientLogosOptions);
-clientLogos.forEach((item) => {
-observerLogos.observe(item)
+
+let observer2 = new IntersectionObserver(setDetailsActive, AwardSSOptions);
+
+AwardSS.forEach((item) => {
+observer2.observe(item)
 })
 
 
