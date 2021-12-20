@@ -2582,6 +2582,7 @@ min-width: 400px;
 .contact-inf-container .contact-inf .box-inf  {
  margin-bottom: 10px;
  min-width: 250px;
+ padding-top: 25px;
 }
 
 .contact-inf-container .contact-inf .box-inf .icon  {
@@ -2591,10 +2592,7 @@ min-width: 400px;
 .contact-inf-container .contact-inf .box-inf .text-inf  {
  margin-left: auto;
  margin-right: auto;
-}
-
-.contact-inf-container .contact-inf .box-inf:hover .icon {
- transform: scale(1.0);
+ padding-top: 10px;
 }
 
 
