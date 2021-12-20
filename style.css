@@ -2033,6 +2033,17 @@ opacity: 1;
 
 }
 
+@media (max-width: 600px)
+{
+
+	.svr-ds-tp-inf-container .tp-inf-wrapper h2
+	{
+		font-size: 45px;
+	}
+
+
+}
+
 .ctus-container {
 
 height: 300px;
