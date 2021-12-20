@@ -3634,13 +3634,13 @@ width: 100%;
 	
     }
     .people_modal-content-projects {
-	max-width: 100%;
+	min-width: 100%;
 
     }
 
-    .people_image-slide {
-	min-width: 480px;
-
+     .people_image-slide {
+	min-width: 375px;
+	min-height: 0;
 	
     }
 
@@ -3673,11 +3673,7 @@ width: 100%;
 
     }
 */
-    .people_image-slide {
-	min-width: 375px;
-	min-height: 0;
-	
-    }
+
 
 
 }
