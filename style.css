@@ -2404,7 +2404,7 @@ font-size: 15px;
 
 @media (max-width: 991px)
 {
- .contact-pg h2 {
+ .contact-pg-container .contact-pg h2 {
 	font-size: 60px;
 
 
@@ -2415,7 +2415,7 @@ font-size: 15px;
 
 @media (max-width: 480px)
 {
- .contact-pg h2 {
+ .contact-pg-container .contact-pg h2 {
 	font-size: 45px;
 
 
