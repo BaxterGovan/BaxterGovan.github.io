@@ -1565,7 +1565,15 @@ color: #006600;
 
 }
 
+@media (max-width: 800px)
+{
+.image-mosaic-wrapper h2 {
+	font-size: 30px;
 
+}
+
+
+}
 .image-mosaic-info{
  width: 50%;
  height:664px;
@@ -2789,13 +2797,18 @@ background-color: #006600;
 
 @media (max-width: 675px)
 {
+.cm-asyc-photo-text-media {
+ width: 90%;
+
+
+}
 .cm-asyc-photo-text-media .cm-text-media-container img{
  margin-left: 0; 
 
 }
 
 .cm-asyc-photo-text-media .cm-photo-media-container{
- min-width: 400px;
+ min-width: 380px;
 
 
 }
@@ -4718,7 +4731,7 @@ margin-bottom: 50px;
 	}
 	.awards-ss-majorContainer .award-ss-container.active .award-ss-minimized .award-ss-mini-prev3 {
  		position: relative;
- 		width: calc((100vw / 3.8) )!important;
+ 		width: calc((100vw / 3.9) )!important;
  		left: 100px;
  		top: 0px;
 	}
