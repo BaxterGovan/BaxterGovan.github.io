@@ -1303,6 +1303,9 @@ height: 500px;
  line-height: 1em;
  padding: 10px 40px;
  font-size: 20px;
+ text-shadow: none;
+ letter-spacing: 0;
+ margin: 0 0 0;
 }
 
 .text_column a
