@@ -4660,7 +4660,7 @@ min-width: 100%;
 @media (max-width: 550px){
 
   .pw-container .text-container {
-	left: none;
+	left: 0;
 	max-width:none;
    }
 
