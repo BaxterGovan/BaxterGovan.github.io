@@ -4115,7 +4115,7 @@ height: 400px;
 }
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
 
 .collapse-container { 
   
@@ -4129,6 +4129,40 @@ height: 400px;
 }
 .collapsible .img-holder {
   width: 450px;
+
+}
+.collapseContent {
+top: -75px;
+}
+
+}
+
+.button_plus {
+  float: right;
+ padding: 18px;
+}
+
+.button_plus p{
+  font-size: 30px;
+  color: black;
+}
+
+
+@media (max-width: 500px){
+
+.collapse-container { 
+  
+  margin-left: 1%; 
+  margin-right: 1%; 
+  width: 400px;
+}
+ .collapsible {
+
+  width: 400px;
+  font-size: 20;
+}
+.collapsible .img-holder {
+  width: 400px;
 
 }
 .collapseContent {
