@@ -1948,6 +1948,31 @@ z-index: 50;
 
 }
 
+@media (max-width: 1250px)
+{
+	
+	.svr-ds-tp-img-container .tp-img-wrapper img{
+
+ 		top: 0;
+ 		width: 1275px;
+
+	}
+
+}
+@media (max-width: 700px)
+{
+	
+	.svr-ds-tp-img-container .tp-img-wrapper img{
+
+
+ 		left: -440px;
+ 
+
+	}
+
+}
+
+
 .svr-ds-tp-inf-container {
 width: calc(100%-75px);
 height: 200px;
@@ -3284,7 +3309,7 @@ font-size: 15px;
  } 
 
 .projects_thumbnails_sgl li {
- 	min-he/ight: 230px;
+ 	min-hight: 280px;
 }
 
 }
