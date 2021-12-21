@@ -4636,6 +4636,11 @@ min-width: 100%;
 	max-height: 400px;
 
    }
+ 	.pw-container .text-container a {
+	
+		opacity: 1;
+	
+	}
 
  	.pw-container1 {
 	
@@ -4651,6 +4656,16 @@ min-width: 100%;
 	.pw-container1 .media-half2 {
 		width: 100%;
 		
+		
+	}
+ 	.pw-container1 .text-container a {
+	
+		opacity: 1;
+	
+	}
+	.pw-container1 .media-half2 .text-container2 h2 {
+		
+		font-size: 35px;
 		
 	}
 
