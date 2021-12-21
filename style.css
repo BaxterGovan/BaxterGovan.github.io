@@ -4431,6 +4431,15 @@ top:-50px;
  align-items: flex-end;
 
 }
+.pw-container1 {
+ position: relative;
+ width: 100%;
+ height: 400px;
+ margin: 0 auto;
+ display:flex;
+ align-items: flex-end;
+
+}
 
 .pw-container .media {
 
@@ -4493,7 +4502,25 @@ min-width: 100%;
 
   .pw-container .media .pw-img{
 	max-height: 400px;
+
    }
+
+ 	.pw-container1 {
+	
+		flex-direction: column;
+		margin-bottom: 25px;
+	
+	}
+	.pw-container1 .media-half1 {
+		width: 100%;
+		
+		
+	}
+	.pw-container1 .media-half2 {
+		width: 1005;
+		
+		
+	}
 
 }
 
