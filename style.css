@@ -156,6 +156,9 @@ display: none;
  height: 70px;
 }
 
+}
+@media (max-width: 969px) {
+
 #navbar ul .collapsedNavbar {
 
 display: list-item;
