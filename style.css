@@ -1678,7 +1678,7 @@ cur/sor: pointer;
   float: left;
   width: 32%;
   margin-left: 0.8%;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: auto; 
   align-items: center;
   justify-content: center;
   
@@ -1789,6 +1789,7 @@ font-size: 30px;
  		margin-left: auto;
  		margin-right: auto;
 		margin-bottom: 30px;
+
 	}
 
 
