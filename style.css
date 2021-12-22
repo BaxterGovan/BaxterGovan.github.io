@@ -2981,6 +2981,7 @@ background-color: #006600;
 	.cm-asyc-photo-text-media .cm-photo-media-container{
  		margin-left: auto;
  		margin-right: auto;
+		overflow: hidden;
 	}
 	.cm-asyc-photo-text-media .cm-text-media-container img{
  		margin-left: 25%; 
@@ -4895,6 +4896,21 @@ margin-bottom: 50px;
  margin-top: 10px;
  
 }
+
+
+@media (max-width: 650px)
+{
+
+	.Info_container1 .Info_row ,Info_column {
+		
+		text-align: center;
+		width: 49%;
+		
+	}
+
+
+}
+
 /* Info_container 1 & 2 Seperation */
 
 .Info_container2 {
@@ -4948,6 +4964,21 @@ margin-bottom: 50px;
  padding-left: 100px;
 
 }
+
+
+@media (max-width: 1000px)
+{
+
+	.Info_container2 h3 {
+		
+		font-size: 45px;
+		
+	}
+
+
+
+}
+
 
 /* ------------------------------------Award slideshow on about us page start -------------------------------*/
 
