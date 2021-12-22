@@ -65,6 +65,10 @@ float: left;
 // height: 60px;
 }
 
+#navbar ul .collapsedNavbar {
+display: none;
+}
+
 #navbar ul li a {
   /*float: left;
   display: block; 
@@ -150,6 +154,11 @@ float: left;
 
 #navbar ul li {
  height: 70px;
+}
+
+#navbar ul .collapsedNavbar {
+
+display: list-item;
 }
 
 }
