@@ -4789,7 +4789,12 @@ min-width: 100%;
 		
 		
 	}
- 	.pw-container1 .text-container a {
+ 	.pw-container1 .text-container1 a {
+	
+		opacity: 1;
+	
+	}
+ 	.pw-container1 .text-container2 a {
 	
 		opacity: 1;
 	
