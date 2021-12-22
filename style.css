@@ -917,7 +917,8 @@ wid//th: 100%;
 wid/th: 33%;
  height: 350px;
  border-radius: 10px;
- marg/in: 20px;
+ margin-right: 20px;
+ margin-left: 20px;
  display: flex;
  transition: 0.5s;
  justify-content: flex-start;
@@ -1034,6 +1035,8 @@ text-decoration: none;
 	}
 	.container .card
 	{
+	 margin-left: 0;
+ 	 margin-right: 0;
 	 margin-bottom: 40px;
 	}
 }
@@ -1664,6 +1667,13 @@ cur/sor: pointer;
  
 }
 
+.Info_container .Info_row {
+
+ display: flex;
+ flex-direction: row;
+
+} 
+
 .Info_container .Info_row .Info_column {
   float: left;
   width: 32%;
@@ -1762,30 +1772,35 @@ font-size: 30px;
 @media (max-width: 1000px)
 {
 
-	Info_container h3 {
+	.Info_container h3 {
 		
 		font-size: 35px;
 		
 	}
+	
+	.Info_container .Info_row [
+		flex-direction: column;
+		
+		
+	}
 
-.Info_column {
- width: 48.2%;
- margin-left: 1%;
- margin-right: 0.8%;
-  height: 300px; /* Should be removed. Only for demonstration */
+	.Info_container .Info_row .Info_column {
+		width: 600px;
+ 		margin-left: auto;
+ 		margin-right: auto;
+		margin-bottom: 30px;
+	}
+
+
 }
 
-
-}
-
-@media (max-width: 480px)
+@media (max-width: 620px)
 {
-.Info_column {
- width: 99%;
- margin-left: 0.5%;
- margin-right: 0.5%;
+	.Info_container .Info_row .Info_column {
+ 		width: 400px;
+
   
-}
+	}
 
 
 }
