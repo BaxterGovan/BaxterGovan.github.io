@@ -3439,8 +3439,8 @@ font-size: 15px;
 	font-size: 6.5vw;
  } 
 
-.projects_thumbnails_sgl li {
- 	min-height: 280px;
+.projects_thumbnails_sgl li a img {
+ 	top: -5%;
 }
 
 }
