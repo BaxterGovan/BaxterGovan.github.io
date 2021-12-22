@@ -4929,7 +4929,7 @@ margin-bottom: 50px;
 }
 .Info_container2 .Info_column {
  flex: 0 0 23%;
- max-width: 23%;
+ max-width: 50%;
  margin-left: 0.5%;
  margin-right: 0.5%;
 }
