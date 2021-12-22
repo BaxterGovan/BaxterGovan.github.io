@@ -799,12 +799,19 @@ margin-right: auto;
     		display: flex;
     		
 	}
+	.tb-container .tb-display .button-container
+	{
+    		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+    		
+	}
 	.tb-container .tb-display .tablinks
 	{
     		max-height: 75px;
 		heig/ht: 75px;
-		min-width: 50%;
-    		w/idth: 75px;
+		width: 75px;
+    		
 	}
 	
         .tb-container .tb-text .tb-text-container
@@ -1403,6 +1410,13 @@ text-align: center;
 .QA_container .swipeArrows {
 
  display: flex;
+ justify-content: center;
+
+}
+.QA_container .swipeArrows img{
+
+ height: 70px;
+ width: 70px;
 
 }
 .QA_container .swipeArrows .reversed {
