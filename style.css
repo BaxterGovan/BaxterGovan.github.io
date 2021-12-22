@@ -1778,7 +1778,7 @@ font-size: 30px;
 		
 	}
 	
-	.Info_container .Info_row [
+	.Info_container .Info_row {
 		flex-direction: column;
 		
 		
