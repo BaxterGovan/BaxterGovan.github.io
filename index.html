@@ -848,12 +848,12 @@ let detailBarsOptions = {
 	threshold: .2
 }
 
-/*let clientLogos = [...document.querySelectorAll('.client_thumbnails li img')];
+let card = [...document.querySelectorAll('.cardContain .container .card')];
 
-let clientLogosOptions = {
+let cardOptions = {
 	rootMargin: '0%',
 	threshold: .8
-}*/
+}
 
 
 let setDetailsActive = ( entries => {
@@ -869,6 +869,12 @@ let setDetailsActive = ( entries => {
 	})
 });
 
+let observer1 = new IntersectionObserver(setDetailsActive, cardOptions);
+
+card.forEach((item) => {
+observer1.observe(item)
+})
+	
 let observer2 = new IntersectionObserver(setDetailsActive, detailBarsOptions);
 
 detailBars.forEach((item) => {
