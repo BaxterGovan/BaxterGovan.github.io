@@ -819,7 +819,7 @@ margin-right: auto;
 	}
         .tb-container .tb-text .tb-text-container p
 	{
-   		font-size: 24px;
+   		font-size: 22px;
 	}
 	
 	.tb-container .tb-display .linework
@@ -872,9 +872,14 @@ margin-right: auto;
 
 	.tb-container .tb-text 
 	{
-
+		margin-top: 30px;
 		width: 100%;
 		top:85px;
+    		
+	}
+	.tb-container .tb-text h3
+	{
+		margin: 0 auto 18px;
     		
 	}
 
