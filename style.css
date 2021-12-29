@@ -5354,6 +5354,14 @@ margin-bottom: 50px;
 
 /* ------------------------------------Award slideshow on about us page End -------------------------------*/
 
+.abtpg-top-container2 h2  {
+
+display: none;
+
+}
+
+
+
 .abtpg-top-container {
 
 display: inline-flex
@@ -5370,18 +5378,18 @@ display: inline-flex
 
 @media (max-width : 1420) {
 
-	.abtpg-top-container .ms-container #title {
+	.abtpg-top-container .ms-container h2 {
 		display: none;
  
 	}
-	.abtpg-top-container2 #title2 {
+	.abtpg-top-container2 h2 {
 		display: block;
  		color: #006600;
 		font-size: 60px;
 		text-align: center;
 	}
 	
-	.ms-container .ms-st .ms-link {
+	.abtpg-top-container .ms-container .ms-st .ms-link {
 		display: none;
  
 	}
@@ -5390,7 +5398,7 @@ display: inline-flex
 		width: 100%;	
 		
 	}
-	.outside-ms-link ms-link {
+	.outside-ms-link .ms-link {
     		position: relative;
     		color: #fff;
     		background: green;
@@ -5407,7 +5415,7 @@ display: inline-flex
 	
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
 
 .abtpg-top-container {
  flex-direction: column;
@@ -5426,12 +5434,8 @@ width: 100%;
 
 
 }
-.abtpg-top-container .ms-container #title {
-display: block;
- 
-}
 	
-.abtpg-top-container2 #title2 {
+.abtpg-top-container2 h2 {
 display: none;
  
 }
@@ -5440,7 +5444,7 @@ display: inline-block;
  
 }
 
-.outside-ms-link ms-link {
+.outside-ms-link .ms-link {
 display:none;
 	
 }
@@ -5448,6 +5452,7 @@ display:none;
 	
 .abtpg-top-container .ms-container h2 {
 font-size: 50px;
+display: block;
 
 }
 .abtpg-top-container .ms-container h2 {
