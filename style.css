@@ -823,9 +823,9 @@ margin-right: auto;
 	}
 	.tb-container .tb-display .tablinks
 	{
-    		max-height: 75px;
+    		max-height: 100px;
 		heig/ht: 75px;
-		width: 70px;
+		width: 100px;
     		
 	}
 	
@@ -841,7 +841,7 @@ margin-right: auto;
 	}
         .tb-container .tb-text .tb-text-container p
 	{
-   		font-size: 22px;
+   		font-size: 30px;
 	}
 	
 	.tb-container .tb-display .linework
@@ -907,6 +907,24 @@ margin-right: auto;
 	
 }
 
+@media only screen and (max-width: 800px)
+{
+	
+	.tb-container .tb-display .tablinks
+	{
+    		max-height: 75px;
+		heig/ht: 75px;
+		width: 70px;
+    		
+	}
+	
+        
+        .tb-container .tb-text .tb-text-container p
+	{
+   		font-size: 22px;
+	}
+
+}
 
 
 
