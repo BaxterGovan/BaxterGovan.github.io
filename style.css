@@ -5360,7 +5360,9 @@ display: none;
 
 }
 
-
+.outside-ms-link .ms-link {
+display: none;
+}
 
 .abtpg-top-container {
 
