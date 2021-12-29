@@ -5365,7 +5365,7 @@ display: none;
 .abtpg-top-container {
 
 display: inline-flex
-
+align-items: center;
 }
 
 .abtpg-top-container .img-holder 
