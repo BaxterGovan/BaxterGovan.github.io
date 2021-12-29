@@ -5378,7 +5378,7 @@ align-items: center;
 }
 
 
-@media (max-width : 1420) {
+@media (max-width: 1420px) {
 
 	.abtpg-top-container .ms-container h2 {
 		display: none;
