@@ -663,7 +663,13 @@ posititon: relative;
  text-align: center;
 }
 
-
+.tb-container .tb-content .phoneLabel {
+ position: relative; 
+ text-align: center; 
+ font-weight: 500;
+ opacity: 0;
+	
+}
 
 .tb-container .tb-display .tb-logo 
 {
@@ -922,6 +928,14 @@ margin-right: auto;
         .tb-container .tb-text .tb-text-container p
 	{
    		font-size: 20px;
+	}
+	.tb-container .tb-content .phoneLabel {
+		animation: blinker 4s linear infinite;
+	}
+	@keyframes blinker {
+		50% {
+			opacity: 0;
+		    }
 	}
 
 }
