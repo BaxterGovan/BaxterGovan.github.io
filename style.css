@@ -931,6 +931,7 @@ margin-right: auto;
 	}
 	.tb-container .tb-content .phoneLabel {
 		animation: blinker 4s linear infinite;
+		opacity: 0.4;
 	}
 	@keyframes blinker {
 		50% {
