@@ -24,7 +24,7 @@
 				{
 					setTimeout(function() {minusOpacity(pht)},0);
 				}
-				setTimeout(function() {switch2(pht},1000);
+				setTimeout(function() {switch2(pht)},1000);
 
 				for(let i=0;i<1;i++)
 				{
@@ -54,7 +54,7 @@
 				{
 					setTimeout(function() {minusOpacity(pht)},0);
 				}
-				setTimeout(function() {switch3(pht)},1000);
+				setTimeout(function() {switch4(pht)},1000);
 				/*pht.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\Scott.jpg"*/
 				for(let i=0;i<1;i++)
 				{
