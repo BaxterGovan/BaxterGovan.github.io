@@ -719,12 +719,13 @@ function CS_showSlides() {
 
     //stop the image slider autoplay on mouseover
     slider.addEventListener("mouseover", () => {
-	    console.log("Inside Slider")
+	    console.log("Inside Slider");
       clearTimeout(playSlider);
     });
 
     //start the image slider autoplay again on mouseout
     slider.addEventListener("mouseout", () => {
+	    console.log("Outside Slider");
       repeater();
     });
     </script>
