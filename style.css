@@ -2885,7 +2885,7 @@ width: 80%;
  margin-right: auto;
 }
 
-.cm-asyc-photo-text-media {
+.cm-asyc-photo-text-media .holdContainer {
 	display: flex;
 	flex-direction: column;
 	width: 50%;
