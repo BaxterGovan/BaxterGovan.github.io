@@ -2893,13 +2893,13 @@ width: 80%;
 
 .cm-text-media-container {
  float: left;
- width: 40%;
+ width: 100%;
  flex-basis: 50%;
  padding-right: 30px;
  padding-left: 30px;
 }
 
-.cm-text-media-container .holdContainer img {
+.cm-asyc-photo-text-media .holdContainer img {
 margin-top: 50px;
  width: 80%;
 margin-left: auto;
