@@ -2885,6 +2885,12 @@ width: 80%;
  margin-right: auto;
 }
 
+.cm-asyc-photo-text-media {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
 .cm-text-media-container {
  float: left;
  width: 40%;
