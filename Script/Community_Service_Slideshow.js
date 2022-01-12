@@ -48,13 +48,27 @@
 				}
 				track = 3;
 			}
-        else if(track == 3)
+        		else if(track == 3)
 			{
 				for(let i=0;i<1;i++)
 				{
 					setTimeout(function() {minusOpacity(pht)},0);
 				}
 				setTimeout(function() {switch4(pht)},1000);
+				/*pht.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\Scott.jpg"*/
+				for(let i=0;i<1;i++)
+				{
+					setTimeout(function() {addOpacity(pht)},1000);
+				}
+				track = 4;
+			}
+			else if(track == 4)
+			{
+				for(let i=0;i<1;i++)
+				{
+					setTimeout(function() {minusOpacity(pht)},0);
+				}
+				setTimeout(function() {switch5(pht)},1000);
 				/*pht.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\Scott.jpg"*/
 				for(let i=0;i<1;i++)
 				{
@@ -82,6 +96,9 @@
  function switch3(event) {
 	event.src = "/Photos/HillsideLogo.png";
  }
- function switch4(event) {
+function switch4(event) {
+	event.src = "/Photos/HumanClay.PNG";
+ }
+ function switch5(event) {
 	event.src = "/Photos/HFH_logo.png";
  }
