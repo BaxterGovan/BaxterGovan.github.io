@@ -3028,6 +3028,10 @@ background-color: #006600;
 
 
 	}
+	.cm-asyc-photo-text-media .holdContainer {
+	
+		width: 100%;
+	}
 	.cm-asyc-photo-text-media .cm-text-media-container .text-media-header h2{
  		font-size: 50px;
 
