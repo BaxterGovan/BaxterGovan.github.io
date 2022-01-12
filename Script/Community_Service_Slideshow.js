@@ -1,104 +1,104 @@
-    	var playSlider;
-    	var track = 0;
-	var pht = document.getElementById("communityService-photo-switch");
+    	var playSlider1;
+    	var track1 = 0;
+	var photo = document.getElementById("communityService-photo-switch");
 
-    	var repeater = () => {
-      		playSlider = setInterval(function(){
-			if(track == 0) {
+    	var repeater1 = () => {
+      		playSlider1 = setInterval(function(){
+			if(track1 == 0) {
 				
 				for(let i=0;i<1;i++)
 				{
-					setTimeout(function() {minusOpacity(pht)},0);
+					setTimeout(function() {minusOpacity(photo)},0);
 				}
-				setTimeout(function() {switch1(pht)},1000);
+				setTimeout(function() {theSwitch1(photo)},1000);
 				/*pht.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\BrianFoster_Award.jpg"*/
 				for(let i=0;i<1;i++)
 				{
-					setTimeout(function() {addOpacity(pht)},1000);
+					setTimeout(function() {addOpacity(photo)},1000);
 				}
-				track++;
+				track1++;
 				
 			}
-			else if( track == 1) {
+			else if( track1 == 1) {
 				for(let i=0;i<1;i++)
 				{
-					setTimeout(function() {minusOpacity(pht)},0);
+					setTimeout(function() {minusOpacity(photo)},0);
 				}
-				setTimeout(function() {switch2(pht)},1000);
+				setTimeout(function() {theSwitch2(photo)},1000);
 
 				for(let i=0;i<1;i++)
 				{
-					setTimeout(function() {addOpacity(pht)},1000);
+					setTimeout(function() {addOpacity(photo)},1000);
 				}
 				
-				track++;
+				track1++;
 				
 			}
-			else if(track == 2)
+			else if(track1 == 2)
 			{
 				for(let i=0;i<1;i++)
 				{
-					setTimeout(function() {minusOpacity(pht)},0);
+					setTimeout(function() {minusOpacity(photo)},0);
 				}
-				setTimeout(function() {switch3(pht)},1000);
+				setTimeout(function() {theSwitch3(photo)},1000);
 				/*pht.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\Scott.jpg"*/
 				for(let i=0;i<1;i++)
 				{
-					setTimeout(function() {addOpacity(pht)},1000);
+					setTimeout(function() {addOpacity(photo)},1000);
 				}
-				track = 3;
+				track1 = 3;
 			}
-        		else if(track == 3)
+        		else if(track1 == 3)
 			{
 				for(let i=0;i<1;i++)
 				{
-					setTimeout(function() {minusOpacity(pht)},0);
+					setTimeout(function() {minusOpacity(photo)},0);
 				}
-				setTimeout(function() {switch4(pht)},1000);
+				setTimeout(function() {theSwitch4(photo)},1000);
 				/*pht.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\Scott.jpg"*/
 				for(let i=0;i<1;i++)
 				{
-					setTimeout(function() {addOpacity(pht)},1000);
+					setTimeout(function() {addOpacity(photo)},1000);
 				}
-				track = 4;
+				track1 = 4;
 			}
-			else if(track == 4)
+			else if(track1 == 4)
 			{
 				for(let i=0;i<1;i++)
 				{
-					setTimeout(function() {minusOpacity(pht)},0);
+					setTimeout(function() {minusOpacity(photo)},0);
 				}
-				setTimeout(function() {switch5(pht)},1000);
+				setTimeout(function() {theSwitch5(photo)},1000);
 				/*pht.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\Scott.jpg"*/
 				for(let i=0;i<1;i++)
 				{
-					setTimeout(function() {addOpacity(pht)},1000);
+					setTimeout(function() {addOpacity(photo)},1000);
 				}
-				track = 0;
+				track1 = 0;
 			}
 
 	      }, 10000);
     	}
-    repeater();
+    repeater1();
 
- function minusOpacity(event) {
-	event.style.opacity = 0;
+ function minusOpacity(event1) {
+	event1.style.opacity = 0;
  }
- function addOpacity(event) {
-	event.style.opacity = 1;
+ function addOpacity(event1) {
+	event1.style.opacity = 1;
  }
- function switch1(event) {
-	event.src = "/Photos/Associations/ACS.png";
+ function theSwitch1(event1) {
+	event1.src = "/Photos/Associations/ACS.png";
  }
- function switch2(event) {
-	event.src = "/Photos/Associations/GCCA.png";
+ function theSwitch2(event1) {
+	event1.src = "/Photos/Associations/GCCA.png";
  }
- function switch3(event) {
-	event.src = "/Photos/HillsideLogo.png";
+ function theSwitch3(event1) {
+	event1.src = "/Photos/HillsideLogo.png";
  }
-function switch4(event) {
-	event.src = "/Photos/HumanClay.PNG";
+function theSwitch4(event1) {
+	event1.src = "/Photos/HumanClay.PNG";
  }
- function switch5(event) {
-	event.src = "/Photos/HFH_logo.png";
+ function theSwitch5(event1) {
+	event1.src = "/Photos/HFH_logo.png";
  }
