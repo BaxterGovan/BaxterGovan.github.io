@@ -652,7 +652,7 @@ function CS_showSlides() {
     const slideIcons = document.querySelectorAll(".slide-icon");
     const numberOfSlides = slides.length;
     var slideNumber = 0;
-    var playSlider;
+    
 	
 	
     //image slider next button
@@ -694,7 +694,7 @@ function CS_showSlides() {
     });
 
     //image slider autoplay
-    
+    var playSlider;
 
     var repeater = () => {
       playSlider = setTimeout(function(){
