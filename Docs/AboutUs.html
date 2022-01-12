@@ -652,6 +652,7 @@ function CS_showSlides() {
     const slideIcons = document.querySelectorAll(".slide-icon");
     const numberOfSlides = slides.length;
     var slideNumber = 0;
+	var basicallyBool= 0;
     
 	
 	
@@ -698,6 +699,7 @@ function CS_showSlides() {
 
     var repeater = () => {
       playSlider = setInterval(function(){
+	      if(basicallyBool == 0){
         slides.forEach((slide) => {
           slide.classList.remove("active");
         });
@@ -713,6 +715,7 @@ function CS_showSlides() {
 
         slides[slideNumber].classList.add("active");
         slideIcons[slideNumber].classList.add("active");
+	}
       }, 4000);
     }
     repeater();
@@ -720,11 +723,13 @@ function CS_showSlides() {
     //stop the image slider autoplay on mouseover
     slider.addEventListener("mouseover", () => {
 	    console.log("Inside Slider");
+	    basicallyBool = 1;
       clearInterval(playSlider);
     });
 
     //start the image slider autoplay again on mouseout
     slider.addEventListener("mouseout", () => {
+	    basicallyBool = 0;
 	    console.log("Outside Slider");
       repeater();
     });
