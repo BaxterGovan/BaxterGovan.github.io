@@ -4101,7 +4101,7 @@ width: 100%;
   transform: translateY(-50px);
   margin: 0 6px;
   border-radius: 2px;
-  box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+  box-shadow: 0 5px 25px rgb(1 1 1 / 50%);
 }
 
 .navigation1-visibility .slide-icon.active{
