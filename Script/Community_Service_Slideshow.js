@@ -1,6 +1,6 @@
     	var playSlider;
     	var track = 0;
-	var pht = document.getElementById("photo-switch-communityService");
+	var pht = document.getElementById("communityService-photo-switch");
 
     	var repeater = () => {
       		playSlider = setInterval(function(){
