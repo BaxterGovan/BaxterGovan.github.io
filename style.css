@@ -4108,6 +4108,17 @@ width: 100%;
   background: #33cc33;
 }
 
+.navigation1-visiblity .PrevArrow {
+	transform: translateY(-63px);
+	cursor: pointer;
+	
+}
+
+.navigation1-visiblity .NextArrow {
+	transform: translateY(-63px);
+	cursor: pointer;
+}
+
 @media (max-width: 900px){
   .slider1{
     width: 100%;
