@@ -663,7 +663,7 @@ function CS_showSlides() {
       slideIcons.forEach((slideIcon) => {
         slideIcon.classList.remove("active");
       });
-	clearTimeout(playSlider);
+	clearInterval(playSlider);
       slideNumber++;
 
       if(slideNumber > (numberOfSlides - 1)){
@@ -682,7 +682,7 @@ function CS_showSlides() {
       slideIcons.forEach((slideIcon) => {
         slideIcon.classList.remove("active");
       });
-	clearTimeout(playSlider);
+	clearInterval(playSlider);
       slideNumber--;
 
       if(slideNumber < 0){
@@ -697,7 +697,7 @@ function CS_showSlides() {
     var playSlider;
 
     var repeater = () => {
-      playSlider = setTimeout(function(){
+      playSlider = setInterval(function(){
         slides.forEach((slide) => {
           slide.classList.remove("active");
         });
@@ -720,7 +720,7 @@ function CS_showSlides() {
     //stop the image slider autoplay on mouseover
     slider.addEventListener("mouseover", () => {
 	    console.log("Inside Slider");
-      clearTimeout(playSlider);
+      clearInterval(playSlider);
     });
 
     //start the image slider autoplay again on mouseout
