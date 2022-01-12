@@ -2399,6 +2399,7 @@ transform: scale(1.05);
 .projects_container {
 
  width:100%;
+ margin-bottom: 200px;
 }
 
 
@@ -2614,6 +2615,7 @@ font-size: 15px;
  flex-direction: column;
  background: url("/Photos/cameron-venti-oiC4Z7BUYAc-unsplash.jpg");
  background-size: cover;
+ margin-bottom: 200px;
  
 }
 
@@ -3241,6 +3243,7 @@ font-weight: 0;
 .projects_container_sgl {
 
  width:100%;
+ margin-bottom: 200px;
 }
 
 .projects_container_sgl h2 {
