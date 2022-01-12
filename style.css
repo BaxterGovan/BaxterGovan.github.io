@@ -4108,13 +4108,13 @@ width: 100%;
   background: #33cc33;
 }
 
-.navigation1-visiblity .PrevArrow {
+.navigation1-visibility .PrevArrow {
 	transform: translateY(-63px);
 	cursor: pointer;
 	
 }
 
-.navigation1-visiblity .NextArrow {
+.navigation1-visibility .NextArrow {
 	transform: translateY(-63px);
 	cursor: pointer;
 }
