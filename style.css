@@ -2906,12 +2906,13 @@ width: 80%;
 	margin: 10px;
 	margin-left: auto;
 	margin-right: auto;
+	height: 350px;
 }
 
 .cm-asyc-photo-text-media .holdContainer .cm-img-container img {
 
 	max-width: 470px;
-	min-width: 350px;
+	max-height: 350px;
 	transition: 1s ease-in-out;
 }
 
