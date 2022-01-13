@@ -5554,6 +5554,9 @@ display: block;
 }
 @media (max-width: 900px)
 {
+	.map-holder {
+		margin-bottom: 150px;	
+	}
 	.map-holder iframe {
 		width:400px;
 		height: 400px;
