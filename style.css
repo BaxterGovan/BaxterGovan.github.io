@@ -2619,6 +2619,16 @@ font-size: 15px;
  
 }
 
+.contact-pg {
+ max-width: 800px;
+ text-align: center;
+}
+.contact-pg h2 {
+ font-size: 86px;
+ font-weight: 500;
+ color: #fff;
+}
+
 .contact-pg-container .contact-pg {
  max-width: 800px;
  text-align: center;
