@@ -5536,3 +5536,31 @@ display: block;
 
 }
 }
+
+.map-holder {
+	position: relative;
+	width: 100%;
+	margin-bottom: 120px;
+	top:-80px;
+	
+}
+.map-holder iframe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 450px;
+	width: 600px;
+	
+}
+@media (max-width: 900px)
+{
+	.map-holder iframe {
+		width:400px;
+		height: 400px;
+		
+	}
+		
+		
+}
+
+
