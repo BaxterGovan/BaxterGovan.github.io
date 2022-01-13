@@ -2902,16 +2902,14 @@ width: 80%;
 }
 .cm-asyc-photo-text-media .holdContainer .cm-img-container
 {
-	width:100%;
-	margin: 10;
 	
+	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .cm-asyc-photo-text-media .holdContainer .cm-img-container img {
-	margin-top: 50px;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+
 	max-width: 470px;
 	min-width: 350px;
 	transition: 1s ease-in-out;
