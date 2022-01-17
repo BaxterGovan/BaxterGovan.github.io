@@ -2603,21 +2603,30 @@ transform: scale(1.05);
  margin-left: 5%;
  margin-right: 5%;
  display:inline-flex;
+ flex-direction: column;
  
  
 }
 .projects_LW {
  justify-items: center;
  align-items: center;
- width: 30%;
- height: 500px;
+ height: 120px;
  background-color: #006600;
- float: left;
+
 }
+
+nav>li {
+	
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	
+}
+
 .projects_LW li {
-position: relative;
-width: 100%;
-align-text: center;
+posi/tion: relative;
+width: 19%;
+
 margin-top: 48px;
 font-size: 15px;
 }
@@ -2642,9 +2651,9 @@ font-size: 15px;
 }
 
 .projects_RW {
- width: 70%;
+ width: 100%;
 heig/ht: 450px;
- float: right;
+ 
 }
 
 .projects_RW .projects_thumbnails_sgl {
