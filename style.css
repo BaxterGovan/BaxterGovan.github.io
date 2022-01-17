@@ -4036,8 +4036,9 @@ col {
 	position: absolute;
 	top: 25px;
 	left: 30px;
-	
-	
+	height: 50px;
+	padding: 0 5px;
+	background-color: rgb(0,0,0,0.4);
 }
 
 .people_slide .lightboxText p {
@@ -4045,7 +4046,7 @@ col {
    	font-size: 20px;
     	padding: 10px 0;
     	letter-spacing: 2px;
-    	font-weight: 450;
+    	font-weight: 600;
 }
 
 .bio_modal-content {
