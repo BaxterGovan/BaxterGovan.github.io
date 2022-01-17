@@ -2650,6 +2650,8 @@ transform: scale(1.05);
 
 .projects_LW li a {
  color: #fff;
+ background-color: green;
+ border-radius: 6px;
 }
 
 .projects_RW {
