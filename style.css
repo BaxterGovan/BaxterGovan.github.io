@@ -2687,6 +2687,17 @@ height: auto;
 }
 @media (max-width: 885px)
 {
+	.projects_container h1{
+		
+		font-size: 35px;
+		
+	}
+	.projects_container h2{
+		
+		font-size: 25px;
+		
+	}
+	
 	.projects_RW .projects_thumbnails_sgl li {
 		float: none;
   		width: 60%;
