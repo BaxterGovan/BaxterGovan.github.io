@@ -2725,7 +2725,7 @@ height: auto;
 {
 	.projects_LW li .doubleText {
 		top: -10px;
-		padding-top: none;
+		padding-top: 10px;
 		
 			
 	}
