@@ -2624,11 +2624,12 @@ transform: scale(1.05);
 }
 
 .projects_LW li {
-posi/tion: relative;
-width: 19%;
-
-margin-top: 48px;
-font-size: 15px;
+	posi/tion: relative;
+	width: 19%;
+	display: inline-flex;
+	justify-content: center;
+	margin-top: 48px;
+	font-size: 15px;
 }
 
 .projects_LW li:hover a {
