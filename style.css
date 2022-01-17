@@ -1976,7 +1976,7 @@ cur/sor: pointer;
 
 .Info_container .Info_row .Info_column {
   float: left;
-  width: 32%;
+  width: 48%;
   margin-left: 0.8%;
   height: auto; 
   align-items: center;
