@@ -2710,17 +2710,22 @@ height: auto;
 			
 }
 
-@media (max-width: 730px)
+@media (max-width: 575px)
 {
-	.projects_LW li .singleText {
+	.projects_LW li a {
 			
 		height: 60px;
-		padding-top: 20px !important;
+		padding-top: 20px;
 			
 	}
-	.projects_LW li .doubleText {
+	
 			
-		height: 60px;
+}
+@media (max-width: 575px)
+{
+	.projects_LW li .doubleText {
+		top: -10px;
+		padding-top: none;
 		
 			
 	}
