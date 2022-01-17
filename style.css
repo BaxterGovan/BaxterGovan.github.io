@@ -2019,15 +2019,12 @@ cur/sor: pointer;
  width: 60px;
  height: 60px;
  overflow: visible;
- margin-right: 20px;
- margin-left: 10px;
+ margin-right: auto;
+ margin-left: auto;
 }
 
 .Info_imgbox img
 {
- postition: absolute;
- top: 0;
- left: 0;
  width: 100%;
  height: 100%;
  object-fit: contain;
