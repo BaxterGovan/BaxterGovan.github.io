@@ -3696,7 +3696,7 @@ height: 100px;
 @media (max-width: 1546px) {
 
 .projects_thumbnails_sgl li {
-  width: 46%;  
+  width: 49%;  
 marg/in-left: auto;
 mar/gin-right: auto;
 flo/at: none;
@@ -4032,7 +4032,7 @@ col {
     max-width: 1000px;
     
 }
-.people_image-slide .lightboxText {
+.people_slide .lightboxText {
 	position: absolute;
 	top: 25px;
 	left: 30px;
@@ -4040,7 +4040,7 @@ col {
 	
 }
 
-.people_image-slide .lightboxText p {
+.people_slide .lightboxText p {
 	color: #FFF;
    	font-size: 20px;
     	padding: 10px 0;
