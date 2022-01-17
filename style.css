@@ -2729,6 +2729,9 @@ height: auto;
 		
 			
 	}
+	.projects_RW .projects_thumbnails_sgl li {
+		max-height: 250px;
+	}
 	
 			
 }
