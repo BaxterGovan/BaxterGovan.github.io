@@ -446,9 +446,14 @@ z-index: 8000;
 
 
 @media (max-width: 500px) {
+	.slide.current .content .text {
+ 
+   		font-size: 55px;
+
+	}
  	.slide.current .content .subText {
 		
-		top: 72%;
+		top: 68%;
 		
 	}
 }
