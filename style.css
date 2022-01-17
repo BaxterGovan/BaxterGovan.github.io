@@ -2715,14 +2715,10 @@ height: auto;
 	.projects_LW li a {
 			
 		height: 60px;
+		padding-top: 20px !important;
 			
 	}
-	.projects_LW li a span {
-  		display: inline-block;
- 	 	vertical-align: middle;
- 	 	line-height: normal;
 	
-	}
 			
 }
 
