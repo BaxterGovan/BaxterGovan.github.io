@@ -2712,10 +2712,15 @@ height: auto;
 
 @media (max-width: 730px)
 {
-	.projects_LW li a {
+	.projects_LW li singleText {
 			
 		height: 60px;
-		padding-top: 20px;
+		padding-top: 20px !important;
+			
+	}
+	.projects_LW li .doubleText {
+		
+		height: 60px;
 			
 	}
 	
