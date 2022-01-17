@@ -2612,6 +2612,7 @@ transform: scale(1.05);
  align-items: center;
  height: 120px;
  background-color: #006600;
+ border-radius: 8px;
 
 }
 
