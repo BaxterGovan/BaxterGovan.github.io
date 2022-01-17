@@ -406,15 +406,15 @@ z-index: 8000;
 /* Backgorund Images */
  
 .slide:first-child {
-  background: url('https://source.unsplash.com/RyRpq9SUwAU/1600x900') no-repeat
+  background: url('https://baxtergovan.github.io/Photos/LobbyBase.png') no-repeat
     center top/cover;
 }
 .slide:nth-child(2) {
-  background: url('https://source.unsplash.com/BeOW_PJjA0w/1600x900') no-repeat
+  background: url('https://baxtergovan.github.io/Photos/lobby.png') no-repeat
     center top/cover;
 }
 .slide:nth-child(3) {
-  background: url('https://source.unsplash.com/TMOeGZw9NY4/1600x900') no-repeat
+  background: url('https://baxtergovan.github.io/Photos/Bridge_view.png') no-repeat
     center top/cover;
 }
 .slide:nth-child(4) {
