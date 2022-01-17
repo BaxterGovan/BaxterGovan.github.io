@@ -2615,7 +2615,7 @@ transform: scale(1.05);
 
 }
 
-nav>li {
+.nav>li {
 	
 	position: relative;
 	display: inline-flex;
