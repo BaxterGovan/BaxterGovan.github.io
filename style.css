@@ -4033,7 +4033,9 @@ col {
     
 }
 .people_image-slide .lightboxText {
-
+	position: absolute;
+	top: 25px;
+	left: 30px;
 	
 	
 }
