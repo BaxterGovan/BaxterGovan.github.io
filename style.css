@@ -2082,7 +2082,13 @@ font-size: 30px;
 
 @media (max-width: 1000px)
 {
-
+	.Info_container {
+	
+		margin-top: 50px;
+		
+	}
+	
+	
 	.Info_container .Info_title {
 		
 		font-size: 35px;
