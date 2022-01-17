@@ -2233,27 +2233,17 @@ font-size: 30px;
 
 }
 
-@media (max-width: 1000px)
+
+@media (max-width: 850px)
 {
-.services_column {
- width: 48.2%;
- margin-left: 1%;
- margin-right: 0.8%;
-}
-
-
-}
-
-@media (max-width: 480px)
-{
-.services_column {
- width: 99%;
+.services_container .services_row .services_column {
+ width: 98%;
  margin-left: 0.5%;
  margin-right: 0.5%;
   
 }
 
-.services_column h3 {
+.services_container .services_row .services_column h3 {
 
 text-align: center;
 
