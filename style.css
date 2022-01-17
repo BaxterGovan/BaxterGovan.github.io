@@ -2819,11 +2819,11 @@ height: auto;
 }
 
 .projects_LW li {
-display: block;
+
  margin-left: 20px;
-width: auto;
+width: 25%;
 align-text: center;
-margin-top: 0px;
+margin-top: 15px;
 font-size: 15px;
 }
 .projects_RW {
