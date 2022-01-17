@@ -416,7 +416,7 @@ h3 {
 </div>
 
 <br>
-	<!--
+	
 <div class="company_about">
 	<h2>Whats new with us...</h2>
     <div class="company_about_holder">
@@ -430,7 +430,7 @@ h3 {
                 	<h3>Continued Excellence</h3>
                     <p>2020 NECA Project Excellence Award Winner</p>
                 </div>
-                <div class="company_about_info_2">
+                <div class="company_about_info_3">
                 	<h3>Test3</h3>
                 </div>
             </div>
@@ -438,7 +438,24 @@ h3 {
     </div>
 </div>
 <br>
--->
+	    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	    <script type="text/javascript" src="https://cdn.tutorialjinni.com/tabletop.js/1.6.2/tabletop.js"></script>
+<script>
+
+	function init() { 
+		Tabletop.init(key:'https://docs.google.com/spreadsheets/d/1vYY0wXDecAyqe_U10dBOY-oGmiBwDmFST_gBMoCej24/edit#gid=0',
+		callback:showInfo,
+		simpleSheet:true
+		})
+	}
+	function showInfo(data,Tabletop){
+		$(".company_about_info").append(
+			'<h3>' + data[0].News + '</h3>
+		);
+	}
+	window.addEventListener('DOMContentLoaded',init);
+	
+</script>	
 <br>
 
 
