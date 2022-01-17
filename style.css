@@ -4032,6 +4032,20 @@ col {
     max-width: 1000px;
     
 }
+.people_image-slide .lightboxText {
+
+	
+	
+}
+
+.people_image-slide .lightboxText p {
+	color: #FFF;
+   	font-size: 20px;
+    	padding: 10px 0;
+    	letter-spacing: 2px;
+    	font-weight: 450;
+}
+
 .bio_modal-content {
     position: relative;
     left: -10px;
