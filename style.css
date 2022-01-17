@@ -1971,14 +1971,25 @@ cur/sor: pointer;
 
  display: flex;
  flex-direction: row;
-
+ margin-bottom: 40px;
 } 
 
-.Info_container .Info_row .Info_column {
-  float: left;
-  width: 48%;
-  margin-left: 0.8%;
+.Info_container .Info_row .Info_column1 {
+
+  width: 40%;
+  margin-left: auto;
+  margin-right: 1%;
   height: auto; 
+  align-items: center;
+  justify-content: center;
+  
+}
+.Info_container .Info_row .Info_column2 {
+
+  width: 40%;
+  margin-left: 1%;
+  margin-right: auto;
+  height: auto;
   align-items: center;
   justify-content: center;
   
@@ -2084,11 +2095,18 @@ font-size: 30px;
 		
 	}
 
-	.Info_container .Info_row .Info_column {
+	.Info_container .Info_row .Info_column1 {
 		width: 600px;
  		margin-left: auto;
  		margin-right: auto;
 		margin-bottom: 30px;
+
+	}
+	.Info_container .Info_row .Info_column2 {
+		width: 600px;
+ 		margin-left: auto;
+ 		margin-right: auto;
+		
 
 	}
 
