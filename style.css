@@ -989,6 +989,11 @@ margin-right: auto;
 
 }
 
+.tb-container .tb-text .tb-text-container h3{
+ 
+margin: 0 auto 12px;
+
+}
 
 .tb-container .tb-text .tb-text-container.active {
 
