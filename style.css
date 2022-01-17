@@ -342,14 +342,15 @@ z-index: 8000;
 }
 
 .slide .content {
-  position: absolute;
-  bottom: 70px;
-  left: -600px;
+  pos/ition: absolute;
+  bot/tom: 70px;
+  lef/t: -600px;
   opacity: 0;
-  width: 600px;
-  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  back/ground-color: rgba(255, 255, 255, 0.8);
   color: #333;
-  padding: 35px;
+  padd/ing: 35px;
+  margi/n-top: 50%;
 }
 
 .slide .content h1 {
@@ -358,19 +359,53 @@ z-index: 8000;
 
 .slide.current .content {
   opacity: 1;
-  transform: translateX(600px);
+  tran/sform: translateX(100%);
   transition: all 0.7s ease-in-out 0.3s;
 }
 
-.buttons button#next {
+
+
+
+
+.slide.current .content .text {
+  color: white;
+  font-family: "copperplate", fantasy;
+
+
+  padding: 8px 12px;
   position: absolute;
   top: 40%;
+  width: 100%;
+  text-align: center;
+    font-size: 65px;
+    text-shadow: 4px 3px 0 rgb(1 1 1 / 13%);
+    letter-spac/ing: -2px;
+    margin: 0 auto 36px;
+    font-weight: 700;
+}
+
+.slide.current .content .subText {
+  color: white;
+  font-size: 30px;
+  font-family: font-family: Georgia, serif;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  text-align: center;
+}
+
+
+.buttons button#next {
+  position: absolute;
+  top: 59%;
   right: 15px;
 }
 
 .buttons button#prev {
   position: absolute;
-  top: 40%;
+  top: 59%;
   left: 15px;
 }
 
@@ -379,7 +414,7 @@ z-index: 8000;
   background-color: transparent;
   color: #fff;
   cursor: pointer;
-  padding: 13px 15px;
+  padding: 6px 15px;
   border-radius: 50%;
   outline: none;
 }
@@ -389,16 +424,33 @@ z-index: 8000;
   color: #333;
 }
 
-@media (max-width: 500px) {
-  .slide .content {
-    bottom: -300px;
-    left: 0;
-    width: 100%;
-  }
+@media (max-width: 740px) {
 
-  .slide.current .content {
-    transform: translateY(-300px);
-  }
+	.slide.current .content .subText {
+		
+		top: 60%;
+		
+	}
+.buttons button#next {
+  top: 62%;
+
+}
+
+.buttons button#prev {
+
+  top: 62%;
+
+}
+
+}
+
+
+@media (max-width: 500px) {
+ 	.slide.current .content .subText {
+		
+		top: 67%;
+		
+	}
 }
 
 
@@ -565,7 +617,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   color: white;
 }
 
-/* Caption text */
+/* Caption text 
 .text {
   color: white;
   font-family: "copperplate", fantasy;
@@ -594,6 +646,8 @@ body {font-family: Verdana, sans-serif; margin:0}
   width: 100%;
   text-align: center;
 }
+
+*/
 
 /* The dots/bullets/indicators */
 .dot { 
