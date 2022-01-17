@@ -2710,6 +2710,22 @@ height: auto;
 			
 }
 
+@media (max-width: 730px)
+{
+	.projects_LW li a {
+			
+		height: 60px;
+			
+	}
+	.projects_LW li a span {
+  		display: inline-block;
+ 	 	vertical-align: middle;
+ 	 	line-height: normal;
+	
+	}
+			
+}
+
 .projects_RW ul li .hvr-name-disp1 {
   position: absolute;
   width: 100%;
