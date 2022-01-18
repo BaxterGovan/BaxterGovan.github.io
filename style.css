@@ -22,7 +22,7 @@ body {
 #navbar {
   /*overflow: visible;*/
   padding-top: 10px;
-  background-color: rgba(105, 105, 105, 0.7);
+  background-color: rgba(105, 105, 105, 1);
   color: #006600;
   z-index: 5000;
   
