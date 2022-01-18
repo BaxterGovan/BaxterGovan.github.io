@@ -1845,7 +1845,8 @@ font-size: 30px;
 
 	}
 	.Info_container .Info_row .Info_column2 {
-		width: 600px;
+		min-width: 400px;
+		width: 78%;
  		margin-left: auto;
  		margin-right: auto;
 		
