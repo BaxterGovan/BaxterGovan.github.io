@@ -62,7 +62,7 @@ float: left;
  float: left;
  display: inline-block;
  margins: 0 5px;
- height: 70px;
+ //height: 70px;
 }
 
 #navbar ul .collapsedNavbar {
