@@ -424,38 +424,81 @@ h3 {
         <h3> Atlanta's Premier Commercial Electrical Contractor </h3>
         	<div class="company_about_container">
             	<div class="company_about_info">
-                	<h3>Test1</h3>
+                	
                 </div>
                 <div class="company_about_info_2">
-                	<h3>Continued Excellence</h3>
-                    <p>2020 NECA Project Excellence Award Winner</p>
+
                 </div>
                 <div class="company_about_info_3">
-                	<h3>Test3</h3>
+                	
                 </div>
             </div>
         </div>
     </div>
 </div>
 <br>
-	    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	    <script type="text/javascript" src="https://cdn.tutorialjinni.com/tabletop.js/1.6.2/tabletop.js"></script>
-<script>
 
-	function init() { 
-		Tabletop.init(key:'https://docs.google.com/spreadsheets/d/1vYY0wXDecAyqe_U10dBOY-oGmiBwDmFST_gBMoCej24/edit#gid=0',
-		callback:showInfo,
-		simpleSheet:true
-		})
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/papaparse@5.3.1/papaparse.min.js"></script>
+<script>
+let results;
+var bucket1 = document.querySelector(".company_about_info");
+var bucket2 = document.querySelector(".company_about_info_2");
+var bucket3 = document.querySelector(".company_about_info_3");
+
+const csvData = Papa.parse("https://baxtergovan.github.io/News.csv", {
+	dynamicTyping: true,
+	download: true,
+	header: true,
+	skipEmptyLines: true,
+	complete: function(data){
+		results = data.data;
 	}
-	function showInfo(data,Tabletop){
-		$(".company_about_info").append(
-			'<h3>' + data[0].News + '</h3>
-		);
-	}
-	window.addEventListener('DOMContentLoaded',init);
 	
+});
+
+setTimeout(()=> {
+	console.log(results[0])
+	console.log(results[1])
+	console.log(results[2])
+if(results[0] != null)
+{
+	if(results[0].text != null)
+		bucket1.innerHTML+=("<h3>"+ results[0].text + "</h3>");
+	if(results[0].subtext != null)
+		bucket1.innerHTML+=("<p>"+ results[0].subtext + "</p>");
+	if(results[0].pic != null)
+		bucket1.innerHTML+=("<img style='width: 100%;' src='"+ results[0].pic + "'>");
+}
+
+if(results[1] != null)
+{
+	if(results[1].text != null)
+		bucket2.innerHTML+=("<h3>"+ results[1].text + "</h3>");
+	if(results[1].subtext != null)
+		bucket2.innerHTML+=("<p>"+ results[1].subtext + "</p>");
+	if(results[1].pic != null)
+		bucket2.innerHTML+=("<img style='width: 100%;' src='"+ results[1].pic + "'>");
+}
+
+if(results[2] != null)
+{
+	if(results[2].text != null)
+		bucket3.innerHTML+=("<h3>"+ results[2].text + "</h3>");
+	if(results[2].subtext != null)
+		bucket3.innerHTML+=("<p>"+ results[2].subtext + "</p>");
+	if(results[2].pic != null)
+		bucket3.innerHTML+=("<img style='width: 100%;' src='"+ results[2].pic + "'>");
+}
+
+}, 1500);
+
+
+
+
 </script>	
+
+	
 <br>
 
 
