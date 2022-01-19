@@ -5678,7 +5678,7 @@ display: block;
 /* The one element for the new lightbox set up.*/
 .lightboxInfo {
 	background-color: white;
-	height: 200px;
+	height: auto;
 
 }
 
