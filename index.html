@@ -430,7 +430,7 @@ h3 {
 	<div class="lightbox-background" onclick="closeLightbox()">
 	</div>
         <span class="people_close pointer" onclick="closeLightbox()">&times;</span>
-        <div class="people_modal-content-projects">
+        <div style="padding: 0;" class="people_modal-content-projects">
             <div style="max-width: 800px;" class="people_slide" >
                 <img src="" class="people_image-slide" />
 	    </div>
@@ -442,6 +442,7 @@ h3 {
             <div style="max-width: 800px;" class="people_slide" >
                 <img src="" class="people_image-slide" />
             </div>
+		<div id="lbInfo" class="lightboxInfo"></div>
     </div>
 </div>
 
@@ -471,7 +472,7 @@ setTimeout(()=> {
 	console.log(results[2])
 if(results[0] != null)
 {
-	/*bucket.style="grid-template-columns: repeat(1, 1fr)";*/
+	//bucket.style="grid-template-columns: repeat(1, 1fr)";
 	if(results[0].pic != null){
 		bucket.innerHTML+=("<div id='news1' style='background: url(" + results[0].pic + ") no-repeat center top/cover;' class='news_holder'>");
 		//slides[0].src = results[0].pic
@@ -491,7 +492,7 @@ if(results[0] != null)
 }
 if(results[1] != null)
 {
-	/*bucket.style="grid-template-columns: repeat(2, 1fr)";*/
+	//bucket.style="grid-template-columns: repeat(2, 1fr)";
 	if(results[1].pic != null){
 		bucket.innerHTML+=("<div id='news2' style='background: url(" + results[1].pic + ") no-repeat center top/cover;' class='news_holder'>");
 		//slides[1].src = results[1].pic
@@ -511,7 +512,7 @@ if(results[1] != null)
 }
 if(results[2] != null)
 {
-	/*bucket.style="grid-template-columns: repeat(3, 1fr)";*/
+	//bucket.style="grid-template-columns: repeat(3, 1fr)";
 	if(results[2].pic != null){
 		bucket.innerHTML+=("<div id='news3' style='background: url(" + results[2].pic + ") no-repeat center top/cover;' class='news_holder'>");
 		//slides[2].src = results[2].pic
@@ -545,7 +546,7 @@ if(document.getElementById('Lightbox').style.display != "none" )	{
  }
 };
 
-var screenWidth = window.matchMedia("(max-width: 1050px)")
+var screenWidth = window.matchMedia("(max-width: 825px)")
 resizeLightbox(screenWidth) // Call listener function at run time
 screenWidth.addListener(resizeLightbox) // Attach listener function on state changes
 
@@ -553,14 +554,14 @@ screenWidth.addListener(resizeLightbox) // Attach listener function on state cha
 
 var slideIndex = 1;
 
-showSlide(slideIndex);
+//showSlide(slideIndex);
 
 function openLightbox() {
-var mq = window.matchMedia( "(min-width: 1050px)" );
+var mq = window.matchMedia( "(max-width: 825px)" );
 if(mq.matches){
-    document.getElementById('Lightbox').style.display = 'inline-flex';}
+        document.getElementById('Lightbox').style.display = 'block';}
 else{
-    document.getElementById('Lightbox').style.display = 'block';}
+	document.getElementById('Lightbox').style.display = 'inline-flex';}
 };
 
 function closeLightbox() {
@@ -596,18 +597,19 @@ function showSlide(n) {
         modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
     };
 
-    slides[slideIndex - 1].style.display = 'block';
-    var chld = slides[slideIndex - 1].children
-	chld[0].src=results[slideIndex - 1].pic;
-    //modalPreviews[slideIndex - 1].className += ' active';
+    slides[slideIndex-1].style.display = 'block';
+    var chld = slides[slideIndex-1].children
+	chld[0].src=results[slideIndex-1].pic;
+	var LightBoxInfo = document.querySelector("#lbInfo");
+	
+	if(results[slideIndex-1].date != null)
+		LightBoxInfo.innerHTML += ("<p style='font-size:15px;'>" + results[slideIndex-1].date +"</p>");
+	if(results[slideIndex-1].text != null)
+		LightBoxInfo.innerHTML += ("<h3 style='font-size:40px; text-shadow: none; margin: 0;'>" + results[slideIndex-1].text +"</h3>");
+	if(results[slideIndex-1].subtext != null)
+		LightBoxInfo.innerHTML += ("<p style='font-size:15px;'>" + results[slideIndex-1].subtext +"</p>");
+
 };
-
-
-
-function pri() {
-console.log("clicked");
-}
-
 
 </script>	
 	
