@@ -426,7 +426,24 @@ h3 {
 	</div>
 </div>
 
+<div id="Lightbox" class="people_modal" style="display: none;">
+	<div class="lightbox-background" onclick="closeLightbox()">
+	</div>
+        <span class="people_close pointer" onclick="closeLightbox()">&times;</span>
+        <div class="people_modal-content-projects">
+            <div style="max-width: 800px;" class="people_slide" >
+                <img src="" class="people_image-slide" />
+	    </div>
 
+            <div style="max-width: 800px;" class="people_slide" >
+                <img src="" class="people_image-slide" />
+            </div>
+
+            <div style="max-width: 800px;" class="people_slide" >
+                <img src="" class="people_image-slide" />
+            </div>
+    </div>
+</div>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/papaparse@5.3.1/papaparse.min.js"></script>
 
@@ -435,9 +452,9 @@ h3 {
 <script>
 let results;
 var bucket = document.querySelector(".news_wrapper");
+const slides = document.getElementsByClassName('people_slide');
 
-
-const csvData = Papa.parse("/News.csv", {
+const csvData = Papa.parse("https://baxtergovan.github.io/News.csv", {
 	dynamicTyping: true,
 	download: true,
 	header: true,
@@ -457,9 +474,10 @@ if(results[0] != null)
 	bucket.style="grid-template-columns: repeat(1, 1fr)";
 	if(results[0].pic != null){
 		bucket.innerHTML+=("<div id='news1' style='background: url(" + results[0].pic + ") no-repeat center top/cover;' class='news_holder'>");
+		//slides[0].src = results[0].pic
 		var inside = document.querySelector("#news1");
 		if(results[0].text != null){
-			inside.innerHTML +=("<div id='link1' class='link' onclick='pri()'></div>");
+			inside.innerHTML +=("<div id='link1' class='link' onclick='openLightbox();toSlide(1)'></div>");
 			var insideLink = document.querySelector("#link1");
 				insideLink.innerHTML += ("<h3>" + results[0].text + "</h3>")
 				if(results[0].date != null)
@@ -476,9 +494,10 @@ if(results[1] != null)
 	bucket.style="grid-template-columns: repeat(2, 1fr)";
 	if(results[1].pic != null){
 		bucket.innerHTML+=("<div id='news2' style='background: url(" + results[1].pic + ") no-repeat center top/cover;' class='news_holder'>");
+		//slides[1].src = results[1].pic
 		var inside = document.querySelector("#news2");
 		if(results[1].text != null){
-			inside.innerHTML +=("<div id='link2' class='link' onclick='pri()'></div>");
+			inside.innerHTML +=("<div id='link2' class='link' onclick='openLightbox();toSlide(2)'></div>");
 			var insideLink = document.querySelector("#link2");
 				insideLink.innerHTML += ("<h3>" + results[1].text + "</h3>")
 				if(results[1].date != null)
@@ -495,9 +514,10 @@ if(results[2] != null)
 	bucket.style="grid-template-columns: repeat(3, 1fr)";
 	if(results[2].pic != null){
 		bucket.innerHTML+=("<div id='news3' style='background: url(" + results[2].pic + ") no-repeat center top/cover;' class='news_holder'>");
+		//slides[2].src = results[2].pic
 		var inside = document.querySelector("#news3");
 		if(results[2].text != null){
-			inside.innerHTML +=("<div id='link3' class='link' onclick='pri()'></div>");
+			inside.innerHTML +=("<div id='link3' class='link' onclick='openLightbox();toSlide(3)'></div>");
 			var insideLink = document.querySelector("#link3");
 				insideLink.innerHTML += ("<h3>" + results[2].text + "</h3>")
 				if(results[2].date != null)
@@ -512,13 +532,84 @@ if(results[2] != null)
 }, 1500);
 
 
+
+function resizeLightbox(x) {
+
+if(document.getElementById('Lightbox').style.display != "none" )	{
+  	if (x.matches) { // If media query matches
+ 	  	document.getElementById('Lightbox').style.display = "block";
+	  }
+	else {
+		document.getElementById('Lightbox').style.display = "inline-flex";
+	}
+ }
+};
+
+var screenWidth = window.matchMedia("(max-width: 1050px)")
+resizeLightbox(screenWidth) // Call listener function at run time
+screenWidth.addListener(resizeLightbox) // Attach listener function on state changes
+
+//--------------------------------------------------------
+
+var slideIndex = 1;
+
+showSlide(slideIndex);
+
+function openLightbox() {
+var mq = window.matchMedia( "(min-width: 1050px)" );
+if(mq.matches){
+    document.getElementById('Lightbox').style.display = 'inline-flex';}
+else{
+    document.getElementById('Lightbox').style.display = 'block';}
+};
+
+function closeLightbox() {
+    document.getElementById('Lightbox').style.display = 'none';
+};
+
+function changeSlide(n) {
+    showSlide(slideIndex += n);
+};
+
+function toSlide(n) {
+    showSlide(slideIndex = n);
+};
+
+function showSlide(n) {
+    
+    let modalPreviews = document.getElementsByClassName('people_modal-preview');
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    };
+
+    if (n < 1) {
+        slideIndex = slides.length;
+    };
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+
+    };
+
+    for (let i = 0; i < modalPreviews.length; i++) {
+        modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
+    };
+
+    slides[slideIndex - 1].style.display = 'block';
+    var chld = slides[slideIndex - 1].children
+	chld[0].src=results[slideIndex - 1].pic;
+    //modalPreviews[slideIndex - 1].className += ' active';
+};
+
+
+
 function pri() {
 console.log("clicked");
 }
 
 
 </script>	
-
 	
 <br>
 
