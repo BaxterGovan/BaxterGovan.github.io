@@ -442,8 +442,11 @@ setTimeout(()=> {
 	console.log(results[0])
 	console.log(results[1])
 	console.log(results[2])
+	console.log(results[2])
 if(results[0] != null)
 {
+	if(results[0].date != null)
+		bucket1.innerHTML+=("<p>"+results[0].date + "</p>");
 	if(results[0].text != null)
 		bucket1.innerHTML+=("<h3>"+ results[0].text + "</h3>");
 	if(results[0].subtext != null)
@@ -454,6 +457,8 @@ if(results[0] != null)
 
 if(results[1] != null)
 {
+	if(results[1].date != null)
+		bucket2.innerHTML+=("<p>"+results[1].date + "</p>");
 	if(results[1].text != null)
 		bucket2.innerHTML+=("<h3>"+ results[1].text + "</h3>");
 	if(results[1].subtext != null)
@@ -463,7 +468,9 @@ if(results[1] != null)
 }
 
 if(results[2] != null)
-{
+{	
+	if(results[2].date != null)
+		bucket3.innerHTML+=("<p>"+results[2].date + "</p>");
 	if(results[2].text != null)
 		bucket3.innerHTML+=("<h3>"+ results[2].text + "</h3>");
 	if(results[2].subtext != null)
