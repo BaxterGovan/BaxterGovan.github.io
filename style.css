@@ -4011,7 +4011,7 @@ width: 100%;
         margin-left: 0px;
     }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 825px) {
 
     .col {
 	
@@ -5672,6 +5672,13 @@ display: block;
 	font-size: 20px;
 	color: black;
 	padding-left: 10px;
+
+}
+
+/* The one element for the new lightbox set up.*/
+.lightboxInfo {
+	background-color: white;
+	height: 200px;
 
 }
 
