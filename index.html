@@ -397,35 +397,44 @@ h3 {
 </div>
 
 <br>
-	
+<!--	
 <div class="company_about">
-	<h1>What's new with us...</h1>
+	<h2>Whats new with us...</h2>
     <div class="company_about_holder">
     	<div class="company_about_wrapper">
-        <!--<h3> Atlanta's Premier Commercial Electrical Contractor </h3>-->
+        <h3> Atlanta's Premier Commercial Electrical Contractor </h3>
         	<div class="company_about_container">
             	<div class="company_about_info">
                 	
                 </div>
                 <div class="company_about_info_2">
-
+                	
                 </div>
                 <div class="company_about_info_3">
-                	
+
                 </div>
             </div>
         </div>
     </div>
 </div>
 <br>
+-->
+<div class="news_container">
+	<div class="news_wrapper">
+
+	</div>
+</div>
+
 
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/papaparse@5.3.1/papaparse.min.js"></script>
+
+
+
 <script>
 let results;
-var bucket1 = document.querySelector(".company_about_info");
-var bucket2 = document.querySelector(".company_about_info_2");
-var bucket3 = document.querySelector(".company_about_info_3");
+var bucket = document.querySelector(".news_wrapper");
+
 
 const csvData = Papa.parse("https://baxtergovan.github.io/News.csv", {
 	dynamicTyping: true,
@@ -442,46 +451,69 @@ setTimeout(()=> {
 	console.log(results[0])
 	console.log(results[1])
 	console.log(results[2])
-	console.log(results[2])
 if(results[0] != null)
 {
-	if(results[0].date != null)
-		bucket1.innerHTML+=("<p style='float: left; font-size: 18px;'>"+results[0].date + "</p><br>");
-	if(results[0].text != null)
-		bucket1.innerHTML+=("<h3>"+ results[0].text + "</h3>");
-	if(results[0].subtext != null)
-		bucket1.innerHTML+=("<p>"+ results[0].subtext + "</p>");
-	if(results[0].pic != null)
-		bucket1.innerHTML+=("<img style='width: 100%;' src='"+ results[0].pic + "'>");
-}
+	bucket.style="grid-template-columns: repeat(1, 1fr)";
+	if(results[0].pic != null){
+		bucket.innerHTML+=("<div id='news1' style='background: url(" + results[0].pic + ") no-repeat center top/cover;' class='news_holder'>");
+		var inside = document.querySelector("#news1");
+		if(results[0].text != null){
+			inside.innerHTML +=("<div id='link1' class='link' onclick='pri()'></div>");
+			var insideLink = document.querySelector("#link1");
+				insideLink.innerHTML += ("<h3>" + results[0].text + "</h3>")
+				if(results[0].date != null)
+					insideLink.innerHTML+=("<p>"+ results[0].date + "</p>");
+				insideLink.innerHTML+=("<div style='float:right; font-size: 40px; margin-top: -64px;'>></div>");
+						
 
+		}
+	}
+		
+}
 if(results[1] != null)
 {
-	if(results[1].date != null)
-		bucket2.innerHTML+=("<p style='float: left; font-size: 18px;'>"+results[1].date + "</p><br>");
-	if(results[1].text != null)
-		bucket2.innerHTML+=("<h3>"+ results[1].text + "</h3>");
-	if(results[1].subtext != null)
-		bucket2.innerHTML+=("<p>"+ results[1].subtext + "</p>");
-	if(results[1].pic != null)
-		bucket2.innerHTML+=("<img style='width: 100%;' src='"+ results[1].pic + "'>");
-}
+	bucket.style="grid-template-columns: repeat(2, 1fr)";
+	if(results[1].pic != null){
+		bucket.innerHTML+=("<div id='news2' style='background: url(" + results[1].pic + ") no-repeat center top/cover;' class='news_holder'>");
+		var inside = document.querySelector("#news2");
+		if(results[1].text != null){
+			inside.innerHTML +=("<div id='link2' class='link' onclick='pri()'></div>");
+			var insideLink = document.querySelector("#link2");
+				insideLink.innerHTML += ("<h3>" + results[1].text + "</h3>")
+				if(results[1].date != null)
+					insideLink.innerHTML+=("<p>"+ results[1].date + "</p>");
+				insideLink.innerHTML+=("<div style='float:right; font-size: 40px; margin-top: -64px;'>></div>");
+						
 
+		}
+	}
+		
+}
 if(results[2] != null)
-{	
-	if(results[2].date != null)
-		bucket3.innerHTML+=("<p style='float: left; font-size: 18px;'>"+results[2].date + "</p><br>");
-	if(results[2].text != null)
-		bucket3.innerHTML+=("<h3>"+ results[2].text + "</h3>");
-	if(results[2].subtext != null)
-		bucket3.innerHTML+=("<p>"+ results[2].subtext + "</p>");
-	if(results[2].pic != null)
-		bucket3.innerHTML+=("<img style='width: 100%;' src='"+ results[2].pic + "'>");
+{
+	bucket.style="grid-template-columns: repeat(3, 1fr)";
+	if(results[2].pic != null){
+		bucket.innerHTML+=("<div id='news3' style='background: url(" + results[2].pic + ") no-repeat center top/cover;' class='news_holder'>");
+		var inside = document.querySelector("#news3");
+		if(results[2].text != null){
+			inside.innerHTML +=("<div id='link3' class='link' onclick='pri()'></div>");
+			var insideLink = document.querySelector("#link3");
+				insideLink.innerHTML += ("<h3>" + results[2].text + "</h3>")
+				if(results[2].date != null)
+					insideLink.innerHTML+=("<p>"+ results[2].date + "</p>");
+				insideLink.innerHTML+=("<div style='float:right; font-size: 40px; margin-top: -64px;'>></div>");
+						
+
+		}
+	}
 }
 
 }, 1500);
 
 
+function pri() {
+console.log("clicked");
+}
 
 
 </script>	
