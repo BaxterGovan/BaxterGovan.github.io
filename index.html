@@ -420,6 +420,7 @@ h3 {
 <br>
 -->
 <div class="news_container">
+	<h3>What's new with us</h3>
 	<div class="news_wrapper">
 
 	</div>
@@ -436,7 +437,7 @@ let results;
 var bucket = document.querySelector(".news_wrapper");
 
 
-const csvData = Papa.parse("https://baxtergovan.github.io/News.csv", {
+const csvData = Papa.parse("/News.csv", {
 	dynamicTyping: true,
 	download: true,
 	header: true,
