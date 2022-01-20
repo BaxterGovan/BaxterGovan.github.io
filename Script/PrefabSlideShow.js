@@ -1,7 +1,7 @@
     	var playSlider1;
     	var track1 = 0;
-	var photo = document.getElementById("communityService-photo-switch");
-
+	var cont = document.getElementById("photo-media1").children;
+	var photo = cont[0];
     	var repeater1 = () => {
       		playSlider1 = setInterval(function(){
 			if(track1 == 0) {
@@ -11,7 +11,7 @@
 					setTimeout(function() {minusOpacity1(photo)},0);
 				}
 				setTimeout(function() {theSwitch1(photo)},1000);
-				/*pht.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\BrianFoster_Award.jpg"*/
+				
 				for(let i=0;i<1;i++)
 				{
 					setTimeout(function() {addOpacity1(photo)},1000);
@@ -31,51 +31,10 @@
 					setTimeout(function() {addOpacity1(photo)},1000);
 				}
 				
-				track1++;
+				track1=0;
 				
 			}
-			else if(track1 == 2)
-			{
-				for(let i=0;i<1;i++)
-				{
-					setTimeout(function() {minusOpacity1(photo)},0);
-				}
-				setTimeout(function() {theSwitch3(photo)},1000);
-				/*pht.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\Scott.jpg"*/
-				for(let i=0;i<1;i++)
-				{
-					setTimeout(function() {addOpacity1(photo)},1000);
-				}
-				track1 = 3;
-			}
-        		else if(track1 == 3)
-			{
-				for(let i=0;i<1;i++)
-				{
-					setTimeout(function() {minusOpacity1(photo)},0);
-				}
-				setTimeout(function() {theSwitch4(photo)},1000);
-				/*pht.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\Scott.jpg"*/
-				for(let i=0;i<1;i++)
-				{
-					setTimeout(function() {addOpacity1(photo)},1000);
-				}
-				track1 = 4;
-			}
-			else if(track1 == 4)
-			{
-				for(let i=0;i<1;i++)
-				{
-					setTimeout(function() {minusOpacity1(photo)},0);
-				}
-				setTimeout(function() {theSwitch5(photo)},1000);
-				/*pht.src = "C:\\Users\\Tiffany McDonald\\Dropbox\\Scott.jpg"*/
-				for(let i=0;i<1;i++)
-				{
-					setTimeout(function() {addOpacity1(photo)},1000);
-				}
-				track1 = 0;
-			}
+			
 
 	      }, 10000);
     	}
@@ -88,17 +47,9 @@
 	event1.style.opacity = 1;
  }
  function theSwitch1(event1) {
-	event1.src = "/Photos/Associations/ACS.png";
+	event1.src = "/Photos/Prefab/PrefabPost.png";
  }
  function theSwitch2(event1) {
-	event1.src = "/Photos/Associations/GCCA.png";
+	event1.src = "/Photos/Prefab/PrefabSpool.png";
  }
- function theSwitch3(event1) {
-	event1.src = "/Photos/HillsideLogo.png";
- }
-function theSwitch4(event1) {
-	event1.src = "/Photos/HumanClay.PNG";
- }
- function theSwitch5(event1) {
-	event1.src = "/Photos/HFH_logo.png";
- }
+
