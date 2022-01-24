@@ -146,6 +146,54 @@ h2 {
 
 <script type="text/javascript" src="/Script/PrefabSlideShow.js"></script>
 
+	<div class="capabilities_container">
+	<div class="capabilities_header">
+		<h2> Prefabrication Capabilities</h2>
+		<p></p>
+	</div>
+	<div class="capabilities_wrap">
+		<div class="capabilities_tabs">
+			<h4 class="capabilities_tab active" onclick="capa(0)">Electrical Components</h4>
+			<h4 class="capabilities_tab" onclick="capa(1)">Dedicated Craftmanship</h4>
+		</div>
+		<div class="capabilities_items">
+			<div class="capabilities_item active">
+				<h3>Electrical Components</h3>
+				<p></p>
+				<div class="item_mainText">
+					<p>Our approach to prefabrication of our electrical components allows up to stay ahead of the curve and deliver on our promises to a on time project completion.</p>
+				</div>
+			</div>
+			<div class="capabilities_item">
+				<h3>Dedicated Craftmanship</h3>
+				<p></p>
+				<div class="item_mainText">
+					<p>We at Mayberry Electric want to deliver nothing but the best for our clients, thats why we pride ourselves on our extensive testing, quality assurance, and vetting processes.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	const arytxt = document.querySelector(".capabilities_items").children;
+	const arybtn = document.querySelector(".capabilities_tabs").children;
+	function capa(index)
+	{
+		for(let i = 0;i<arytxt.length;i++)
+		{
+			if(i==index)
+				arytxt[i].className += " active";
+			else
+				arytxt[i].className = arytxt[i].className.replace(" active", "");
+			if(i==index)
+				arybtn[i].className += " active";
+			else
+				arybtn[i].className = arybtn[i].className.replace(" active", "");
+		}
+	}
+</script>
+	
+	
 <div class="img_select_container">
 	<div class="img_select_box">
 		<div id="IMGgrid"class="img_thumbnail_grid">
