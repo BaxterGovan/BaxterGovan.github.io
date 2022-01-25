@@ -4462,7 +4462,10 @@ top: -75px !important;
 
 }
 .collapseContent {
-top: -75px;
+top: -10px !important;
+}
+	.collapsible .white-text-double {
+	font-size: 23px;
 }
 
 }
