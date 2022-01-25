@@ -176,6 +176,88 @@ h3 {
 
 </div>
 </div>
+	
+	<div style="height:400px;"></div>
+
+
+<div class="testimonial_container">
+	<div class="indicator">
+		<span class="btn active"></span>
+		<span class="btn"></span>
+		<span class="btn"></span>
+	</div>
+	<div class="testimonial_Written">
+		<div class="slide-row" id="slideRow">
+			<div class="slide-col">
+				<div class="user-text">
+					<p> I started my career with Mayberry Electric as an Apprentice, and have been here for 13 years. I couldn't be happier. Now I get to lead the jobsite and our client deliverables while customizing a program for the Apprentices as they thoroughly learn the trade. 
+						I have a passion to see my Team grow. I tell my Team that they can set their own pace for learning, like I did when I first started with Mayberry Electric. 
+						Our goal is to proceed with excellence every day while we work as a Team and support each other as we get one step closer to finishing a space that people will enjoy for years to come.</p>
+					<h3> Leo McCardel </h3>
+					<p> Project Supervisor</p>
+				</div>
+				<div class="user-img">
+					<img src="/Photos/CareerTestimonials/Leo.png">
+      				</div>
+			</div>
+			<div class="slide-col">
+				<div class="user-text">
+					<p> I am a huge fan of the Team environment, and getting to work inside tenant spaces.</p>
+					<h3> Avery Woods </h3>
+					<p> Electrcian</p>
+				</div>
+				<div class="user-img">
+					<img src="/Photos/CareerTestimonials/Avery.png">
+      				</div>
+			</div>
+			
+			<div class="slide-col">
+				<div class="user-text">
+					<p> I was introduced to Mayberry Electric at a job fair. That marked the start of a very interesting career. We get to see what people normally don't see. When people see a light, they don't get to see all the power like we do. 
+						My Supervisor, Leo, has been great. He is organized, structured, and in depth with his approach to teaching, while always keeping me safe. Leo puts his trust in me, which is something I value and appreciate.</p>
+					<h3> Luke Aasen </h3>
+					<p> 1st Year Apprentice</p>
+				</div>
+				<div class="user-img">
+					<img src="/Photos/CareerTestimonials/Luke.png">
+      				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+
+	var btn = document.getElementsByClassName("btn");
+	var slide = document.getElementById("slideRow");
+
+	btn[0].onclick = function() {
+		slide.style.transform = "translateX(0px)";
+		for(i=0;i<3;i++) {
+			btn[i].classList.remove("active");
+		}
+		this.classList.add("active");
+	}
+	btn[1].onclick = function() {
+		slide.style.transform = "translateX(-900px)";
+		for(i=0;i<3;i++) {
+			btn[i].classList.remove("active");
+		}
+		this.classList.add("active");
+	}
+	btn[2].onclick = function() {
+		slide.style.transform = "translateX(-1800px)";
+		for(i=0;i<3;i++) {
+			btn[i].classList.remove("active");
+		}
+		this.classList.add("active");
+	}
+
+	
+</script>
+
+	
+<br>	
 
 <div style="height:60px;"></div>
 
