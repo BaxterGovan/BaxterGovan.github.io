@@ -5868,23 +5868,7 @@ display: block;
 
 /* Career Page Testimonials using some css from line 4100 or something */
 
-.slider1 .slide1 .testimonialHolder {
 
-	overflow: hidden;
-	margin-top: 100px;
-	
-}
-
-.slider1 .slide1 .testimonialHolder li {
-float: left;
-    width: 25%;
-    position: relative;
-    margin-top: 10px;
-    min-height: 100px;
-    background-color: #fff;
-    overflow: hidden;
-    border: 0px solid #ccc;
-}
 	
 	
 .slide-row { 
@@ -5979,4 +5963,54 @@ float: left;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+}
+
+.testimonialDisp {
+
+	height: 400px;
+
+}
+
+@media(max-width: 900px)
+{
+	
+	.testimonial_container {
+		width: 400px;
+		height: auto;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.slide-col { 
+
+		width: 400px;
+		height: 1500px;
+		
+	}
+	.user-text {
+
+		width: 400px;
+		height: auto;
+		top: 75%;
+	}
+	.user-text p{
+
+		font-size: 16px;
+	}
+	
+	.user-img {
+
+		height: 33%;
+		right: 12px;
+		top: 285px;
+	}
+
+	.testimonialDisp {
+
+		height: 500px;
+
+	}
+
 }
