@@ -350,9 +350,22 @@ var playSlider;
 		</div>
 	</div>
 </div>
+<script>
+var contain = document.querySelector(".cm-container");
+var x = window.matchMedia("(max-width: 900px)");
+	function myFunction(x) {
+  if (x.matches) { // If media query matches
+    contain.style.marginTop= "-550px";
+  } else {
+    contain.style.marginTop = "0";
+  }
+}	
 
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction)
+</script>
 
-<div class="cm-container">
+<div class="cm-container1">
 	<div class="cm-asyc-photo-text-media">
 		<div class="cm-photo-media-container">
 			<div class="photo-media1">
