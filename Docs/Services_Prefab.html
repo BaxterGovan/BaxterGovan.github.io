@@ -119,7 +119,7 @@ var x1 = window.matchMedia("(max-width: 850px)")
 function myfunc1(x1) {
 if(x1.matches && cont1 != null)
 	console.log( $(window).width() +"px"); 
-	cont1.style.height = "600px";
+	cont1.style.height = $(window).width() +"px");
 }
 
 var playSlider1;
