@@ -112,21 +112,21 @@ h2 {
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-var cont = document.getElementById('svrdstp');
+var cont1 = document.getElementById('svrdstp');
 
-var x = window.matchMedia("(max-width: 850px)")
+var x1 = window.matchMedia("(max-width: 850px)")
 
-function myfunc(x) {
-if(x.matches && cont != null)
+function myfunc1(x) {
+if(x1.matches && cont1 != null)
 	console.log( $(window).width() +"px"); 
-	cont.style.height = "600px";
+	cont1.style.height = "600px";
 }
 
-var playSlider;
+var playSlider1;
 
-    var repeater = () => {
-	playSlider = setInterval(function(){
-      myfunc(x);
+    var repeater1 = () => {
+	playSlider1 = setInterval(function(){
+      myfunc1(x);
      
       }, 500);
     }
