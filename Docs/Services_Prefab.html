@@ -116,7 +116,7 @@ var cont1 = document.getElementById('svrdstp');
 cont1.style.height= "550px";
 var x1 = window.matchMedia("(max-width: 850px)")
 
-function myfunc1(x) {
+function myfunc1(x1) {
 if(x1.matches && cont1 != null)
 	console.log( $(window).width() +"px"); 
 	cont1.style.height = "600px";
@@ -126,7 +126,7 @@ var playSlider1;
 
     var repeater1 = () => {
 	playSlider1 = setInterval(function(){
-      myfunc1(x);
+      myfunc1(x1);
      
       }, 500);
     }
