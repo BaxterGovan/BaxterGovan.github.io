@@ -93,7 +93,7 @@ h2 {
 <div style="height:100px;"></div>
 	
 <div class="svr-ds-container">
-<div style = "background: url(/Photos/Prefab/PrefabBackdrop.png) no-repeat center top/cover;" class="svr-ds-tp-img-container"><!--
+<div id="svrdstp" style = "background: url(/Photos/Prefab/PrefabBackdrop.png) no-repeat center top/cover;" class="svr-ds-tp-img-container"><!--
 		<div class="tp-img-wrapper">
 			<img src="/Photos/ServiceBackdrop2.jpg">
 		</div>-->
@@ -112,13 +112,14 @@ h2 {
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-var cont = document.querySelector(".svr-ds-tp-img-container");
+var cont = document.getElementById('svrdstp');
 
 var x = window.matchMedia("(max-width: 850px)")
 
 function myfunc(x) {
 if(x.matches && cont !== null)
 	console.log( $(window).width() +"px"); 
+	cont.style.height = "600px";
 }
 
 var playSlider;
