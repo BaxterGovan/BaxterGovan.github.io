@@ -3102,6 +3102,7 @@ background-color: #006600;
 		text-align: center;
 
 	}
+	
 
 }
 
@@ -3125,6 +3126,10 @@ background-color: #006600;
 	}
 	.cm-asyc-photo-text-media .cm-text-media-container .text-media-header-home h3{
  		font-size: 40px;
+
+	}
+	.cm-asyc-photo-text-media .cm-text-media-container .text-media-header-home .special{
+ 		font-size: 20px;
 
 	}
 }
