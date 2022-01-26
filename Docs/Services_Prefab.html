@@ -114,10 +114,10 @@ h2 {
 <script>
 var cont1 = document.getElementById('svrdstp');
 
-var x1 = window.matchMedia("(max-width: 850px)")
+var x1 = window.matchMedia("(max-width: 850px)");
 
 function myfunc1(x1) {
-if(x1.matches && cont1 != null)
+if(x1.matches)
 	console.log( $(window).width() +"px"); 
 	cont1.style.height = $(window).width() +"px";
 }
