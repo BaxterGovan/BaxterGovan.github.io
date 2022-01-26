@@ -111,7 +111,26 @@ h2 {
 	</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="/Script/svr-ds-tp-imgScale.js"></script>
+<script>
+var cont = document.querySelector(".svr-ds-tp-img-container");
+
+var x = window.matchMedia("(max-width: 850px)")
+
+function myfunc(x) {
+if(x.matches && cont !== null)
+	cont.style.height = $(window).width() +"px"; 
+}
+
+var playSlider;
+
+    var repeater = () => {
+	playSlider = setInterval(function(){
+      myfunc(x);
+     
+      }, 500);
+    }
+    repeater();	
+</script>
 
 <div class="ms-container" >
 		<div class="ms-st">
