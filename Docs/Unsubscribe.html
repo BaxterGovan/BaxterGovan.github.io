@@ -45,20 +45,55 @@ h2 {
 
 
 
+
 <div style="width: 100%;" class="services_container">
 	<div style="border-radius: 8px; margin-left: 15%; margin-right: 15%; background-color: green; height: 300px;">
-		<h1>Please Enter Email Address below to Unsubscribe</h1>
+		<h1 id="txt" >Please Enter Email Address below to Unsubscribe</h1>
 		<form style="text-align: center; color: white;">
 			Email Address :
 			<input type="text" name="Email">
-			<input type="button" id="unsubEmail" value="SUBMIT" />
+			<input type="button" id="unsubEmail" onclick = "load('hi')" value="SUBMIT" />
 		</form>
 	</div>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+var x = window.matchMedia("(max-width: 850px)");
+var text = document.getElementById("txt");
+var COMMAND_STRING = "0a85f4c1-fcd8-4ff8-ac1e-36ba51f38160:x"
+if(x.matches)
+text.style.fontSize = "30px";
+
+function load(email) {
+console.log("Making sure this runs");
+ $.ajax({
+    url: "https://app.bluefolder.com/api/2.0/customers/list.aspx",
+   headers: {
+        'Authorization':'Basic '+COMMAND_STRING,
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    type: "GET",
+    dataType: "json",
+    data: "<request>" +
+              "<customerList>" +
+                "<listType>basic</listType>" +
+              "</customerList>" +
+          "</request>",
+    success: function (result) {
+      console.log(result); 
+    },
+    error: function (error) {
+      console.log(result);
+    }  
+ })
+  
+}
 
 
 
+
+</script>
 
 
 
