@@ -110,7 +110,30 @@ h2 {
 	</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="/Script/svr-ds-tp-imgScale.js"></script>
+<script>
+	var cont = document.querySelector(".svr-ds-tp-img-container");
+var greenBar = document.querySelector(".svr-ds-tp-inf-container");
+var x = window.matchMedia("(max-width: 850px)")
+let textCont = document.querySelector(".tp-inf-wrapper").children;
+var text = textCont[1];
+
+function myfunc(x) {
+if(x.matches && cont !== null){
+	cont.style.height = $(window).width() +"px"; 
+	greenBar.style.transform = "translate(0,-160px)";
+	greenBar.style.height = "155px";
+	}
+}
+var playSlider;
+
+    var repeater = () => {
+	playSlider = setInterval(function(){
+      myfunc(x);
+     
+      }, 500);
+    }
+    repeater();
+</script>
 
 
 <div class="ms-container" >
