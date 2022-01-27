@@ -106,10 +106,10 @@ h3 {
 
 
 <div class="svr-ds-container">
-	<div class="svr-ds-tp-img-container">
+	<div style="background: url(/Photos/CareerBackdrop2.jpg) no-repeat center top/cover;" class="svr-ds-tp-img-container"><!--
 		<div class="tp-img-wrapper">
 			<img src="/Photos/CareerBackdrop2.jpg">
-		</div>
+		</div> -->
 	</div>
 	<div class="svr-ds-tp-inf-container">
 		<div class="tp-inf-wrapper">
@@ -121,9 +121,27 @@ h3 {
 		</div>
 	</div>
 </div>
+<script>
+var cont = document.querySelector(".svr-ds-tp-img-container");
 
-<script type="text/javascript" src="/Script/svr-ds-tp-imgScale.js"></script>
+var x = window.matchMedia("(max-width: 1125px)")
 
+function myfunc(x) {
+if(x.matches && cont !== null)
+	cont.style.height = $(window).width() +"px"; 
+}
+
+var playSlider;
+
+    var repeater = () => {
+	playSlider = setInterval(function(){
+      myfunc(x);
+     
+      }, 500);
+    }
+    repeater();
+
+	</script>
 
 	
 <div class="object-sep">
