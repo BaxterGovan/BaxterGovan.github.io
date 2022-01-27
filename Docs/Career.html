@@ -106,7 +106,7 @@ h3 {
 
 
 <div class="svr-ds-container">
-	<div style="background: url(/Photos/CareerBackdrop2.jpg) no-repeat center top/cover;" class="svr-ds-tp-img-container"><!--
+	<div style="background: url(/Photos/CareerBackdrop2.jpg) no-repeat center top/cover;  min-height: 325px;" class="svr-ds-tp-img-container"><!--
 		<div class="tp-img-wrapper">
 			<img src="/Photos/CareerBackdrop2.jpg">
 		</div> -->
@@ -123,14 +123,19 @@ h3 {
 </div>
 <script>
 var cont = document.querySelector(".svr-ds-tp-img-container");
-
-var x = window.matchMedia("(max-width: 1125px)")
+var greenBar = document.querySelector(".svr-ds-tp-inf-container");
+var x = window.matchMedia('(max-width: 1225px)')
+let textCont = document.querySelector(".tp-inf-wrapper").children;
+var text = textCont[1];
 
 function myfunc(x) {
-if(x.matches && cont !== null){
-		cont.style.height = ($(window).width()-300) +"px"; 
-		console.log($(window).width()) + "px");
-	}
+if(x.matches){
+	cont.style.height = ($(window).width()-300) +"px"; 
+	console.log($(window).width());
+	greenBar.style.transform = "translate(0,-130px)";
+	greenBar.style.height = "150px";
+	text.fontSize = 48px;
+}
 }
 
 var playSlider;
@@ -143,7 +148,9 @@ var playSlider;
     }
     repeater();
 
-	</script>
+
+
+</script>
 
 	
 <div class="object-sep">
