@@ -113,13 +113,13 @@ h2 {
 <script>
 	var cont = document.querySelector(".svr-ds-tp-img-container");
 var greenBar = document.querySelector(".svr-ds-tp-inf-container");
-var x = window.matchMedia("(max-width: 850px)")
+var x = window.matchMedia("(max-width: 1120px)")
 let textCont = document.querySelector(".tp-inf-wrapper").children;
 var text = textCont[1];
 
 function myfunc(x) {
 if(x.matches && cont !== null){
-	cont.style.height = $(window).width() +"px"; 
+	cont.style.height = ($(window).width()-250) +"px"; 
 	greenBar.style.transform = "translate(0,-160px)";
 	greenBar.style.height = "155px";
 	}
