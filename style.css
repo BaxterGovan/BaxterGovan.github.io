@@ -2033,7 +2033,7 @@ flex-direction: column;
 
 .svr-ds-tp-img-container {
 width: 100%;
-height: 850px;
+max-height: 850px;
 overflow: hidden;
 display: flex;
 z-index: 50;
