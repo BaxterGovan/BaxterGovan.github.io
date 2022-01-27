@@ -112,7 +112,7 @@ h2 {
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-	var cont = document.querySelector(".svr-ds-tp-img-container");
+	var cont1 = document.querySelector(".svr-ds-tp-img-container");
 var greenBar = document.querySelector(".svr-ds-tp-inf-container");
 var y = window.matchMedia("(max-width: 850px)")
 let textCont = document.querySelector(".tp-inf-wrapper").children;
@@ -120,7 +120,7 @@ var text = textCont[1];
 
 function myfunc(y) {
 if(y.matches && cont !== null){
-	cont.style.height = $(window).width() +"px"; 
+	cont1.style.height = $(window).width() +"px"; 
 	greenBar.style.transform = "translate(0,-160px)";
 	greenBar.style.height = "155px";
 	}
