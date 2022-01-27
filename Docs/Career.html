@@ -128,8 +128,8 @@ var x = window.matchMedia("(max-width: 1125px)")
 
 function myfunc(x) {
 if(x.matches && cont !== null){
-		cont.style.height = $(window).width() +"px"; 
-		console.log($(window).width() + "px");
+		cont.style.height = ($(window).width()-300) +"px"; 
+		console.log($(window).width()) + "px");
 	}
 }
 
