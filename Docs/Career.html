@@ -124,12 +124,12 @@ h3 {
 <script>
 var cont = document.querySelector(".svr-ds-tp-img-container");
 var greenBar = document.querySelector(".svr-ds-tp-inf-container");
-var x = window.matchMedia('(max-width: 1225px)')
+var x = window.matchMedia('(max-width: 1125px)')
 let textCont = document.querySelector(".tp-inf-wrapper").children;
 var text = textCont[1];
 
-function myfunc(x) {
-if(x.matches){
+function myfunc(y) {
+if(y.matches){
 	cont.style.height = ($(window).width()-300) +"px"; 
 	console.log($(window).width());
 	greenBar.style.transform = "translate(0,-130px)";
@@ -142,7 +142,7 @@ var playSlider;
 
     var repeater = () => {
 	playSlider = setInterval(function(){
-      myfunc(x);
+      myfunc(y);
      
       }, 500);
     }
