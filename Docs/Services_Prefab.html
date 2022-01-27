@@ -111,27 +111,30 @@ h2 {
 	</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!--<script>
-var cont1 = document.getElementById('svrdstp');
+<script>
+	var cont = document.querySelector(".svr-ds-tp-img-container");
+var greenBar = document.querySelector(".svr-ds-tp-inf-container");
+var y = window.matchMedia("(max-width: 850px)")
+let textCont = document.querySelector(".tp-inf-wrapper").children;
+var text = textCont[1];
 
-var x1 = window.matchMedia("(max-width: 850px)");
-
-function myfunc1(x1) {
-if(x1.matches)
-	console.log( $(window).width() +"px"); 
-	cont1.style.height = $(window).width() +"px";
+function myfunc(y) {
+if(y.matches && cont !== null){
+	cont.style.height = $(window).width() +"px"; 
+	greenBar.style.transform = "translate(0,-160px)";
+	greenBar.style.height = "155px";
+	}
 }
+var playSlider;
 
-var playSlider1;
-
-    var repeater1 = () => {
-	playSlider1 = setInterval(function(){
-      myfunc1(x1);
+    var repeater = () => {
+	playSlider = setInterval(function(){
+      myfunc(y);
      
       }, 500);
     }
-    repeater1();	
-</script> -->
+    repeater();
+</script>
 
 <div class="ms-container" >
 		<div class="ms-st">
