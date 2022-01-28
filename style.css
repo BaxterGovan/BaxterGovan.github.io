@@ -464,7 +464,7 @@ z-index: 8000;
 /* Backgorund Images */
  
 .slide:first-child {
-  background: url('https://baxtergovan.github.io/Photos/LobbyBase.png') no-repeat
+  background: url('https://baxtergovan.github.io/Photos/LobbyBase.jpg') no-repeat
     center top/cover;
 }
 .slide:nth-child(2) {
