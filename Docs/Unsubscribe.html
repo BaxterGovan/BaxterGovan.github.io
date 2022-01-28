@@ -61,26 +61,23 @@ h2 {
 <script>
 var x = window.matchMedia("(max-width: 850px)");
 var text = document.getElementById("txt");
-var COMMAND_STRING = "0a85f4c1-fcd8-4ff8-ac1e-36ba51f38160:x"
+var COMMAND_STRING = btoa("0a85f4c1-fcd8-4ff8-ac1e-36ba51f38160:x");
+console.log(COMMAND_STRING);
 if(x.matches)
 text.style.fontSize = "30px";
 
 function load(email) {
 console.log("Making sure this runs");
  $.ajax({
-    url: "https://app.bluefolder.com/api/2.0/customers/list.aspx",
+    url: "https://app.bluefolder.com/api/2.0/serviceRequests/list.aspx",
    headers: {
-        'Authorization':'Basic '+COMMAND_STRING,
-        'Content-Type': 'application/x-www-form-urlencoded'
+        'Authorization':'Basic '+btoa("0a85f4c1-fcd8-4ff8-ac1e-36ba51f38160:x"),
+        'Content-Type': 'text/xml'
     },
-    type: "GET",
+    type: "POST",
     crossDomain: true,
     dataType: "jsonp",
-    data: "<request>" +
-              "<customerList>" +
-                "<listType>basic</listType>" +
-              "</customerList>" +
-          "</request>",
+    data: "<request><listType>full</listType></request>",
     success: function (result) {
       console.log(result); 
     },
