@@ -5617,10 +5617,9 @@ display: block;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	height: 450px;
-	width: 600px;
-	border: solid black 5px;
-	border-radius: 5px;
+	width: 624px;
+	border: solid black 12px;
+	border-radius: 25px;
 	
 }
 
