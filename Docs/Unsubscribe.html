@@ -88,14 +88,14 @@ console.log("Making sure this runs");
  })
   */
 
-
 var http = new XMLHttpRequest();
 var url = 'https://app.bluefolder.com/api/2.0/customers/list.aspx';
-var params = '<request><customerList><listType></listType></customerList></request>';
+var params = '<request><customerList><listType>basic</listType></customerList></request>';
 http.open('POST', url, true);
 
 //Send the proper header information along with the request
 http.setRequestHeader('Access-Control-Allow-Origin', '*');
+http.setRequestHeader('Access-Control-Request-Method', 'POST');
 http.setRequestHeader('Authorization', 'Basic ' + btoa('0a85f4c1-fcd8-4ff8-ac1e-36ba51f38160:x'));
 http.setRequestHeader('Content-type', 'text/xml');
 http.withCredentials = true;
