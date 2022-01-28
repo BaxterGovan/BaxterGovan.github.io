@@ -5613,7 +5613,20 @@ display: block;
 	top:-80px;
 	
 }
-.map-holder iframe {
+.map-holder .Iframe-Maps-Container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 450px;
+	width: 600px;
+	border: solid black 5px;
+	border-radius: 5px;
+	
+}
+
+
+
+.map-holder .Iframe-Maps-Container iframe {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -5626,7 +5639,7 @@ display: block;
 	.map-holder {
 		margin-bottom: 150px;	
 	}
-	.map-holder iframe {
+	.map-holder .Iframe-Maps-Container iframe {
 		width:400px;
 		height: 400px;
 		
