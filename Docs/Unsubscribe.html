@@ -49,10 +49,10 @@ h2 {
 <div style="width: 100%;" class="services_container">
 	<div style="border-radius: 8px; margin-left: 15%; margin-right: 15%; background-color: green; height: 300px;">
 		<h1 id="txt" >Please Enter Email Address below to Unsubscribe</h1>
-		<form style="text-align: center; color: white;">
+		<form method="post" action="https://formspree.io/f/xrgjpgwv" style="text-align: center; color: white;">
 			Email Address :
-			<input type="text" name="Email">
-			<input type="button" id="unsubEmail" onclick = "load('hi')" value="SUBMIT" />
+			<input type="email" name="Email" required="required">
+			<input type="submit" value="SUBMIT" />
 		</form>
 	</div>
 </div>
@@ -61,63 +61,11 @@ h2 {
 <script>
 var x = window.matchMedia("(max-width: 850px)");
 var text = document.getElementById("txt");
-var COMMAND_STRING = btoa("0a85f4c1-fcd8-4ff8-ac1e-36ba51f38160:x");
-console.log(COMMAND_STRING);
 if(x.matches)
 text.style.fontSize = "30px";
-
-function load(email) {
-console.log("Making sure this runs");
-/*
- $.ajax({
-    url: "https://app.bluefolder.com/api/2.0/customers/list.aspx",
-   headers: {
-        'Authorization':'Basic '+btoa("0a85f4c1-fcd8-4ff8-ac1e-36ba51f38160:x"),
-        'Content-Type': 'text/xml'
-    },
-    type: "POST",
-    crossDomain: true,
-    dataType: "jsonp",
-    data: '<request><customerList><listType>full</listType></customerList></request>',
-    success: function (result) {
-      console.log(result); 
-    },
-    error: function (error) {
-      console.log(error);
-    }  
- })
-  */
-
-var http = new XMLHttpRequest();
-var url = 'https://app.bluefolder.com/api/2.0/customers/list.aspx';
-var params = '<request><customerList><listType>basic</listType></customerList></request>';
-http.open('POST', url, true);
-
-//Send the proper header information along with the request
-http.setRequestHeader('Access-Control-Allow-Origin', '*');
-http.setRequestHeader('Access-Control-Request-Method', 'POST');
-http.setRequestHeader('Authorization', 'Basic ' + btoa('0a85f4c1-fcd8-4ff8-ac1e-36ba51f38160:x'));
-http.setRequestHeader('Content-type', 'text/xml');
-http.withCredentials = true;
-
-http.onreadystatechange = function() {//Call a function when the state changes.
-    if(http.readyState == 4 && http.status == 200) {
-        alert(http.responseText);
-    }
-}
-http.send(params);
-
-
-
-}
-
+	
+	
 </script>
-
-
-
-
-
-
 
 
 <div style="height: 50px;"></div>
