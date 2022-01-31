@@ -5898,6 +5898,35 @@ display: block;
 }
 
 
+@media (max-width: 800px){
+	
+	.capabilities_container .capabilities_wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.capabilities_container .capabilities_wrap .capabilities_tabs{
+		width: 90%;	
+		display: flex;
+	}
+	.capabilities_container .capabilities_wrap .capabilities_items {
+		width: 90%;
+	}
+	
+	.capabilities_container .capabilities_wrap .capabilities_tabs .capabilities_tab {
+		padding: 17px 19px;	
+	}
+	.capabilities_container .capabilities_wrap .capabilities_tabs .capabilities_tab:after {
+		width: 100%;
+		height: 8px;
+		bottom: 0;
+		top: auto;
+		transform: translate3d(-19px, 0, 0);
+	}
+	
+}
+
+
 
 /* Career Page Testimonials using some css from line 4100 or something */
 
