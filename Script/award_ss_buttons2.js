@@ -10,7 +10,7 @@ var phttxt6 = document.getElementById("phttxt6");
 pht4.style.maxHeight = "436px";
 pht5.style.maxHeight = "436px";
 pht6.style.maxHeight = "436px";
-phttxt4.style.marginTop = "-20px";
+phttxt4.style.marginTop = "-50px";
 phttxt5.style.marginTop = "-20px";
 phttxt6.style.marginTop = "-20px";
 function awardsSSPrev2() {
