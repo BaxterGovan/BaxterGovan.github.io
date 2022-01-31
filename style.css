@@ -5184,6 +5184,13 @@ margin-bottom: 50px;
  left: 10px;
  transition: 1s;
 }
+.awards-ss-majorContainer .award-ss-container .award-ss-minimized .text-ss-mini-prev1 {
+ position: relative;
+ font-size: 20px;
+ margin-top: -15px;
+ opacity: 0;
+ transition: 0s;
+}
 .awards-ss-majorContainer .award-ss-container .award-ss-minimized .award-ss-mini-prev2 {
  position: relative;
  width: 350px;
@@ -5191,12 +5198,28 @@ margin-bottom: 50px;
  top: 50px;
  transition: 1s;
 }
+.awards-ss-majorContainer .award-ss-container .award-ss-minimized .text-ss-mini-prev2 {
+ position: relative;
+ font-size: 20px;
+ margin-top: -15px;
+ left: 50px;
+ opacity: 0;
+ transition: 0s;
+}
 .awards-ss-majorContainer .award-ss-container .award-ss-minimized .award-ss-mini-prev3 {
  position: relative;
  width: 350px;
  left: -640px;
  top: 100px;
  transition: 1s;
+}
+.awards-ss-majorContainer .award-ss-container .award-ss-minimized .text-ss-mini-prev3 {
+ position: relative;
+ font-size: 20px;
+ margin-top: -15px;
+ left: 100px;
+ opacity: 0;
+ transition: 0s;
 }
 
 .awards-ss-majorContainer .award-ss-container .award-ss-minimized .award-ss-prev {
@@ -5260,6 +5283,23 @@ margin-bottom: 50px;
  left: 100px;
  top: 0px;
 }
+
+.awards-ss-majorContainer .award-ss-container .award-ss-minimized:hover .text-ss-mini-prev1  {
+ opacity: 1;
+ transition: 1s;
+ 
+}
+.awards-ss-majorContainer .award-ss-container .award-ss-minimized:hover .text-ss-mini-prev2  {
+ opacity: 1;
+ transition: 1s;
+ 
+}
+.awards-ss-majorContainer .award-ss-container .award-ss-minimized:hover .text-ss-mini-prev3  {
+ opacity: 1;
+ transition: 1s;
+ 
+}
+
 
 
 @media (max-width: 1860px)
