@@ -130,6 +130,7 @@ function awardsSSNext2() {
 		phttxt4.innerText = "2015 AGC Build Georgia Specialty Contractor Award First Place";
 		phttxt5.innerText = "2016 AGC Build Georgia Specialty Contractor Award First Place";
 		phttxt6.innerText = "2017 AGC Build Georgia Specialty Contractor Award First Place";
+		phttxt6.style.fontSize = "20px";
 	}
 	else if( count2 == 3)
 	{
@@ -155,6 +156,7 @@ function awardsSSNext2() {
 		phttxt5.innerText = "2020 Turner Outstanding Subcontractor Performance Award";
 		phttxt5.style.fontSize = "18px";
 		phttxt6.innerText = "2021 NECA Project Excellence Award";
+		phttxt6.style.marginTop = "-15px";
 	}
 	else if( count2 == 5)
 	{
@@ -169,6 +171,7 @@ function awardsSSNext2() {
 		phttxt5.innerText = "2004 Build Georgia Specialty Contractor Award";
 		phttxt5.style.fontSize = "20px";
 		phttxt6.innerText = "2006 Build Georgia Specialty Contractor Award";
+		phttxt6.style.marginTop = "-20px";
 	}
 
 }
