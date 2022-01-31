@@ -2149,7 +2149,10 @@ opacity: 1;
  		width: 100px;
 		padding-left: 0;
 	}
-
+	.svr-ds-tp-inf-container .tp-inf-wrapper h2
+	{
+		font-size: 45px;
+	}
 
 }
 
@@ -5867,7 +5870,7 @@ display: block;
 }
 
 .capabilities_container .capabilities_wrap .capabilities_items{	
-	width: calc(100% - 300px);
+	width: calc(95% - 300px);
 	position: relative;
 	z-index: 1;
 	padding: 60px 80px 50px 80px;
