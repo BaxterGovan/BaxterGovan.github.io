@@ -5900,10 +5900,10 @@ display: block;
 
 @media (max-width: 800px){
 	
-	.capabilities_header {
+	.capabilities_container .capabilities_header {
 		paddig-right: 0;
 	}
-	.capabilities_header h2 {
+	.capabilities_container .capabilities_header h2 {
 		text-align: center;
 	}
 	
