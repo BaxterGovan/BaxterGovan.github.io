@@ -13,9 +13,9 @@ function awardsSSPrev() {
 		pht1.src = "/Photos/Awards/Placards/Award2016BGSC.png";
 		pht2.src = "/Photos/Awards/Placards/Award2017BGSC.png";
 		pht3.src = "/Photos/Awards/Placards/Award2018BGSC.png";
-		phttxt1.innerText = "2016 AGC Build Georgia Specalty Contractor Award First Place"
-		phttxt2.innerText = "2017 AGC Build Georgia Specalty Contractor Award First Place"
-		phttxt3.innerText = "2018 AGC Build Georgia Specalty Contractor Award First Place"
+		phttxt1.innerText = "2016 AGC Build Georgia Specialty Contractor Award First Place"
+		phttxt2.innerText = "2017 AGC Build Georgia Specialty Contractor Award First Place"
+		phttxt3.innerText = "2018 AGC Build Georgia Specialty Contractor Award First Place"
 	}
 	else if( count == 1)
 	{
@@ -23,9 +23,9 @@ function awardsSSPrev() {
 		pht1.src = "/Photos/Awards/Placards/Award2001BGSC.png";
 		pht2.src = "/Photos/Awards/Placards/Award2002BGSC.png";
 		pht3.src = "/Photos/Awards/Placards/Award2006BGSC.png";
-		phttxt1.innerText = "2001 Build Georgia Specalty Contractor Award"
-		phttxt2.innerText = "2002 Build Georgia Specalty Contractor Award"
-		phttxt3.innerText = "2006 Build Georgia Specalty Contractor Award First Place"
+		phttxt1.innerText = "2001 Build Georgia Specialty Contractor Award"
+		phttxt2.innerText = "2002 Build Georgia Specialty Contractor Award"
+		phttxt3.innerText = "2006 Build Georgia Specialty Contractor Award First Place"
 	}
 	else if( count == 2)
 	{
@@ -33,9 +33,9 @@ function awardsSSPrev() {
 		pht1.src = "/Photos/Awards/Placards/Award2007BGSC.png";
 		pht2.src = "/Photos/Awards/Placards/Award2008BGSC.png";
 		pht3.src = "/Photos/Awards/Placards/Award2008BGSC2.png";
-		phttxt1.innerText = "2007 Build Georgia Specalty Contractor Award First Place"
-		phttxt2.innerText = "2008 Build Georgia Specalty Contractor Award First Place"
-		phttxt3.innerText = "2008 Build Georgia Specalty Contractor Award First Place"
+		phttxt1.innerText = "2007 Build Georgia Specialty Contractor Award First Place"
+		phttxt2.innerText = "2008 Build Georgia Specialty Contractor Award First Place"
+		phttxt3.innerText = "2008 Build Georgia Specialty Contractor Award First Place"
 	}
 	else if( count == 3)
 	{
@@ -43,9 +43,9 @@ function awardsSSPrev() {
 		pht1.src = "/Photos/Awards/Placards/Award2009BGSC.png";
 		pht2.src = "/Photos/Awards/Placards/Award2010BGSC.png";
 		pht3.src = "/Photos/Awards/Placards/Award2011BGSC.png";
-		phttxt1.innerText = "2009 Build Georgia Specalty Contractor Award First Place"
-		phttxt2.innerText = "2010 Build Georgia Specalty Contractor Award First Place"
-		phttxt3.innerText = "2011 AGC Build Georgia Specalty Contractor Award Merit Award"
+		phttxt1.innerText = "2009 Build Georgia Specialty Contractor Award First Place"
+		phttxt2.innerText = "2010 Build Georgia Specialty Contractor Award First Place"
+		phttxt3.innerText = "2011 AGC Build Georgia Specialty Contractor Award Merit Award"
 	}
 	else if( count == 4)
 	{
@@ -53,9 +53,9 @@ function awardsSSPrev() {
 		pht1.src = "/Photos/Awards/Placards/Award2014BGSC.png";
 		pht2.src = "/Photos/Awards/Placards/Award2015BGSC.png";
 		pht3.src = "/Photos/Awards/Placards/Award2015BGSC2.png";
-		phttxt1.innerText = "2014 AGC Build Georgia Specalty Contractor Award Merit Award"
-		phttxt2.innerText = "2015 AGC Build Georgia Specalty Contractor Award First Place"
-		phttxt3.innerText = "2015 AGC Build Georgia Specalty Contractor Award First Place"
+		phttxt1.innerText = "2014 AGC Build Georgia Specialty Contractor Award Merit Award"
+		phttxt2.innerText = "2015 AGC Build Georgia Specialty Contractor Award First Place"
+		phttxt3.innerText = "2015 AGC Build Georgia Specialty Contractor Award First Place"
 	}
 
 }
@@ -68,9 +68,9 @@ function awardsSSNext() {
 		pht1.src = "/Photos/Awards/Placards/Award2007BGSC.png";
 		pht2.src = "/Photos/Awards/Placards/Award2008BGSC.png";
 		pht3.src = "/Photos/Awards/Placards/Award2008BGSC2.png";
-		phttxt1.innerText = "2007 Build Georgia Specalty Contractor Award First Place"
-		phttxt2.innerText = "2008 Build Georgia Specalty Contractor Award First Place"
-		phttxt3.innerText = "2008 Build Georgia Specalty Contractor Award First Place"
+		phttxt1.innerText = "2007 Build Georgia Specialty Contractor Award First Place"
+		phttxt2.innerText = "2008 Build Georgia Specialty Contractor Award First Place"
+		phttxt3.innerText = "2008 Build Georgia Specialty Contractor Award First Place"
 	}
 	else if( count == 1)
 	{
@@ -78,9 +78,9 @@ function awardsSSNext() {
 		pht1.src = "/Photos/Awards/Placards/Award2009BGSC.png";
 		pht2.src = "/Photos/Awards/Placards/Award2010BGSC.png";
 		pht3.src = "/Photos/Awards/Placards/Award2011BGSC.png";
-		phttxt1.innerText = "2009 Build Georgia Specalty Contractor Award First Place"
-		phttxt2.innerText = "2010 Build Georgia Specalty Contractor Award First Place"
-		phttxt3.innerText = "2011 AGC Build Georgia Specalty Contractor Award Merit Award"
+		phttxt1.innerText = "2009 Build Georgia Specialty Contractor Award First Place"
+		phttxt2.innerText = "2010 Build Georgia Specialty Contractor Award First Place"
+		phttxt3.innerText = "2011 AGC Build Georgia Specialty Contractor Award Merit Award"
 	}
 	else if( count == 2)
 	{
@@ -88,9 +88,9 @@ function awardsSSNext() {
 		pht1.src = "/Photos/Awards/Placards/Award2014BGSC.png";
 		pht2.src = "/Photos/Awards/Placards/Award2015BGSC.png";
 		pht3.src = "/Photos/Awards/Placards/Award2015BGSC2.png";
-		phttxt1.innerText = "2014 AGC Build Georgia Specalty Contractor Award Merit Award"
-		phttxt2.innerText = "2015 AGC Build Georgia Specalty Contractor Award First Place"
-		phttxt3.innerText = "2015 AGC Build Georgia Specalty Contractor Award First Place"
+		phttxt1.innerText = "2014 AGC Build Georgia Specialty Contractor Award Merit Award"
+		phttxt2.innerText = "2015 AGC Build Georgia Specialty Contractor Award First Place"
+		phttxt3.innerText = "2015 AGC Build Georgia Specialty Contractor Award First Place"
 	}
 	else if( count == 3)
 	{
@@ -98,9 +98,9 @@ function awardsSSNext() {
 		pht1.src = "/Photos/Awards/Placards/Award2016BGSC.png";
 		pht2.src = "/Photos/Awards/Placards/Award2017BGSC.png";
 		pht3.src = "/Photos/Awards/Placards/Award2018BGSC.png";
-		phttxt1.innerText = "2016 AGC Build Georgia Specalty Contractor Award First Place"
-		phttxt2.innerText = "2017 AGC Build Georgia Specalty Contractor Award First Place"
-		phttxt3.innerText = "2018 AGC Build Georgia Specalty Contractor Award First Place"
+		phttxt1.innerText = "2016 AGC Build Georgia Specialty Contractor Award First Place"
+		phttxt2.innerText = "2017 AGC Build Georgia Specialty Contractor Award First Place"
+		phttxt3.innerText = "2018 AGC Build Georgia Specialty Contractor Award First Place"
 	}
 	else if( count == 4)
 	{
@@ -108,9 +108,9 @@ function awardsSSNext() {
 		pht1.src = "/Photos/Awards/Placards/Award2001BGSC.png";
 		pht2.src = "/Photos/Awards/Placards/Award2002BGSC.png";
 		pht3.src = "/Photos/Awards/Placards/Award2006BGSC.png";
-		phttxt1.innerText = "2001 Build Georgia Specalty Contractor Award"
-		phttxt2.innerText = "2002 Build Georgia Specalty Contractor Award"
-		phttxt3.innerText = "2006 Build Georgia Specalty Contractor Award First Place"
+		phttxt1.innerText = "2001 Build Georgia Specialty Contractor Award"
+		phttxt2.innerText = "2002 Build Georgia Specialty Contractor Award"
+		phttxt3.innerText = "2006 Build Georgia Specialty Contractor Award First Place"
 	}
 
 }
