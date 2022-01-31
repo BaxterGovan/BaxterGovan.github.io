@@ -116,7 +116,7 @@
 	event1.src = "/Photos/Prefab/Prefab-sm1.jpg";
  }
  function theSwitch4(event1) {
-	event1.src = "/Photos/Prefab/Prefab-sm2.jpgg";
+	event1.src = "/Photos/Prefab/Prefab-sm2.jpg";
  }
  function theSwitch5(event1) {
 	event1.src = "/Photos/Prefab/Prefab-sm3.jpg";
