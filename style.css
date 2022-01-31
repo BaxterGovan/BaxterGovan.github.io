@@ -5363,14 +5363,23 @@ margin-bottom: 50px;
 	.awards-ss-majorContainer .award-ss-container.active .award-ss-minimized  .award-ss-mini-prev2 {
  		position: relative;
  		width: calc((100vw / 4.1) )!important;
- 		left: 50px;
+ 		left: 0px;
  		top: 0px
 	}
 	.awards-ss-majorContainer .award-ss-container.active .award-ss-minimized .award-ss-mini-prev3 {
  		position: relative;
  		width: calc((100vw / 3.9) )!important;
- 		left: 100px;
+ 		left: 0px;
  		top: 0px;
+	}
+	.awards-ss-majorContainer .award-ss-container.active .award-ss-minimized  .text-ss-mini-prev1 {
+ 		left: 0px;
+	}
+	.awards-ss-majorContainer .award-ss-container.active .award-ss-minimized  .text-ss-mini-prev2 {
+ 		left: 0px;
+	}
+	.awards-ss-majorContainer .award-ss-container.active .award-ss-minimized  .text-ss-mini-prev3 {
+ 		left: 0px;
 	}
 	.awards-ss-majorContainer .award-ss-container .award-ss-minimized .award-ss-next {
  		left: 94%;
