@@ -2949,7 +2949,7 @@ width: 80%;
 
 .cm-asyc-photo-text-media .holdContainer .cm-img-container img {
 
-	max-width: 470px;
+	max-width: 400px;
 	max-height: 350px;
 	transition: 1s ease-in-out;
 }
